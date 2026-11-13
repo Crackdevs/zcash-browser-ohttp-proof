@@ -1,0 +1,54 @@
+{
+  "workflow_runs": [
+    {
+      "id": 41926607243,
+      "name": "Check Snap Manifest",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_number": 10,
+      "jobs_url": "https://api.github.com/repos/red-dev-inc/WebZjs/actions/runs/41926607243/jobs",
+      "logs_url": "https://api.github.com/repos/red-dev-inc/WebZjs/actions/runs/41926607243/logs",
+      "workflow_id": 308007050
+    },
+    {
+      "id": 41926607240,
+      "name": "Web Tests",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_number": 64,
+      "jobs_url": "https://api.github.com/repos/red-dev-inc/WebZjs/actions/runs/41926607240/jobs",
+      "logs_url": "https://api.github.com/repos/red-dev-inc/WebZjs/actions/runs/41926607240/logs",
+      "workflow_id": 308004294
+    },
+    {
+      "id": 41926607228,
+      "name": "Enforce Snap allowedOrigins",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_number": 9,
+      "jobs_url": "https://api.github.com/repos/red-dev-inc/WebZjs/actions/runs/41926607228/jobs",
+      "logs_url": "https://api.github.com/repos/red-dev-inc/WebZjs/actions/runs/41926607228/logs",
+      "workflow_id": 308007049
+    },
+    {
+      "id": 41926607224,
+      "name": "Rust-Checks",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_number": 64,
+      "jobs_url": "https://api.github.com/repos/red-dev-inc/WebZjs/actions/runs/41926607224/jobs",
+      "logs_url": "https://api.github.com/repos/red-dev-inc/WebZjs/actions/runs/41926607224/logs",
+      "workflow_id": 308004297
+    },
+    {
+      "id": 41926607232,
+      "name": "Playwright Tests",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_number": 64,
+      "jobs_url": "https://api.github.com/repos/red-dev-inc/WebZjs/actions/runs/41926607232/jobs",
+      "logs_url": "https://api.github.com/repos/red-dev-inc/WebZjs/actions/runs/41926607232/logs",
+      "workflow_id": 308004296
+    }
+  ]
+}

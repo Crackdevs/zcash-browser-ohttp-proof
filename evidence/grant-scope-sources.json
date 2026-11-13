@@ -1,0 +1,29 @@
+{
+  "checked_at_utc": "2026-11-10T21:13:00Z",
+  "sources": [
+    {
+      "url": "https://github.com/ZcashCommunityGrants/zcashcommunitygrants/issues/486",
+      "title": "Grant Application - Konclave: taking the viewing key off the coordinator",
+      "state": "open",
+      "labels": [
+        "📋 Grant Application",
+        "👀 Ready For ZCG Review",
+        "✅ Grant Approved"
+      ],
+      "updated_at": "2026-11-05T11:37:05Z"
+    },
+    {
+      "url": "https://github.com/ZcashCommunityGrants/zcashcommunitygrants/issues/335",
+      "title": "red·bridge Launch",
+      "state": "open",
+      "labels": [
+        "📋 Grant Application",
+        "👀 Ready For ZCG Review",
+        "✅ Grant Approved",
+        "✅ Startup Payment Completed"
+      ],
+      "updated_at": "2026-08-27T16:46:12Z"
+    }
+  ],
+  "scope": "Issue bodies read using GitHub connector; labels report source status, not acceptance of each deliverable. Scope analysis is in GAP.md; no funding or adoption claim was independently verified."
+}

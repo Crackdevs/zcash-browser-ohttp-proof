@@ -1,0 +1,12 @@
+{
+  "exit_code": 0,
+  "stdout": "rustc 1.89.0-nightly (49a8ba068 2025-06-14)\n",
+  "stderr": "",
+  "command": [
+    "work/r/toolchains/nightly-2025-06-15-x86_64-pc-windows-msvc/bin/rustc.exe",
+    "--version"
+  ],
+  "cwd": "C:\\Users\\NewOwner\\Documents\\Codex\\2026-11-10\\build-a-bounded-feasibility-proof-for",
+  "started_at_utc": "2026-11-10T21:18:47.591746+00:00",
+  "elapsed_seconds": 0.172
+}

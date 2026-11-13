@@ -1,0 +1,99 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "crates/webzjs-common",
+    "crates/webzjs-keys",
+    "crates/webzjs-requests",
+    "crates/webzjs-wallet",
+]
+# A path dependency inside the workspace directory would otherwise become a member.
+exclude = ["vendor/tonic-web-wasm-client"]
+
+[profile.release]
+# Tell `rustc` to optimize for small code size.
+opt-level = 3
+lto = true
+codegen-units = 1
+
+[workspace.dependencies]
+## Web dependencies
+wasm-bindgen = "=0.2.100" # PINNED: 0.2.108+ has TextEncoder.encodeInto issues with MetaMask Snap sandbox
+js-sys = "=0.3.77"
+wasm-bindgen-futures = "=0.4.50"
+web-sys = { version = "=0.3.77", features = [
+    "console",
+] }
+wasm-bindgen-rayon = { version = "1.3" } # Update to higher version cause playwright test in chtomium fail
+
+# WASM specific dependencies
+tracing-web = { version = "0.1.3" }
+console_error_panic_hook = { version = "0.1.7" }
+tonic-web-wasm-client = "0.8.0"
+tokio_with_wasm = { version = "0.7.1", features = ["rt", "rt-multi-thread", "sync", "macros", "time"] }
+
+## Zcash dependencies: librustzcash NU7 final stable crates from crates.io (pinned exactly). NU7 is
+## active on testnet from block 4,465,026 (branch id 0x77190AD9); mainnet has no NU7 height yet.
+## `zcash_client_memory` is our NU7 store branch (red-dev-inc `feat/snap-nu7`). For local store work,
+## swap it to `{ path = "../zcash_client_memory" }`.
+zcash_keys = { version = "=0.17.0", features = ["transparent-inputs", "orchard", "sapling", "unstable"] }
+zcash_client_backend = { version = "=0.25.0", default-features = false, features = ["sync", "lightwalletd-tonic", "orchard", "zeroize"] }
+zcash_client_memory = { git = "https://github.com/red-dev-inc/zcash_client_memory", branch = "feat/snap-nu7", features = ["orchard", "transparent-inputs"] }
+zcash_primitives = { version = "=0.31.0" }
+zcash_transparent = { version = "=0.11.0", default-features = false }
+zcash_address = { version = "=0.14.0" }
+zcash_proofs = { version = "=0.31.0", default-features = false, features = ["bundled-prover", "multicore"] }
+zip321 = { version = "=0.10.0" }
+zip32 = { version = "0.3" }
+zcash_protocol = { version = "=0.11.0", default-features = false }
+pczt = { version = "=0.10.0", default-features = false, features = ["orchard", "sapling", "transparent"] }
+sapling = { package = "sapling-crypto", version = "0.9", default-features = false }
+bip32 = { version = "0.6", default-features = false, features = ["alloc"] }
+
+## gRPC Web dependencies
+prost = { version = "0.14", default-features = false }
+tonic = { version = "0.14", default-features = false }
+
+
+# Used in Native tests
+zcash_client_sqlite = { version = "=0.23.0", default-features = false, features = ["unstable", "orchard"] }
+
+getrandom = { version = "0.2", features = ["js"] }
+# `rand 0.10` (pulled in by the zcash crates) uses getrandom 0.4, which needs its `wasm_js` backend on wasm32.
+rand10 = { package = "rand", version = "0.10", default-features = false, features = ["std", "std_rng", "sys_rng", "thread_rng"] }
+getrandom04 = { package = "getrandom", version = "0.4", features = ["wasm_js"] }
+thiserror = "1.0.63"
+indexed_db_futures = "0.5.0"
+sha2 = "0.10"
+ripemd = "0.1"
+bip0039 = "0.12.0"
+secrecy = "0.8.0"
+futures-util = "0.3.30"
+nonempty = "0.11"
+hex = "0.4.3"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+tracing = "0.1.40"
+rayon = { version = "1.8", features = ["web_spin_lock"] }
+subtle = "2.6.1"
+wasm_thread = { git = "https://github.com/ec2/wasm_thread", rev = "9e432077948d927d49373d1d039c23447d3648df", default-features = false, features = ["keep_worker_alive", "es_modules"] }
+
+wasm_sync = "0.1.2"
+http = { version = "1.1.0", default-features = false }
+serde = { version = "1", features = ["derive"], default-features = false }
+postcard = { version = "1.0.10", features = ["alloc"] }
+serde-wasm-bindgen = "0.6.5"
+
+wasm-bindgen-test = "=0.3.50"
+tempfile = "3.12"
+# Used in Native tests
+tokio = { version = "1.0", features = ["rt", "macros"] }
+byte-unit = { version = "5.1.4", features = ["byte"] }
+
+[patch.crates-io]
+# lightwalletd v0.5.4 (Zcash testnet) answers an empty stream with a trailers-only response, which
+# tonic-web-wasm-client 0.8.0 rejects as `MalformedResponse`, so sync fails. See
+# vendor/tonic-web-wasm-client/VENDORED.md. Remove once fixed upstream.
+tonic-web-wasm-client = { path = "vendor/tonic-web-wasm-client" }
+
+[workspace.lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(wasm_bindgen)', 'cfg(wasm_bindgen_unstable_test_coverage)'] }

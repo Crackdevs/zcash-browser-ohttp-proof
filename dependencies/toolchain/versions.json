@@ -1,0 +1,90 @@
+{
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\bin\\wasm-pack.exe",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "wasm-pack 0.15.1\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\bin\\wasm-bindgen.exe",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "wasm-bindgen 0.2.100\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\bin\\just.exe",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "just 1.59.0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\l\\bin\\clang.exe",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "clang version 23.1.4 (https://github.com/llvm/llvm-project 7a941dfb2877a0b8cf30323fefa85ad019e0b0f5)\nTarget: x86_64-pc-windows-msvc\nThread model: posix\nInstalledDir: C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\l\\bin\nBuild config: +alloc:rpmalloc\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "cargo",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "cargo 1.89.0-nightly (fc1518ef0 2025-06-06)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "v24.22.1\r\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\js-tools\\node_modules\\@yarnpkg\\cli-dist\\bin\\yarn.js",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "4.5.1\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\js-tools\\node_modules\\npm\\bin\\npm-cli.js",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "10.9.4\n",
+      "stderr": ""
+    }
+  ],
+  "binary_sha256": {
+    "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\bin\\wasm-pack.exe": "a79049abec10ae21657458c5a553ae7632f16d800cffd0703c07e45aaef0d6c7",
+    "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\bin\\wasm-bindgen.exe": "c552a94630728b11c02785ab4a42cf031576736e7769492973e26292afba343c",
+    "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\bin\\just.exe": "146c26ccfe1e40fadb59183cf8bc17d46c0cdf1bd1e43e52cca686cef0c44627",
+    "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\l\\bin\\clang.exe": "2fcd72a41bbc6bcf8e89c63555c4db7451da53bf47082fb91d6b1c1e990636ad",
+    "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\l\\bin\\llvm-ar.exe": "e83928cfe8a3ade00656dffa2b435f8a7f160c1733bcf41345633f4e9764e774"
+  },
+  "lockfiles": {
+    "Cargo.lock": "d14958b23cf7c6fd67b511529ea007394cb4685d35b0decb78d2f7660a586d8d",
+    "yarn.lock": "c05c59d61013e67de63b6e0a6c98aa37274ce4caeed92af082d4993c3c992e9e"
+  },
+  "source_commit": "c0457174ecb99c67a9d081fba0be54f50d0cf012"
+}

@@ -1,0 +1,41 @@
+{
+  "recorded_at": "2026-11-10T20:14:57Z",
+  "data": {
+    "url": "https://github.com/red-dev-inc/WebZjs/pull/27",
+    "number": 27,
+    "state": "open",
+    "merged": false,
+    "mergeable": true,
+    "draft": false,
+    "body": null,
+    "title": "Feat/nu7 portable keys",
+    "base": "main",
+    "base_sha": "317d790f4a3af9da08f191c17e7c1b4269417ab4",
+    "head": "feat/nu7-portable-keys",
+    "head_sha": "c0457174ecb99c67a9d081fba0be54f50d0cf012",
+    "head_repo_id": 1290997389,
+    "head_repo_full_name": "red-dev-inc/WebZjs",
+    "merge_commit_sha": "f5eef9815349640a6ee3db47326bf10018fe155a",
+    "user": {
+      "login": "aratrika1996",
+      "name": "aratrika1996",
+      "email": null,
+      "avatar_url": "https://avatars.githubusercontent.com/u/52925089?v=4",
+      "id": 52925089
+    },
+    "requested_reviewers": null,
+    "requested_team_reviewers": null,
+    "diff": null,
+    "comments": null,
+    "created_at": "2026-11-04T13:10:48Z",
+    "updated_at": "2026-11-05T17:33:08Z",
+    "closed_at": null,
+    "merged_at": null,
+    "commits": 5,
+    "changed_files": 55,
+    "additions": 3146,
+    "deletions": 401,
+    "display_url": "https://github.com/red-dev-inc/WebZjs/pull/27",
+    "display_title": "Feat/nu7 portable keys"
+  }
+}

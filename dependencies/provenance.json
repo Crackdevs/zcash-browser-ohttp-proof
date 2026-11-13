@@ -1,0 +1,18 @@
+{
+  "webzjs": {
+    "commit": "c0457174ecb99c67a9d081fba0be54f50d0cf012",
+    "origin": "https://github.com/red-dev-inc/WebZjs",
+    "contents": "Pinned Cargo build subset from committed blobs, before the experiment patch."
+  },
+  "relay": {
+    "commit": "75e0a766ded56fe4ed8562d8953160fd35b171b0",
+    "origin": "https://github.com/thibmeu/ohttp-relay",
+    "contents": "Exact committed Node relay sources and MIT license. Recorded run staged CRLF copies."
+  },
+  "browser": {
+    "playwright": "1.64.1",
+    "chromium_observed": "156.0.8078.4"
+  },
+  "c02_npm_lock": "continuation-02/pnpm-lock.yaml",
+  "c02_build_inventory": "continuation-02/evidence/inventory.json"
+}

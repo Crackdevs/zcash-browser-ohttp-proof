@@ -1,0 +1,8 @@
+{
+	"dependencies": {
+		"@yarnpkg/cli-dist": "4.5.1",
+		"npm": "10.9.4",
+		"parcel": "2.13.3",
+		"zcash-faucet": "1.2.1"
+	}
+}

@@ -1,0 +1,80 @@
+[package]
+name = "webzjs-keys"
+version = "0.1.0"
+authors = ["ChainSafe Systems"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/ZcashCommunityGrants/WebZjs"
+description = "A browser client-side library for generating and manipulating zcash keys"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = ["-O4", "-O4"]
+
+[dependencies]
+webzjs-common = { path = "../webzjs-common" }
+
+js-sys.workspace = true
+thiserror.workspace = true
+wasm-bindgen.workspace = true
+zcash_primitives = { workspace = true, features = ["transparent-inputs"] }
+zcash_keys.workspace = true
+zcash_protocol.workspace = true
+bip0039.workspace = true
+zip32.workspace = true
+zcash_transparent.workspace = true
+sapling = { workspace = true }
+bip32.workspace = true
+pczt = { workspace = true, default-features = false, features = [
+    "signer",
+    "orchard",
+    "sapling",
+    "transparent",
+    "tx-extractor",
+] }
+orchard = { version = "0.16", default-features = false }
+wasm-bindgen-futures = "0.4.43"
+serde.workspace = true
+serde-wasm-bindgen.workspace = true
+
+# Demo-only: building sample PCZTs for the connected wallet's UFVK. Gated behind
+# the `demo-builder` feature so they never bloat the production Snap WASM.
+rand = { version = "0.8", optional = true }
+secp256k1 = { version = "0.33", optional = true }
+
+# fixes "failed to resolve: use of undeclared crate or module `imp`" error
+getrandom = { workspace = true, features = ["js"] }
+getrandom04.workspace = true
+rand10.workspace = true
+
+[features]
+# Exposes `build_owned_demo_pczts` (src/demo_pczt.rs) — used only by the PoC demo
+# to construct per-pool sample PCZTs attributable to a given UFVK. Pulls the
+# transaction builders (`pczt/zcp-builder`) into the wasm build.
+demo-builder = ["dep:rand", "dep:secp256k1", "pczt/zcp-builder"]
+
+[dev-dependencies]
+# Used by tests/spoof_pczt.rs to build UFVKs and parse PCZT fixtures natively
+# against the inner (non-wasm) entry points.
+webzjs-common = { path = "../webzjs-common" }
+zcash_keys.workspace = true
+zip32.workspace = true
+# `zcp-builder` unlocks `Creator::build_from_parts`, used by tests/gen_fixtures.rs
+# to wrap an Orchard bundle into a `pczt::Pczt`. Dev-only: it pulls
+# `zcash_primitives` into `pczt` for the test build but never the wasm lib build.
+pczt = { workspace = true, default-features = false, features = [
+    "orchard",
+    "sapling",
+    "transparent",
+    "zcp-builder",
+] }
+# Seeded RNG for deterministic fixture generation (tests/gen_fixtures.rs).
+rand = "0.8"
+# Transparent fixture construction (tests/gen_fixtures.rs) derives a P2PKH pubkey
+# and spends it; `secp256k1` is already in the graph via `zcash_transparent`.
+secp256k1 = "0.33"
+
+[lints]
+workspace = true

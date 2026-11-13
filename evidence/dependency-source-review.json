@@ -1,0 +1,36 @@
+[
+  {
+    "registry_file": "zcash_protocol-0.11.0/src/consensus.rs",
+    "sha256": "a6a7ccc3cdcc32c5f45772273e419432c08615e085084e595f6c6150a232b6b5",
+    "excerpts": [
+      {
+        "first_line": 584,
+        "text": "584: impl Parameters for TestNetwork {\n585:     fn network_type(&self) -> NetworkType {\n586:         NetworkType::Test\n587:     }\n588: \n589:     fn activation_height(&self, nu: NetworkUpgrade) -> Option<BlockHeight> {\n590:         match nu {\n591:             NetworkUpgrade::Overwinter => Some(BlockHeight(207_500)),\n592:             NetworkUpgrade::Sapling => Some(BlockHeight(280_000)),\n593:             NetworkUpgrade::Blossom => Some(BlockHeight(584_000)),\n594:             NetworkUpgrade::Heartwood => Some(BlockHeight(903_800)),\n595:             NetworkUpgrade::Canopy => Some(BlockHeight(1_028_500)),\n596:             NetworkUpgrade::Nu5 => Some(BlockHeight(1_842_420)),\n597:             NetworkUpgrade::Nu6 => Some(BlockHeight(2_976_000)),\n598:             NetworkUpgrade::Nu6_1 => Some(BlockHeight(3_536_500)),\n599:             NetworkUpgrade::Nu6_2 => Some(BlockHeight(4_052_000)),\n600:             NetworkUpgrade::Nu6_3 => Some(BlockHeight(4_134_000)),\n601:             NetworkUpgrade::Nu7 => Some(BlockHeight(4_465_026)),\n602:             #[cfg(zcash_unstable = \"nutachyon\")]\n603:             NetworkUpgrade::NuTachyon => None,\n604:         }\n605:     }"
+      },
+      {
+        "first_line": 917,
+        "text": "917: impl From<BranchId> for u32 {\n918:     fn from(consensus_branch_id: BranchId) -> u32 {\n919:         match consensus_branch_id {\n920:             BranchId::Sprout => 0,\n921:             BranchId::Overwinter => 0x5ba8_1b19,\n922:             BranchId::Sapling => 0x76b8_09bb,\n923:             BranchId::Blossom => 0x2bb4_0e60,\n924:             BranchId::Heartwood => 0xf5b9_230b,\n925:             BranchId::Canopy => 0xe9ff_75a6,\n926:             BranchId::Nu5 => 0xc2d6_d0b4,\n927:             BranchId::Nu6 => 0xc8e7_1055,\n928:             BranchId::Nu6_1 => 0x4dec_4df0,\n929:             BranchId::Nu6_2 => 0x5437_f330,\n930:             BranchId::Nu6_3 => 0x37a5_165b,\n931:             BranchId::Nu7 => 0x7719_0ad9,\n932:             #[cfg(zcash_unstable = \"nutachyon\")]\n933:             BranchId::NuTachyon => 0xffff_fffc,\n934:         }"
+      }
+    ]
+  },
+  {
+    "registry_file": "tonic-0.14.3/src/status.rs",
+    "sha256": "91cfa9c3c4850b53643395618d7f7ff29a2fde5767214f89462af74954096be9",
+    "excerpts": [
+      {
+        "first_line": 775,
+        "text": "775: pub(crate) fn infer_grpc_status(\n776:     trailers: Option<&HeaderMap>,\n777:     status_code: http::StatusCode,\n778: ) -> Result<(), Option<Status>> {\n779:     if let Some(trailers) = trailers {\n780:         if let Some(status) = Status::from_header_map(trailers) {\n781:             if status.code() == Code::Ok {\n782:                 return Ok(());\n783:             } else {\n784:                 return Err(status.into());\n785:             }\n786:         }\n787:     }\n788:     trace!(\"trailers missing grpc-status\");\n789:     let code = match status_code {\n790:         // Borrowed from https://github.com/grpc/grpc/blob/master/doc/http-grpc-status-mapping.md\n791:         http::StatusCode::BAD_REQUEST => Code::Internal,\n792:         http::StatusCode::UNAUTHORIZED => Code::Unauthenticated,\n793:         http::StatusCode::FORBIDDEN => Code::PermissionDenied,\n794:         http::StatusCode::NOT_FOUND => Code::Unimplemented,\n795:         http::StatusCode::TOO_MANY_REQUESTS\n796:         | http::StatusCode::BAD_GATEWAY\n797:         | http::StatusCode::SERVICE_UNAVAILABLE\n798:         | http::StatusCode::GATEWAY_TIMEOUT => Code::Unavailable,\n799:         // We got a 200 but no trailers, we can infer that this request is finished.\n800:         //\n801:         // This can happen when a streaming response sends two Status but\n802:         // gRPC requires that we end the stream after the first status.\n803:         //\n804:         // https://github.com/hyperium/tonic/issues/681\n805:         http::StatusCode::OK => return Err(None),\n806:         _ => Code::Unknown,\n807:     };\n808: \n809:     let msg = format!(\n810:         \"grpc-status header missing, mapped from HTTP status code {}\",\n811:         status_code.as_u16(),\n812:     );\n813:     let status = Status::new(code, msg);\n814:     Err(status.into())\n815: }"
+      }
+    ]
+  },
+  {
+    "registry_file": "tonic-0.14.3/src/codec/decode.rs",
+    "sha256": "2e15d86f34aabee83f4da333a90b1a2fead47c865b82c9e0a912e64c7be25073",
+    "excerpts": [
+      {
+        "first_line": 294,
+        "text": "294:     fn response(&mut self) -> Result<(), Status> {\n295:         if let Direction::Response(status) = self.direction {\n296:             if let Err(Some(e)) = crate::status::infer_grpc_status(self.trailers.as_ref(), status) {\n297:                 // If the trailers contain a grpc-status, then we should return that as the error\n298:                 // and otherwise stop the stream (by taking the error state)\n299:                 self.trailers.take();\n300:                 return Err(e);\n301:             }\n302:         }\n303:         Ok(())\n304:     }"
+      }
+    ]
+  }
+]

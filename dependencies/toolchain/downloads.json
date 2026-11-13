@@ -1,0 +1,41 @@
+[
+  {
+    "project": "wasm-pack",
+    "release": "https://github.com/wasm-bindgen/wasm-pack/releases/tag/v0.15.1",
+    "asset": "wasm-pack-v0.15.1-x86_64-pc-windows-msvc.tar.gz",
+    "url": "https://github.com/wasm-bindgen/wasm-pack/releases/download/v0.15.1/wasm-pack-v0.15.1-x86_64-pc-windows-msvc.tar.gz",
+    "published_digest": "sha256:80afe1f95aaa3f7442917c4457c8316bd1a383c1f27eb0e40601ff3ee3217583",
+    "download_sha256": "80afe1f95aaa3f7442917c4457c8316bd1a383c1f27eb0e40601ff3ee3217583"
+  },
+  {
+    "project": "just",
+    "release": "https://github.com/casey/just/releases/tag/1.59.0",
+    "asset": "just-1.59.0-x86_64-pc-windows-msvc.zip",
+    "url": "https://github.com/casey/just/releases/download/1.59.0/just-1.59.0-x86_64-pc-windows-msvc.zip",
+    "published_digest": "sha256:9c5463e2d0974e31bee71346aa5cbf19167de1585a4abc1bae7b3b04604ea9c0",
+    "download_sha256": "9c5463e2d0974e31bee71346aa5cbf19167de1585a4abc1bae7b3b04604ea9c0"
+  },
+  {
+    "project": "wasm-bindgen",
+    "release": "https://github.com/wasm-bindgen/wasm-bindgen/releases/tag/0.2.100",
+    "asset": "wasm-bindgen-0.2.100-x86_64-pc-windows-msvc.tar.gz",
+    "url": "https://github.com/wasm-bindgen/wasm-bindgen/releases/download/0.2.100/wasm-bindgen-0.2.100-x86_64-pc-windows-msvc.tar.gz",
+    "sha256": "54a3fb947464388a468ade86d65ffa334d6d2c74b7982723b34ecf6ec8c213d8"
+  },
+  {
+    "project": "Binaryen",
+    "url": "https://github.com/WebAssembly/binaryen/releases/download/version_133/binaryen-version_133-x86_64-windows.tar.gz",
+    "release": "https://github.com/WebAssembly/binaryen/releases/tag/version_133",
+    "asset": "binaryen-version_133-x86_64-windows.tar.gz",
+    "sha256": "17a2cbeac6b5693c5fbafab3838d3c65fd9c1eb38b05f5baec6c657e8c84995b",
+    "published_digest": "sha256:17a2cbeac6b5693c5fbafab3838d3c65fd9c1eb38b05f5baec6c657e8c84995b",
+    "version": "wasm-opt version 133 (version_133)\n"
+  },
+  {
+    "project": "grpcwebproxy",
+    "release": "https://github.com/improbable-eng/grpc-web/releases/tag/v0.15.0",
+    "asset": "grpcwebproxy-v0.15.0-win64.exe.zip",
+    "url": "https://github.com/improbable-eng/grpc-web/releases/download/v0.15.0/grpcwebproxy-v0.15.0-win64.exe.zip",
+    "sha256": "88e6d2e750f7039a99ae7086d6aab1f8756bfd62632f980d8da1a332fffe5e06"
+  }
+]

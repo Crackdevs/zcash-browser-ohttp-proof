@@ -1,0 +1,151 @@
+{
+  "ohttp-ts": {
+    "node_modules/@panva/hpke-noble": "1.1.7",
+    "node_modules/bhttp-ts": "0.6.1",
+    "node_modules/hpke": "1.1.7",
+    "node_modules/quicvarint": "0.2.1"
+  },
+  "ohttp-relay": {
+    "node_modules/bhttp-ts": "0.6.1",
+    "node_modules/hpke": "1.1.4",
+    "node_modules/ohttp-ts": "0.6.2",
+    "node_modules/quicvarint": "0.2.1"
+  },
+  "ohttp-gateway": {
+    "node_modules/@hono/node-server": "2.1.1",
+    "node_modules/@panva/hpke-noble": "1.1.7",
+    "node_modules/bhttp-ts": "0.6.1",
+    "node_modules/hono": "4.13.9",
+    "node_modules/hpke": "1.1.7",
+    "node_modules/ohttp-ts": "0.6.2",
+    "node_modules/quicvarint": "0.2.1"
+  },
+  "zodl-client": [
+    {
+      "name": "aes-gcm",
+      "version": "0.10.3"
+    },
+    {
+      "name": "axum",
+      "version": "0.7.9"
+    },
+    {
+      "name": "axum",
+      "version": "0.8.9"
+    },
+    {
+      "name": "bhttp",
+      "version": "0.5.4"
+    },
+    {
+      "name": "ed25519-dalek",
+      "version": "2.2.0"
+    },
+    {
+      "name": "hkdf",
+      "version": "0.12.4"
+    },
+    {
+      "name": "hpke",
+      "version": "0.13.0"
+    },
+    {
+      "name": "prost",
+      "version": "0.13.5"
+    },
+    {
+      "name": "reqwest",
+      "version": "0.12.28"
+    },
+    {
+      "name": "tonic",
+      "version": "0.12.3"
+    }
+  ],
+  "zodl-gateway": [
+    {
+      "name": "aes-gcm",
+      "version": "0.10.3"
+    },
+    {
+      "name": "axum",
+      "version": "0.7.9"
+    },
+    {
+      "name": "axum",
+      "version": "0.8.9"
+    },
+    {
+      "name": "bhttp",
+      "version": "0.5.4"
+    },
+    {
+      "name": "ed25519-dalek",
+      "version": "2.2.0"
+    },
+    {
+      "name": "hkdf",
+      "version": "0.12.4"
+    },
+    {
+      "name": "hpke",
+      "version": "0.13.0"
+    },
+    {
+      "name": "prost",
+      "version": "0.13.5"
+    },
+    {
+      "name": "tonic",
+      "version": "0.12.3"
+    }
+  ],
+  "zodl-relay-simulator": [
+    {
+      "name": "aes-gcm",
+      "version": "0.10.3"
+    },
+    {
+      "name": "axum",
+      "version": "0.8.9"
+    },
+    {
+      "name": "bhttp",
+      "version": "0.5.4"
+    },
+    {
+      "name": "hkdf",
+      "version": "0.12.4"
+    },
+    {
+      "name": "hpke",
+      "version": "0.13.0"
+    },
+    {
+      "name": "reqwest",
+      "version": "0.12.28"
+    }
+  ],
+  "zodl-e2e-client": [
+    {
+      "name": "aes-gcm",
+      "version": "0.10.3"
+    },
+    {
+      "name": "ed25519-dalek",
+      "version": "2.2.0"
+    },
+    {
+      "name": "hkdf",
+      "version": "0.12.4"
+    },
+    {
+      "name": "hpke",
+      "version": "0.13.0"
+    },
+    {
+      "name": "reqwest",
+      "version": "0.12.28"
+    }
+  ]
+}

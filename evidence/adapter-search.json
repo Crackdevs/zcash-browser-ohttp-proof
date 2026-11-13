@@ -1,0 +1,10 @@
+{
+  "recorded_at_utc": "2026-11-10 21:12:50 UTC",
+  "query": "ohttp",
+  "repositories": [
+    "red-dev-inc/WebZjs",
+    "deegalabs/konclave"
+  ],
+  "results": [],
+  "limitation": "GitHub code search covers indexed default branches; local main and PR27 were searched separately. Absence here is not proof of global absence."
+}

@@ -1,0 +1,33 @@
+use wasm_bindgen::JsValue;
+
+#[derive(thiserror::Error, Debug)]
+pub enum Error {
+    #[error("webzjs-common crate gives error: {0}")]
+    WebzJSCommon(#[from] webzjs_common::Error),
+    #[error("Invalid account id")]
+    AccountIdConversion(#[from] zip32::TryFromIntError),
+    #[error("Failed to derive key from seed")]
+    Derivation(#[from] zcash_keys::keys::DerivationError),
+    #[error("Error attempting to decode key: {0}")]
+    KeyDecoding(String),
+    #[error("Error attempting to encode key: {0}")]
+    KeyEncoding(String),
+    #[error("Failed to sign Pczt: {0}")]
+    PcztSign(String),
+    #[error("Failed to describe Pczt: {0}")]
+    PcztDescribe(String),
+    #[error("Pczt validation failed: {0}")]
+    PcztValidate(String),
+    #[error("Error attempting to get seed fingerprint.")]
+    SeedFingerprint,
+    #[error("Failed to derive transparent address from UFVK")]
+    TransparentAddressDerivation,
+    #[error("BIP-39 error: {0}")]
+    Bip39(String),
+}
+
+impl From<Error> for JsValue {
+    fn from(e: Error) -> Self {
+        js_sys::Error::new(&e.to_string()).into()
+    }
+}
