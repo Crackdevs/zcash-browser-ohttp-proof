@@ -1,0 +1,16 @@
+{
+  "version": "v0.6.1",
+  "vendor": "ECC LightWalletD",
+  "taddr_support": 1,
+  "chain_name": "test",
+  "sapling_activation_height": 280000,
+  "consensus_branch_id": "77190ad9",
+  "block_height": 4606132,
+  "git_commit": "c22ca9ba67676e61cd8ee107538ffd9a77799bab",
+  "build_date": "2026-08-28",
+  "build_user": "root",
+  "estimated_height": 4606134,
+  "zcashd_build": "v1.7.0+gc572f8faf88e",
+  "zcashd_subversion": "/Zakura:1.7.0/",
+  "lightwallet_protocol_version": "v0.5.0"
+}

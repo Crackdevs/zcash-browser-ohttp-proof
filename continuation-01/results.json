@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "continuation": "continuation-01",
+  "scope": "Direct testnet receipt baseline only",
+  "started_at_utc": "2026-11-10T21:59:42+00:00",
+  "finished_at_utc": "2026-11-10T22:59:21.993688+00:00",
+  "elapsed_seconds": 3579.994,
+  "maximum_focused_hours": 4,
+  "original_evidence_unchanged": true,
+  "source_commit": "c0457174ecb99c67a9d081fba0be54f50d0cf012",
+  "ohttp_adapter_implemented": false,
+  "original_ohttp_acceptance_changed": false,
+  "results": [
+    {
+      "check": "Packaged wallet loads in Chromium",
+      "status": "PASS",
+      "browser_version": "156.0.8078.4",
+      "evidence": [
+        "evidence/upstream-packaging-retry.json",
+        "evidence/packaged-artifacts.json",
+        "evidence/alternate-receipt-final/wallet-load.json"
+      ]
+    },
+    {
+      "check": "Compatible metadata RPC responds",
+      "status": "PASS",
+      "hosted_grpc_web_endpoint_status": "FAIL: no RPC response before 20 s bound",
+      "working_endpoint": "http://127.0.0.1:3100",
+      "remote_backend": "testnet.zec.rocks:443",
+      "network": "test",
+      "consensus_branch": "77190ad9",
+      "server_version": "v0.6.1",
+      "evidence": [
+        "evidence/metadata-comparison.json",
+        "evidence/native-metadata-decoded.json",
+        "evidence/browser-local-proxy/browser-preflight.json",
+        "evidence/rpc-local-proxy.json"
+      ]
+    },
+    {
+      "check": "Real receipt appears in wallet balance/history",
+      "status": "PASS",
+      "funding_source": "https://zcash-faucet.vercel.app",
+      "canonical_txid": "4423d42759802a20b55b3178839b116cfb6f9be4b90e34ecb9c84e1a604ac066",
+      "wallet_raw_txid": "66c04a601a4ec8b9ec340eb9e49b6ffb6c119b8378315bb5202a805927d42344",
+      "inclusion_height": 4606216,
+      "wallet_birthday": 4606214,
+      "recognized_zatoshi": 10000000,
+      "pool": "ironwood",
+      "confirmations_at_capture": 1,
+      "evidence": [
+        "evidence/alternate-receipt-final/funding.json",
+        "evidence/alternate-receipt-final/wallet-control.json",
+        "evidence/alternate-receipt-final/wallet-scans.json",
+        "evidence/receipt-node-crosscheck.json"
+      ]
+    }
+  ]
+}

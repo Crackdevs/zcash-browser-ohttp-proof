@@ -1,0 +1,213 @@
+{
+  "packages": [
+    {
+      "package": {
+        "name": "@zcashcommunitygrants/webzjs-wallet",
+        "type": "module",
+        "collaborators": [
+          "ChainSafe Systems"
+        ],
+        "description": "A browser client-side library for implementing Zcash wallets",
+        "version": "0.1.0",
+        "license": "MIT OR Apache-2.0",
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/ZcashCommunityGrants/WebZjs"
+        },
+        "files": [
+          "webzjs_wallet_bg.wasm",
+          "webzjs_wallet.js",
+          "webzjs_wallet.d.ts",
+          "snippets"
+        ],
+        "main": "webzjs_wallet.js",
+        "types": "webzjs_wallet.d.ts",
+        "sideEffects": [
+          "./snippets/*"
+        ]
+      },
+      "files": [
+        {
+          "path": ".gitignore",
+          "bytes": 1,
+          "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1"
+        },
+        {
+          "path": "package.json",
+          "bytes": 579,
+          "sha256": "78359482119687a8b782d96e041d0c1153f3e754c512d12d61f3ea49458a5579"
+        },
+        {
+          "path": "snippets/wasm-bindgen-rayon-38edf6e439f6d70d/src/workerHelpers.js",
+          "bytes": 4546,
+          "sha256": "6982a7a006a69849d666aaf4ac7ea07a42931f850c31006782b1937fd5704f96"
+        },
+        {
+          "path": "snippets/wasm_thread-8ee53d0673203880/src/wasm32/js/module_worker_start.js",
+          "bytes": 241,
+          "sha256": "ab01d522953252ac38bfebedf17a2049db7aca39804b860e11ecc8b67156235b"
+        },
+        {
+          "path": "snippets/wasm_thread-8ee53d0673203880/src/wasm32/js/module_workers_polyfill.min.js",
+          "bytes": 6347,
+          "sha256": "8a1b206907df127c5477d4ae4d78799a5bae18ca31b6b386fe835a0bb7fe55e7"
+        },
+        {
+          "path": "snippets/wasm_thread-8ee53d0673203880/src/wasm32/js/web_worker_module.bundler.js",
+          "bytes": 1304,
+          "sha256": "0081153ad254ea312febe56fd28dd5f568c93f03ab86a23c37f0553e4cb83e93"
+        },
+        {
+          "path": "webzjs_wallet.d.ts",
+          "bytes": 34476,
+          "sha256": "490d9eef8a5f5babe59cedbff8f9be0523acff3fe0f1adc083c5811dc590df18"
+        },
+        {
+          "path": "webzjs_wallet.js",
+          "bytes": 96097,
+          "sha256": "c3e6cc6aa14621a15e612fd01c1635951f21e9ae42015316be352e212089daee"
+        },
+        {
+          "path": "webzjs_wallet_bg.wasm",
+          "bytes": 60525733,
+          "sha256": "b4d58e71f8f5e6e722a9c55d5bc12e93240352981efb4ff6e1816416f1f47cab"
+        },
+        {
+          "path": "webzjs_wallet_bg.wasm.d.ts",
+          "bytes": 9406,
+          "sha256": "7027f75e52a651efa19130627c88e8d5e1a3e1b994af955235bebf71d207bc79"
+        }
+      ]
+    },
+    {
+      "package": {
+        "name": "@zcashcommunitygrants/webzjs-keys",
+        "type": "module",
+        "collaborators": [
+          "ChainSafe Systems"
+        ],
+        "description": "A browser client-side library for generating and manipulating zcash keys",
+        "version": "0.1.0",
+        "license": "MIT OR Apache-2.0",
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/ZcashCommunityGrants/WebZjs"
+        },
+        "files": [
+          "webzjs_keys_bg.wasm",
+          "webzjs_keys.js",
+          "webzjs_keys.d.ts"
+        ],
+        "main": "webzjs_keys.js",
+        "types": "webzjs_keys.d.ts",
+        "sideEffects": [
+          "./snippets/*"
+        ]
+      },
+      "files": [
+        {
+          "path": ".gitignore",
+          "bytes": 1,
+          "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1"
+        },
+        {
+          "path": "package.json",
+          "bytes": 563,
+          "sha256": "1cc71351f08c192a0d8274047d0e99216da021d72eb68de98acde1273bc8525f"
+        },
+        {
+          "path": "webzjs_keys.d.ts",
+          "bytes": 9777,
+          "sha256": "dd4005e80d65f4e2306da9f45174a29a63a9c5a9d87cf1cab712cb6ca93e94e6"
+        },
+        {
+          "path": "webzjs_keys.js",
+          "bytes": 35396,
+          "sha256": "439c49839a9ed29802530633e3351caf2b80e8048884e91a8a853b66e303575f"
+        },
+        {
+          "path": "webzjs_keys_bg.wasm",
+          "bytes": 2745033,
+          "sha256": "eb3dceb3bf06dad16930a3b86a0106d3fcacffbb22df873aadb8f8d2d3a48f44"
+        },
+        {
+          "path": "webzjs_keys_bg.wasm.d.ts",
+          "bytes": 3275,
+          "sha256": "43e4ce2308285822ca8e6497ceee24ca041248a2ccb8e0ca3923e17fc883ae0d"
+        }
+      ]
+    },
+    {
+      "package": {
+        "name": "@zcashcommunitygrants/webzjs-requests",
+        "type": "module",
+        "collaborators": [
+          "ChainSafe Systems"
+        ],
+        "description": "A browser client-side library for generating and manipulating zcash keys",
+        "version": "0.1.0",
+        "license": "MIT OR Apache-2.0",
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/ZcashCommunityGrants/WebZjs"
+        },
+        "files": [
+          "webzjs_requests_bg.wasm",
+          "webzjs_requests.js",
+          "webzjs_requests.d.ts"
+        ],
+        "main": "webzjs_requests.js",
+        "types": "webzjs_requests.d.ts",
+        "sideEffects": [
+          "./snippets/*"
+        ]
+      },
+      "files": [
+        {
+          "path": ".gitignore",
+          "bytes": 1,
+          "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1"
+        },
+        {
+          "path": "package.json",
+          "bytes": 587,
+          "sha256": "18cad99aaa12dff408f6c3a384161361a13f4c6a3ea978d09a1cc45201709e1e"
+        },
+        {
+          "path": "webzjs_requests.d.ts",
+          "bytes": 6639,
+          "sha256": "699d14292cb33e0808fb45e222d1478c2c60fbcc92458a9809a30d60bf52c794"
+        },
+        {
+          "path": "webzjs_requests.js",
+          "bytes": 25111,
+          "sha256": "df7ff9261dc8748af1f4d98e2d7e147ea7250a62cccad2de36d48ff71260f3ae"
+        },
+        {
+          "path": "webzjs_requests_bg.wasm",
+          "bytes": 213080,
+          "sha256": "455496919b024b0fb5fbc658de44059b49e08899b2aaa8290778d46a1ac52a92"
+        },
+        {
+          "path": "webzjs_requests_bg.wasm.d.ts",
+          "bytes": 2061,
+          "sha256": "463f52e599ecac7296ec0edaa4310b021e80c6817a1fe46d1b110441473310ec"
+        }
+      ]
+    }
+  ],
+  "tracked_diff_exit_code": 0,
+  "tracked_diff": "",
+  "diff_diagnostics": "warning: in the working copy of 'add-worker-module.sh', LF will be replaced by CRLF the next time Git touches it\n",
+  "lockfiles": {
+    "Cargo.lock": {
+      "checkout_sha256": "d14958b23cf7c6fd67b511529ea007394cb4685d35b0decb78d2f7660a586d8d",
+      "original_sha256": "d14958b23cf7c6fd67b511529ea007394cb4685d35b0decb78d2f7660a586d8d"
+    },
+    "yarn.lock": {
+      "checkout_sha256": "c05c59d61013e67de63b6e0a6c98aa37274ce4caeed92af082d4993c3c992e9e",
+      "original_sha256": "c05c59d61013e67de63b6e0a6c98aa37274ce4caeed92af082d4993c3c992e9e"
+    }
+  },
+  "source_commit": "c0457174ecb99c67a9d081fba0be54f50d0cf012"
+}

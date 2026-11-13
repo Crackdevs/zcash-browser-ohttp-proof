@@ -1,0 +1,44 @@
+{
+  "started_at_utc": "2026-11-10T22:10:12.519Z",
+  "purpose": "Public testnet metadata; does not establish wallet baseline",
+  "endpoint": "http://127.0.0.1:3100/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetLightdInfo",
+  "chromium_args": [],
+  "browser_version": "156.0.8078.4",
+  "page": {
+    "elapsed_ms": 137,
+    "http_status": 200,
+    "headers": {
+      "access-control-allow-credentials": "true",
+      "access-control-allow-origin": "http://127.0.0.1:55088",
+      "content-type": "application/grpc-web+proto",
+      "date": "Tue, 10 Nov 2026 22:10:16 GMT",
+      "fly-request-id": "01M73R62WC0EPM4P8C4G7DRE9V-ord",
+      "server": "Fly/366e4bf88 (2026-10-27)",
+      "vary": "Origin",
+      "via": "2 fly.io, 2 fly.io",
+      "x-backend": "na-iah-zakura",
+      "x-cache": "hit",
+      "x-region": "ewr"
+    },
+    "body_hex": "00000000a50a0676302e362e311210454343204c6967687457616c6c657444180122047465737428c08b113208373731393061643938b9919902422863323263613962613637363736653631636438656531303735333866666439613737373939626162520a323032362d30382d32385a04726f6f7460b99199026a1476312e372e302b67633537326638666166383865720e2f5a616b7572613a312e372e302f92010676302e352e308000000010677270632d7374617475733a20300d0a"
+  },
+  "worker": {
+    "elapsed_ms": 113,
+    "http_status": 200,
+    "headers": {
+      "access-control-allow-credentials": "true",
+      "access-control-allow-origin": "http://127.0.0.1:55088",
+      "content-type": "application/grpc-web+proto",
+      "date": "Tue, 10 Nov 2026 22:10:16 GMT",
+      "fly-request-id": "01M73R63357M1XN3M810Q6ZJ2W-ord",
+      "server": "Fly/366e4bf88 (2026-10-27)",
+      "vary": "Origin",
+      "via": "2 fly.io, 2 fly.io",
+      "x-backend": "na-iah-zakura",
+      "x-cache": "hit",
+      "x-region": "ewr"
+    },
+    "body_hex": "00000000a50a0676302e362e311210454343204c6967687457616c6c657444180122047465737428c08b113208373731393061643938b9919902422863323263613962613637363736653631636438656531303735333866666439613737373939626162520a323032362d30382d32385a04726f6f7460b99199026a1476312e372e302b67633537326638666166383865720e2f5a616b7572613a312e372e302f92010676302e352e308000000010677270632d7374617475733a20300d0a"
+  },
+  "finished_at_utc": "2026-11-10T22:10:19.635Z"
+}

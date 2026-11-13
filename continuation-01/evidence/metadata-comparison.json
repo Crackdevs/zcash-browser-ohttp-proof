@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "assertions": {
+    "native_status": true,
+    "cli_grpc_web_status": true,
+    "browser_page_status": true,
+    "browser_worker_status": true,
+    "testnet_chain": true,
+    "candidate_nu7_branch": true
+  },
+  "limits": "Metadata compatibility only; no receipt or complete wallet sync yet."
+}

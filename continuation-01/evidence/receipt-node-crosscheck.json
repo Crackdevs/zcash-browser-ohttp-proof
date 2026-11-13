@@ -1,0 +1,27 @@
+{
+  "started_at_utc": "2026-11-10T22:57:52.574Z",
+  "endpoint": "https://testnet.zec.rocks:443",
+  "path": "/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetTransaction",
+  "txid": "4423d42759802a20b55b3178839b116cfb6f9be4b90e34ecb9c84e1a604ac066",
+  "request_hex": "00000000221a2066c04a601a4ec8b9ec340eb9e49b6ffb6c119b8378315bb5202a805927d42344",
+  "tls_verification": true,
+  "headers": {
+    ":status": 200,
+    "content-type": "application/grpc",
+    "date": "Tue, 10 Nov 2026 22:57:52 GMT",
+    "trailer": "Grpc-Status, Grpc-Message, Grpc-Status-Details-Bin",
+    "x-backend": "na-iah-zakura",
+    "x-region": "ewr",
+    "server": "Fly/366e4bf88 (2026-10-27)",
+    "via": "2 fly.io, 2 fly.io",
+    "fly-request-id": "01M73TX82QGXTBTZ3RDN7A1K61-ord"
+  },
+  "trailers": {
+    "grpc-status": "0"
+  },
+  "raw_transaction_sha256": "e11b266cb181564a7270a4b9a8a1de648cb3d9edaca4ba6b2c2ad1289869e55b",
+  "raw_transaction_bytes": 9166,
+  "node_reported_inclusion_height": "4606216",
+  "matches_wallet_height": true,
+  "elapsed_ms": 306
+}

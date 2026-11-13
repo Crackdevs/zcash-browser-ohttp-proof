@@ -1,0 +1,116 @@
+{
+  "started_at_utc": "2026-11-10T22:55:03.237Z",
+  "network": "test",
+  "endpoint": "http://127.0.0.1:3100",
+  "packaged_wallet_load": "PASS",
+  "real_receipt": "PASS",
+  "funding_requested": true,
+  "browser_version": "156.0.8078.4",
+  "harness_url": "http://127.0.0.1:63310/recovery.html",
+  "account": {
+    "network": "test",
+    "endpoint": "http://127.0.0.1:3100",
+    "birthday": 4606214,
+    "account": 1,
+    "address": "utest1l7c3w76c7sqljdhtsl287hrqhuj26s7yzkvwraywdlkrz0tw86tfmc2dmh5aycyaq6a9f4mxrqyc7ruc0uxscj5m55pqnqflky0nwcghzkfd2g8ftmff2c8xwll0ssgf4d8slxjfrte70xezs8674ndf98mdw3cp5rwtckm8xuvj4372fjw3mzl0js09sz7lpuevtzgjuplzcyavaer",
+    "recipient_type": "unified"
+  },
+  "state": {
+    "phase": "disposable-account-ready",
+    "network": "test"
+  },
+  "before_funding": {
+    "summary": {
+      "chain_tip_height": 4606214,
+      "fully_scanned_height": 4606214,
+      "account_balances": [
+        [
+          1,
+          {
+            "sapling_balance": 0,
+            "orchard_balance": 0,
+            "ironwood_balance": 0,
+            "unshielded_balance": 0,
+            "pending_change": 0,
+            "pending_spendable": 0
+          }
+        ]
+      ]
+    },
+    "history": {
+      "transactions": [],
+      "total_count": 0,
+      "has_more": false
+    }
+  },
+  "funding": {
+    "source": "https://zcash-faucet.vercel.app",
+    "cli_version": "1.2.1",
+    "auth": "documented proof of work",
+    "command": [
+      "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1105-1297-0_26.1105.1297.0_x64__3k8sg7r9htsxt\\dependencies\\node\\bin\\node.exe",
+      "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\js-tools\\node_modules\\.pnpm\\zcash-faucet@1.2.1\\node_modules\\zcash-faucet\\bin\\zcash-faucet.js",
+      "utest1l7c3w76c7sqljdhtsl287hrqhuj26s7yzkvwraywdlkrz0tw86tfmc2dmh5aycyaq6a9f4mxrqyc7ruc0uxscj5m55pqnqflky0nwcghzkfd2g8ftmff2c8xwll0ssgf4d8slxjfrte70xezs8674ndf98mdw3cp5rwtckm8xuvj4372fjw3mzl0js09sz7lpuevtzgjuplzcyavaer",
+      "--faucet",
+      "https://zcash-faucet.vercel.app"
+    ],
+    "exit_code": 0,
+    "stdout": "\n    .-~~~~~~-.\n  .'  ______  '.\n /   |___  /    \\    ███████╗ ██████╗ █████╗ ███████╗██╗  ██╗\n|  ===  / /===   |   ╚══███╔╝██╔════╝██╔══██╗██╔════╝██║  ██║\n|      / /       |     ███╔╝ ██║     ███████║███████╗███████║\n|  ===/ /____=== |    ███╔╝  ██║     ██╔══██║╚════██║██╔══██║\n \\   /______|   /    ███████╗╚██████╗██║  ██║███████║██║  ██║\n  '.          .'     ╚══════╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝\n    '-.____.-'         t e s t n e t   ·   f a u c e t\n\n… Mining proof-of-work (Argon2id, difficulty 12, usually under a minute)…\n✔ Proof-of-work done (174 hashes in 4.0s, no account needed)\n… Sending 0.1 TAZ (building a shielded transaction takes ~10-60s)…\n\n  ⓩ  0.1 TAZ on its way to utest1l7c3w76c…yavaer\n\n  txid      4423d42759802a20b55b3178839b116cfb6f9be4b90e34ecb9c84e1a604ac066\n  explorer  https://testnet.zcashexplorer.app/transactions/4423d42759802a20b55b3178839b116cfb6f9be4b90e34ecb9c84e1a604ac066\n\n  Arrives after ~1 block (75s). Done testing? Give it back: npx zcash-faucet --donate\n",
+    "stderr": "",
+    "elapsed_ms": 103009,
+    "txid": "4423d42759802a20b55b3178839b116cfb6f9be4b90e34ecb9c84e1a604ac066",
+    "latest": {
+      "status": "sent",
+      "txid": "4423d42759802a20b55b3178839b116cfb6f9be4b90e34ecb9c84e1a604ac066"
+    }
+  },
+  "incoming_txid": "4423d42759802a20b55b3178839b116cfb6f9be4b90e34ecb9c84e1a604ac066",
+  "receipt": {
+    "txid": "66c04a601a4ec8b9ec340eb9e49b6ffb6c119b8378315bb5202a805927d42344",
+    "tx_type": "Received",
+    "value": 10000000,
+    "block_height": 4606216,
+    "confirmations": 1,
+    "status": "Confirmed",
+    "timestamp": 1794351410,
+    "pool": "ironwood"
+  },
+  "wallet_txid_encoding": "internal bytes; reversed for comparison to faucet canonical txid",
+  "resulting_wallet": {
+    "summary": {
+      "chain_tip_height": 4606216,
+      "fully_scanned_height": 4606216,
+      "account_balances": [
+        [
+          1,
+          {
+            "sapling_balance": 0,
+            "orchard_balance": 0,
+            "ironwood_balance": 10000000,
+            "unshielded_balance": 0,
+            "pending_change": 0,
+            "pending_spendable": 0
+          }
+        ]
+      ]
+    },
+    "history": {
+      "transactions": [
+        {
+          "txid": "66c04a601a4ec8b9ec340eb9e49b6ffb6c119b8378315bb5202a805927d42344",
+          "tx_type": "Received",
+          "value": 10000000,
+          "block_height": 4606216,
+          "confirmations": 1,
+          "status": "Confirmed",
+          "timestamp": 1794351410,
+          "pool": "ironwood"
+        }
+      ],
+      "total_count": 1,
+      "has_more": false
+    }
+  },
+  "recognized_zatoshi": 10000000,
+  "finished_at_utc": "2026-11-10T22:57:13.090Z"
+}

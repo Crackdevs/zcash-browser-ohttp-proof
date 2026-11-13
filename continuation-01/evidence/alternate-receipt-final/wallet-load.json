@@ -1,0 +1,22 @@
+{
+  "started_at_utc": "2026-11-10T22:55:03.237Z",
+  "network": "test",
+  "endpoint": "http://127.0.0.1:3100",
+  "packaged_wallet_load": "PASS",
+  "real_receipt": "BLOCKED",
+  "funding_requested": false,
+  "browser_version": "156.0.8078.4",
+  "harness_url": "http://127.0.0.1:63310/recovery.html",
+  "account": {
+    "network": "test",
+    "endpoint": "http://127.0.0.1:3100",
+    "birthday": 4606214,
+    "account": 1,
+    "address": "utest1l7c3w76c7sqljdhtsl287hrqhuj26s7yzkvwraywdlkrz0tw86tfmc2dmh5aycyaq6a9f4mxrqyc7ruc0uxscj5m55pqnqflky0nwcghzkfd2g8ftmff2c8xwll0ssgf4d8slxjfrte70xezs8674ndf98mdw3cp5rwtckm8xuvj4372fjw3mzl0js09sz7lpuevtzgjuplzcyavaer",
+    "recipient_type": "unified"
+  },
+  "state": {
+    "phase": "disposable-account-ready",
+    "network": "test"
+  }
+}

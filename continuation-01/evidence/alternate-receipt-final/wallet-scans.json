@@ -1,0 +1,67 @@
+[
+  {
+    "recorded_at_utc": "2026-11-10T22:56:52.198Z",
+    "snapshot": {
+      "summary": {
+        "chain_tip_height": 4606215,
+        "fully_scanned_height": 4606215,
+        "account_balances": [
+          [
+            1,
+            {
+              "sapling_balance": 0,
+              "orchard_balance": 0,
+              "ironwood_balance": 0,
+              "unshielded_balance": 0,
+              "pending_change": 0,
+              "pending_spendable": 0
+            }
+          ]
+        ]
+      },
+      "history": {
+        "transactions": [],
+        "total_count": 0,
+        "has_more": false
+      }
+    }
+  },
+  {
+    "recorded_at_utc": "2026-11-10T22:57:12.873Z",
+    "snapshot": {
+      "summary": {
+        "chain_tip_height": 4606216,
+        "fully_scanned_height": 4606216,
+        "account_balances": [
+          [
+            1,
+            {
+              "sapling_balance": 0,
+              "orchard_balance": 0,
+              "ironwood_balance": 10000000,
+              "unshielded_balance": 0,
+              "pending_change": 0,
+              "pending_spendable": 0
+            }
+          ]
+        ]
+      },
+      "history": {
+        "transactions": [
+          {
+            "txid": "66c04a601a4ec8b9ec340eb9e49b6ffb6c119b8378315bb5202a805927d42344",
+            "tx_type": "Received",
+            "value": 10000000,
+            "block_height": 4606216,
+            "confirmations": 1,
+            "status": "Confirmed",
+            "timestamp": 1794351410,
+            "pool": "ironwood"
+          }
+        ],
+        "total_count": 1,
+        "has_more": false
+      }
+    }
+  }
+]
