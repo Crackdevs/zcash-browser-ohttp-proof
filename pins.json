@@ -1,0 +1,34 @@
+{
+  "repositories": [
+    {
+      "name": "WebZjs",
+      "url": "https://github.com/red-dev-inc/WebZjs.git",
+      "commit": "317d790f4a3af9da08f191c17e7c1b4269417ab4"
+    },
+    {
+      "name": "WebZjs-pr27",
+      "url": "https://github.com/red-dev-inc/WebZjs.git",
+      "commit": "c0457174ecb99c67a9d081fba0be54f50d0cf012"
+    },
+    {
+      "name": "ohttp-ts",
+      "url": "https://github.com/thibmeu/ohttp-ts.git",
+      "commit": "4f4f277f64bf002af2e10da6daeb773f70d8e6c8"
+    },
+    {
+      "name": "ohttp-relay",
+      "url": "https://github.com/thibmeu/ohttp-relay.git",
+      "commit": "75e0a766ded56fe4ed8562d8953160fd35b171b0"
+    },
+    {
+      "name": "ohttp-gateway",
+      "url": "https://github.com/thibmeu/ohttp-gateway.git",
+      "commit": "21593a4b6777d85c3475ff948e62b4216770462b"
+    },
+    {
+      "name": "zodl-ohttp",
+      "url": "https://github.com/zodl-inc/zodl-ohttp.git",
+      "commit": "478a4e80458f57379b813d3970d2188813d4c4a9"
+    }
+  ]
+}
