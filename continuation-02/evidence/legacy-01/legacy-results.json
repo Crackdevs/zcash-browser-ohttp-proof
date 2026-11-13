@@ -1,0 +1,17 @@
+{
+  "phase": "legacy",
+  "start": "2026-11-11T00:54:44.884Z",
+  "checks": {
+    "reproduced_legacy_final_status_loss": {
+      "status": "PASS",
+      "details": {
+        "fixture": "data then final grpc-status 13",
+        "tip": 4606454,
+        "hits": 1,
+        "observed": 4606454
+      }
+    }
+  },
+  "browser": "156.0.8078.4",
+  "end": "2026-11-11T00:54:57.861Z"
+}

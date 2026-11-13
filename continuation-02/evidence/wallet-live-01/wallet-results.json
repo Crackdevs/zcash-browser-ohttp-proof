@@ -1,0 +1,353 @@
+{
+  "phase": "wallet",
+  "start": "2026-11-11T00:59:06.935Z",
+  "checks": {
+    "wallet_loaded": {
+      "status": "PASS",
+      "details": {
+        "crossOriginIsolated": true,
+        "network": "test"
+      }
+    },
+    "wallet_final_rpc_error": {
+      "status": "PASS",
+      "details": {
+        "error": "page.evaluate: Error: Error returned from GRPC server: code: 'Internal error', message: \"proof-final-error\""
+      }
+    },
+    "wallet_worker_route": {
+      "status": "PASS",
+      "details": {
+        "empty": {
+          "tip": 4606466,
+          "scanned": 4606466,
+          "balances": [
+            [
+              1,
+              {
+                "sapling_balance": 0,
+                "orchard_balance": 0,
+                "ironwood_balance": 0,
+                "unshielded_balance": 0,
+                "pending_change": 0,
+                "pending_spendable": 0
+              }
+            ]
+          ],
+          "history": []
+        },
+        "workerRpc": [
+          "GetSubtreeRoots",
+          "GetLatestBlock",
+          "GetAddressUtxosStream",
+          "GetBlockRange",
+          "GetTreeState"
+        ]
+      }
+    },
+    "real_ohttp_receipt": {
+      "status": "PASS",
+      "details": {
+        "txid": "ed6716dc130e7415a46f24e22b40812f6648c150ecde2bf470a50f5a4e698420",
+        "receipt": {
+          "txid": "2084694e5a0fa570f42bdeec50c148662f81402be2246fa415740e13dc1667ed",
+          "tx_type": "Received",
+          "value": 10000000,
+          "block_height": 4606479,
+          "confirmations": 1,
+          "status": "Confirmed",
+          "timestamp": 1794358973,
+          "pool": "ironwood"
+        },
+        "node": {
+          "http": 200,
+          "terminal": "grpc-status: 0\r\n",
+          "txid": "ed6716dc130e7415a46f24e22b40812f6648c150ecde2bf470a50f5a4e698420",
+          "height": 4606479,
+          "rawBytes": 9166,
+          "rawSha256": "8be0608143360b391062269480c5266775f0485456c51552c37801f48ce870bf"
+        },
+        "wallet": {
+          "tip": 4606479,
+          "scanned": 4606479,
+          "balances": [
+            [
+              1,
+              {
+                "sapling_balance": 0,
+                "orchard_balance": 0,
+                "ironwood_balance": 10000000,
+                "unshielded_balance": 0,
+                "pending_change": 0,
+                "pending_spendable": 0
+              }
+            ]
+          ],
+          "history": [
+            {
+              "txid": "2084694e5a0fa570f42bdeec50c148662f81402be2246fa415740e13dc1667ed",
+              "tx_type": "Received",
+              "value": 10000000,
+              "block_height": 4606479,
+              "confirmations": 1,
+              "status": "Confirmed",
+              "timestamp": 1794358973,
+              "pool": "ironwood"
+            }
+          ]
+        }
+      }
+    },
+    "transaction_details_rpc": {
+      "status": "PASS",
+      "details": {
+        "via": "browser component GetTransaction plus independent direct RPC; not local wallet history",
+        "http": 200,
+        "terminal": "grpc-status: 0\r\n",
+        "txid": "ed6716dc130e7415a46f24e22b40812f6648c150ecde2bf470a50f5a4e698420",
+        "height": 4606479,
+        "rawBytes": 9166,
+        "rawSha256": "8be0608143360b391062269480c5266775f0485456c51552c37801f48ce870bf",
+        "error": null
+      }
+    },
+    "same_checkpoint_comparison": {
+      "status": "PASS",
+      "details": {
+        "compared": {
+          "direct": {
+            "tip": 4606479,
+            "scanned": 4606479,
+            "balances": [
+              [
+                1,
+                {
+                  "sapling_balance": 0,
+                  "orchard_balance": 0,
+                  "ironwood_balance": 10000000,
+                  "unshielded_balance": 0,
+                  "pending_change": 0,
+                  "pending_spendable": 0
+                }
+              ]
+            ],
+            "history": [
+              {
+                "txid": "2084694e5a0fa570f42bdeec50c148662f81402be2246fa415740e13dc1667ed",
+                "tx_type": "Received",
+                "value": 10000000,
+                "block_height": 4606479,
+                "confirmations": 1,
+                "status": "Confirmed",
+                "timestamp": 1794358973,
+                "pool": "ironwood"
+              }
+            ]
+          },
+          "ohttp": {
+            "tip": 4606479,
+            "scanned": 4606479,
+            "balances": [
+              [
+                1,
+                {
+                  "sapling_balance": 0,
+                  "orchard_balance": 0,
+                  "ironwood_balance": 10000000,
+                  "unshielded_balance": 0,
+                  "pending_change": 0,
+                  "pending_spendable": 0
+                }
+              ]
+            ],
+            "history": [
+              {
+                "txid": "2084694e5a0fa570f42bdeec50c148662f81402be2246fa415740e13dc1667ed",
+                "tx_type": "Received",
+                "value": 10000000,
+                "block_height": 4606479,
+                "confirmations": 1,
+                "status": "Confirmed",
+                "timestamp": 1794358973,
+                "pool": "ironwood"
+              }
+            ]
+          },
+          "directTips": [
+            {
+              "height": 4606479,
+              "hash": "8b85cb6d82674a29d512761b598cfb0e273af6f4646e7ada55cbc910950f0000"
+            }
+          ],
+          "ohttpTips": [
+            {
+              "height": 4606479,
+              "hash": "8b85cb6d82674a29d512761b598cfb0e273af6f4646e7ada55cbc910950f0000"
+            }
+          ],
+          "checkpoint": {
+            "height": 4606479,
+            "directHash": "8b85cb6d82674a29d512761b598cfb0e273af6f4646e7ada55cbc910950f0000",
+            "ohttpHash": "8b85cb6d82674a29d512761b598cfb0e273af6f4646e7ada55cbc910950f0000",
+            "directRpc": "grpc-status: 0\r\n",
+            "ohttpRpc": "grpc-status: 0\r\n"
+          }
+        },
+        "attempts": 1
+      }
+    },
+    "outgoing_payment": {
+      "status": "PASS",
+      "details": {
+        "txid": "78f2cc56869c9b02b869e20932bba7776f705267a351a0d6b606ab1147b45846",
+        "submit": {
+          "wallet_send_returned": true
+        },
+        "accepted": true,
+        "backend": [
+          {
+            "time": "2026-11-11T01:03:42.265Z",
+            "event": "backend-unary-result",
+            "id": 44,
+            "mode": "normal",
+            "method": "SendTransaction",
+            "trailer": "grpc-status: 0\r\n",
+            "sendResponseCode": 0
+          }
+        ],
+        "included": {
+          "http": 200,
+          "terminal": "grpc-status: 0\r\n",
+          "txid": "78f2cc56869c9b02b869e20932bba7776f705267a351a0d6b606ab1147b45846",
+          "height": 4606481,
+          "rawBytes": 9166,
+          "rawSha256": "412466bce7cd7e3c3de85cc3d2e7e1bed10cefa642b9f46d5584b82ab356d588"
+        },
+        "sender": {
+          "tip": 4606481,
+          "scanned": 4606481,
+          "balances": [
+            [
+              1,
+              {
+                "sapling_balance": 0,
+                "orchard_balance": 0,
+                "ironwood_balance": 8990000,
+                "unshielded_balance": 0,
+                "pending_change": 0,
+                "pending_spendable": 0
+              }
+            ]
+          ],
+          "history": [
+            {
+              "txid": "4658b44711ab06b6d6a051a36752706f77a7bb3209e269b8029b9c8656ccf278",
+              "tx_type": "Sent",
+              "value": -1000000,
+              "block_height": 4606481,
+              "confirmations": 1,
+              "status": "Confirmed",
+              "timestamp": 1794359040,
+              "pool": "ironwood"
+            },
+            {
+              "txid": "2084694e5a0fa570f42bdeec50c148662f81402be2246fa415740e13dc1667ed",
+              "tx_type": "Received",
+              "value": 10000000,
+              "block_height": 4606479,
+              "confirmations": 3,
+              "status": "Confirmed",
+              "timestamp": 1794358973,
+              "pool": "ironwood"
+            }
+          ]
+        },
+        "recipient": {
+          "tip": 4606481,
+          "scanned": 4606481,
+          "balances": [
+            [
+              1,
+              {
+                "sapling_balance": 0,
+                "orchard_balance": 0,
+                "ironwood_balance": 1000000,
+                "unshielded_balance": 0,
+                "pending_change": 0,
+                "pending_spendable": 0
+              }
+            ]
+          ],
+          "history": [
+            {
+              "txid": "4658b44711ab06b6d6a051a36752706f77a7bb3209e269b8029b9c8656ccf278",
+              "tx_type": "Received",
+              "value": 1000000,
+              "block_height": 4606481,
+              "confirmations": 1,
+              "status": "Confirmed",
+              "timestamp": 1794359040,
+              "pool": "ironwood"
+            }
+          ]
+        },
+        "submissionAttempts": 1,
+        "noReplacement": true
+      }
+    },
+    "attempted_direct_bypass": {
+      "status": "PASS",
+      "details": {
+        "blocked": [],
+        "relayRequests": 70
+      }
+    }
+  },
+  "browser": "156.0.8078.4",
+  "account": {
+    "birthday": 4606466,
+    "address": "utest1sqnzlcxdaccp6nzw3wkd3stwz3xgl0xhhrhc33ezsl7pwadmkgn40y0wzg8qzej25xnk2j6v64vmprev55mr6gs90sczczf6nh29edynkwr9dr3zj7xgqjl6nyc5k6pr2r4mskwx2sgpdcwxn73tkrn7f5exm953s2cqgsfjj3rynlea0hvrw7p3p3tq2mnjcd3j28mwu7s2x7ua47h"
+  },
+  "funding": {
+    "source": "https://zcash-faucet.vercel.app",
+    "elapsedMs": 205245,
+    "exit": 0,
+    "txid": "ed6716dc130e7415a46f24e22b40812f6648c150ecde2bf470a50f5a4e698420",
+    "proofOfWork": true,
+    "possiblyDispatched": true
+  },
+  "sendIntent": {
+    "txid": "78f2cc56869c9b02b869e20932bba7776f705267a351a0d6b606ab1147b45846",
+    "address": "utest180cu6js4qwctn68yeh0mgq3u4c7r4u623c5arvvjx46cwgauctrrkp24kq9u4wl9l72jy6fz3s3qwe39hp9urhdgwpt5zaalf4lumtwl4t3ss4wwk5c6tfs72vp866d2y9ljazlmjd6q222pyhn6sgqdr45d76sre66q9jl62p9jyk8w77njdyjsyywn2hakwf36c5ys04dn63x690h",
+    "amount_zatoshi": 1000000,
+    "recipient_birthday": 4606479
+  },
+  "submission": {
+    "submit": {
+      "wallet_send_returned": true
+    },
+    "accepted": true,
+    "backend": [
+      {
+        "time": "2026-11-11T01:03:42.265Z",
+        "event": "backend-unary-result",
+        "id": 44,
+        "mode": "normal",
+        "method": "SendTransaction",
+        "trailer": "grpc-status: 0\r\n",
+        "sendResponseCode": 0
+      }
+    ]
+  },
+  "protectedRpcCoverage": [
+    "GetAddressUtxosStream",
+    "GetBlock",
+    "GetBlockRange",
+    "GetLatestBlock",
+    "GetSubtreeRoots",
+    "GetTransaction",
+    "GetTreeState",
+    "SendTransaction"
+  ],
+  "end": "2026-11-11T01:05:00.927Z"
+}

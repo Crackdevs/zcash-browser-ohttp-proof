@@ -1,0 +1,13 @@
+Building...
+Bundling...
+Packaging & Optimizing...
+√ Built in 37.60s
+
+dist\index.html                                     229 B     576ms
+dist\index.36c26b04.js                           311.9 kB     801ms
+dist\workerHelpers.7342dc3f.js                   14.63 kB     640ms
+dist\webzjs_wallet.50494d89.js                  124.17 kB     799ms
+dist\web_worker_module.bundler.ccb90800.js      270.62 kB     640ms
+dist\webzjs_wallet_bg.a1a533c4.wasm           ‼  60.53 MB    26.28s
+dist\webzjs_wallet_bg.a1a533c4.wasm           ‼  60.53 MB    22.98s
+dist\webzjs_keys_bg.b1cc1dcf.wasm              ‼  2.75 MB     502ms

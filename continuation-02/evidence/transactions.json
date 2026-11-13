@@ -1,0 +1,45 @@
+{
+  "network": "Zcash testnet",
+  "receipt": {
+    "canonical_txid": "ed6716dc130e7415a46f24e22b40812f6648c150ecde2bf470a50f5a4e698420",
+    "block_height": 4606479,
+    "amount_zatoshi": 10000000,
+    "pool": "ironwood",
+    "source": "https://zcash-faucet.vercel.app",
+    "node": {
+      "http": 200,
+      "terminal": "grpc-status: 0\r\n",
+      "txid": "ed6716dc130e7415a46f24e22b40812f6648c150ecde2bf470a50f5a4e698420",
+      "height": 4606479,
+      "rawBytes": 9166,
+      "rawSha256": "8be0608143360b391062269480c5266775f0485456c51552c37801f48ce870bf"
+    }
+  },
+  "checkpoint": {
+    "height": 4606479,
+    "directHash": "8b85cb6d82674a29d512761b598cfb0e273af6f4646e7ada55cbc910950f0000",
+    "ohttpHash": "8b85cb6d82674a29d512761b598cfb0e273af6f4646e7ada55cbc910950f0000",
+    "directRpc": "grpc-status: 0\r\n",
+    "ohttpRpc": "grpc-status: 0\r\n"
+  },
+  "outgoing": {
+    "canonical_txid_recorded_before_submission": "78f2cc56869c9b02b869e20932bba7776f705267a351a0d6b606ab1147b45846",
+    "amount_zatoshi": 1000000,
+    "included_at": {
+      "http": 200,
+      "terminal": "grpc-status: 0\r\n",
+      "txid": "78f2cc56869c9b02b869e20932bba7776f705267a351a0d6b606ab1147b45846",
+      "height": 4606481,
+      "rawBytes": 9166,
+      "rawSha256": "412466bce7cd7e3c3de85cc3d2e7e1bed10cefa642b9f46d5584b82ab356d588"
+    },
+    "backend_accepted": true,
+    "submission_attempts": 1
+  },
+  "evidence": [
+    "wallet-live-01/wallet-results.json",
+    "wallet-live-01/wallet-events.jsonl",
+    "funding-intent.json",
+    "send-intent.json"
+  ]
+}

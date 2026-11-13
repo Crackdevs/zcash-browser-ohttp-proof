@@ -1,0 +1,65 @@
+{"time":"2026-11-11T01:05:43.282Z","event":"proxy-start","executable":"C:/Users/NewOwner/Documents/Codex/work/o1/bin/grpcwebproxy.exe","args":["--backend_addr=testnet.zec.rocks:443","--backend_tls","--run_tls_server=false","--server_bind_address=127.0.0.1","--server_http_debug_port=3100","--allow_all_origins","--backend_max_call_recv_msg_size=10485760"]}
+{"time":"2026-11-11T01:05:43.299Z","event":"proxy-readiness-retry","error":"ECONNREFUSED"}
+{"time":"2026-11-11T01:05:43.724Z","event":"proxy-readiness","http":200,"terminal":"grpc-status: 0\r\n"}
+{"time":"2026-11-11T01:05:43.730Z","event":"bootstrap-pin","sha256":"4f2f33f127a2269b3c8d97ee4bb67da2c1ff07a620c64a284baae5a517c3577c","keyId":7,"source":"controlled application origin; not relay discovery"}
+{"time":"2026-11-11T01:05:44.399Z","event":"browser-request","mode":"ohttp","url":"http://127.0.0.1:3110/","method":"GET","resource":"document"}
+{"time":"2026-11-11T01:05:44.429Z","event":"browser-response","mode":"ohttp","url":"http://127.0.0.1:3110/","status":200}
+{"time":"2026-11-11T01:05:44.517Z","event":"browser-request","mode":"ohttp","url":"http://127.0.0.1:3110/index.36c26b04.js","method":"GET","resource":"script"}
+{"time":"2026-11-11T01:05:44.563Z","event":"browser-response","mode":"ohttp","url":"http://127.0.0.1:3110/index.36c26b04.js","status":200}
+{"time":"2026-11-11T01:05:44.594Z","event":"browser-request","mode":"ohttp","url":"http://127.0.0.1:3110/webzjs_wallet_bg.a1a533c4.wasm","method":"GET","resource":"fetch"}
+{"time":"2026-11-11T01:05:44.699Z","event":"browser-response","mode":"ohttp","url":"http://127.0.0.1:3110/webzjs_wallet_bg.a1a533c4.wasm","status":200}
+{"time":"2026-11-11T01:05:44.866Z","event":"browser-request","mode":"ohttp","url":"http://127.0.0.1:3110/workerHelpers.7342dc3f.js","method":"GET","resource":"script"}
+{"time":"2026-11-11T01:05:44.867Z","event":"browser-request","mode":"ohttp","url":"http://127.0.0.1:3110/workerHelpers.7342dc3f.js","method":"GET","resource":"script"}
+{"time":"2026-11-11T01:05:44.885Z","event":"browser-worker","url":"/workerHelpers.7342dc3f.js"}
+{"time":"2026-11-11T01:05:44.886Z","event":"browser-worker","url":"/workerHelpers.7342dc3f.js"}
+{"time":"2026-11-11T01:05:44.902Z","event":"browser-response","mode":"ohttp","url":"http://127.0.0.1:3110/workerHelpers.7342dc3f.js","status":200}
+{"time":"2026-11-11T01:05:44.903Z","event":"browser-response","mode":"ohttp","url":"http://127.0.0.1:3110/workerHelpers.7342dc3f.js","status":200}
+{"time":"2026-11-11T01:05:44.914Z","event":"browser-request","mode":"ohttp","url":"http://127.0.0.1:3110/webzjs_wallet.50494d89.js","method":"GET","resource":"other"}
+{"time":"2026-11-11T01:05:44.915Z","event":"browser-request","mode":"ohttp","url":"http://127.0.0.1:3110/webzjs_wallet.50494d89.js","method":"GET","resource":"other"}
+{"time":"2026-11-11T01:05:44.948Z","event":"browser-request","mode":"ohttp","url":"http://127.0.0.1:3110/webzjs_keys_bg.b1cc1dcf.wasm","method":"GET","resource":"fetch"}
+{"time":"2026-11-11T01:05:44.961Z","event":"browser-response","mode":"ohttp","url":"http://127.0.0.1:3110/webzjs_keys_bg.b1cc1dcf.wasm","status":200}
+{"time":"2026-11-11T01:05:44.995Z","event":"browser-request","mode":"ohttp","url":"http://127.0.0.1:3110/proof-config.json","method":"GET","resource":"fetch"}
+{"time":"2026-11-11T01:05:45.001Z","event":"browser-response","mode":"ohttp","url":"http://127.0.0.1:3110/proof-config.json","status":200}
+{"time":"2026-11-11T01:05:45.032Z","event":"browser-adapter","proof":"ohttp","stage":"relay-post","method":"GetLatestBlock","realm":"page","at":1794359145029}
+{"time":"2026-11-11T01:05:45.035Z","event":"browser-request","mode":"ohttp","url":"http://127.0.0.1:3111/ohttp","method":"POST","resource":"fetch"}
+{"time":"2026-11-11T01:05:45.038Z","event":"relay-ingress","method":"POST","headers":["accept","accept-encoding","cache-control","connection","content-length","content-type","host","origin","pragma","sec-ch-ua","sec-ch-ua-mobile","sec-ch-ua-platform","sec-fetch-dest","sec-fetch-mode","sec-fetch-site","user-agent"],"marker":false}
+{"time":"2026-11-11T01:05:45.047Z","event":"gateway-ingress","id":1,"mode":"normal","headers":["connection","content-type","host","transfer-encoding"],"marker":false}
+{"time":"2026-11-11T01:05:45.048Z","event":"gateway-sealed-request","id":1,"bytes":1080,"sha256":"364d53b83781506b31d06e180f18a3957a0b08db35ff3eccc2c93323cf87e21a"}
+{"time":"2026-11-11T01:05:45.101Z","event":"backend-start","id":1,"mode":"normal","method":"GetLatestBlock","innerHeaders":["accept","content-type","x-grpc-web"],"requestBytes":5}
+{"time":"2026-11-11T01:05:45.156Z","event":"backend-http","id":1,"mode":"normal","method":"GetLatestBlock","status":200,"headerStatus":null}
+{"time":"2026-11-11T01:05:45.157Z","event":"backend-unary-result","id":1,"mode":"normal","method":"GetLatestBlock","trailer":"grpc-status: 0\r\n","protobuf":"089194990212201781b30f372b55ca59989644f9061ab9e5edc363231db61f4365f5fc161d0000"}
+{"time":"2026-11-11T01:05:45.169Z","event":"gateway-response-end","id":1,"mode":"normal","method":"GetLatestBlock"}
+{"time":"2026-11-11T01:05:45.171Z","event":"relay-close","finished":true}
+{"time":"2026-11-11T01:05:45.173Z","event":"browser-response","mode":"ohttp","url":"http://127.0.0.1:3111/ohttp","status":200}
+{"time":"2026-11-11T01:05:45.183Z","event":"browser-adapter","proof":"ohttp","stage":"trailer-held","method":"GetLatestBlock","realm":"page","at":1794359145183}
+{"time":"2026-11-11T01:05:45.185Z","event":"browser-adapter","proof":"ohttp","stage":"authenticated-end","method":"GetLatestBlock","realm":"page","at":1794359145184}
+{"time":"2026-11-11T01:05:45.195Z","event":"browser-adapter","proof":"ohttp","stage":"relay-post","method":"GetLatestBlock","realm":"page","at":1794359145194}
+{"time":"2026-11-11T01:05:45.198Z","event":"browser-request","mode":"ohttp","url":"http://127.0.0.1:3111/ohttp","method":"POST","resource":"fetch"}
+{"time":"2026-11-11T01:05:45.200Z","event":"relay-ingress","method":"POST","headers":["accept","accept-encoding","cache-control","connection","content-length","content-type","host","origin","pragma","sec-ch-ua","sec-ch-ua-mobile","sec-ch-ua-platform","sec-fetch-dest","sec-fetch-mode","sec-fetch-site","user-agent"],"marker":false}
+{"time":"2026-11-11T01:05:45.202Z","event":"gateway-ingress","id":2,"mode":"truncate-ending","headers":["connection","content-type","host","transfer-encoding"],"marker":false}
+{"time":"2026-11-11T01:05:45.203Z","event":"gateway-sealed-request","id":2,"bytes":1080,"sha256":"4b352e3efb09d0c6bde618ed30f74b59e7041fc4a6b8812834f0cb513bff974c"}
+{"time":"2026-11-11T01:05:45.206Z","event":"backend-start","id":2,"mode":"truncate-ending","method":"GetLatestBlock","innerHeaders":["accept","content-type","x-grpc-web"],"requestBytes":5}
+{"time":"2026-11-11T01:05:45.258Z","event":"backend-http","id":2,"mode":"truncate-ending","method":"GetLatestBlock","status":200,"headerStatus":null}
+{"time":"2026-11-11T01:05:45.259Z","event":"backend-unary-result","id":2,"mode":"truncate-ending","method":"GetLatestBlock","trailer":"grpc-status: 0\r\n","protobuf":"089194990212201781b30f372b55ca59989644f9061ab9e5edc363231db61f4365f5fc161d0000"}
+{"time":"2026-11-11T01:05:45.266Z","event":"gateway-wire-ending","id":2,"mode":"truncate-ending","method":"GetLatestBlock","bytes":129}
+{"time":"2026-11-11T01:05:45.268Z","event":"gateway-response-end","id":2,"mode":"truncate-ending","method":"GetLatestBlock"}
+{"time":"2026-11-11T01:05:45.270Z","event":"relay-close","finished":true}
+{"time":"2026-11-11T01:05:45.272Z","event":"browser-response","mode":"ohttp","url":"http://127.0.0.1:3111/ohttp","status":200}
+{"time":"2026-11-11T01:05:45.276Z","event":"browser-adapter","proof":"ohttp","stage":"trailer-held","method":"GetLatestBlock","realm":"page","at":1794359145276}
+{"time":"2026-11-11T01:05:45.281Z","event":"check","name":"wallet_truncate-ending","status":"PASS"}
+{"time":"2026-11-11T01:05:45.287Z","event":"browser-adapter","proof":"ohttp","stage":"relay-post","method":"GetLatestBlock","realm":"page","at":1794359145286}
+{"time":"2026-11-11T01:05:45.289Z","event":"browser-request","mode":"ohttp","url":"http://127.0.0.1:3111/ohttp","method":"POST","resource":"fetch"}
+{"time":"2026-11-11T01:05:45.291Z","event":"relay-ingress","method":"POST","headers":["accept","accept-encoding","cache-control","connection","content-length","content-type","host","origin","pragma","sec-ch-ua","sec-ch-ua-mobile","sec-ch-ua-platform","sec-fetch-dest","sec-fetch-mode","sec-fetch-site","user-agent"],"marker":false}
+{"time":"2026-11-11T01:05:45.293Z","event":"gateway-ingress","id":3,"mode":"tamper-ending","headers":["connection","content-type","host","transfer-encoding"],"marker":false}
+{"time":"2026-11-11T01:05:45.294Z","event":"gateway-sealed-request","id":3,"bytes":1080,"sha256":"5ee6ff100401aa6fb4e17b47bb2656751d91876d7792f5320ca2a690f30c0f39"}
+{"time":"2026-11-11T01:05:45.297Z","event":"backend-start","id":3,"mode":"tamper-ending","method":"GetLatestBlock","innerHeaders":["accept","content-type","x-grpc-web"],"requestBytes":5}
+{"time":"2026-11-11T01:05:45.353Z","event":"backend-http","id":3,"mode":"tamper-ending","method":"GetLatestBlock","status":200,"headerStatus":null}
+{"time":"2026-11-11T01:05:45.354Z","event":"backend-unary-result","id":3,"mode":"tamper-ending","method":"GetLatestBlock","trailer":"grpc-status: 0\r\n","protobuf":"089194990212201781b30f372b55ca59989644f9061ab9e5edc363231db61f4365f5fc161d0000"}
+{"time":"2026-11-11T01:05:45.358Z","event":"gateway-wire-ending","id":3,"mode":"tamper-ending","method":"GetLatestBlock","bytes":129}
+{"time":"2026-11-11T01:05:45.359Z","event":"gateway-response-end","id":3,"mode":"tamper-ending","method":"GetLatestBlock"}
+{"time":"2026-11-11T01:05:45.361Z","event":"relay-close","finished":true}
+{"time":"2026-11-11T01:05:46.362Z","event":"browser-response","mode":"ohttp","url":"http://127.0.0.1:3111/ohttp","status":200}
+{"time":"2026-11-11T01:05:46.366Z","event":"browser-adapter","proof":"ohttp","stage":"trailer-held","method":"GetLatestBlock","realm":"page","at":1794359146362}
+{"time":"2026-11-11T01:05:46.367Z","event":"check","name":"wallet_tamper-ending","status":"PASS"}
+{"time":"2026-11-11T01:05:46.600Z","event":"check","name":"attempted_direct_bypass","status":"PASS"}
+{"time":"2026-11-11T01:05:46.610Z","event":"proxy-exit","code":null,"signal":"SIGTERM"}

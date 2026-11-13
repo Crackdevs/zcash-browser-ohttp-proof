@@ -1,0 +1,9 @@
+{
+	"dependencies": {
+		"ohttp-ts": "0.6.2",
+		"hpke": "1.1.7",
+		"hono": "4.13.9",
+		"@hono/node-server": "2.1.1",
+		"esbuild": "0.28.2"
+	}
+}

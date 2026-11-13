@@ -1,0 +1,69 @@
+{
+  "phase": "qualify",
+  "start": "2026-11-11T00:58:28.076Z",
+  "checks": {
+    "wallet_loaded": {
+      "status": "PASS",
+      "details": {
+        "crossOriginIsolated": true,
+        "network": "test"
+      }
+    },
+    "wallet_final_rpc_error": {
+      "status": "PASS",
+      "details": {
+        "error": "page.evaluate: Error: Error returned from GRPC server: code: 'Internal error', message: \"proof-final-error\""
+      }
+    },
+    "wallet_worker_route": {
+      "status": "PASS",
+      "details": {
+        "empty": {
+          "tip": 4606464,
+          "scanned": 4606464,
+          "balances": [
+            [
+              1,
+              {
+                "sapling_balance": 0,
+                "orchard_balance": 0,
+                "ironwood_balance": 0,
+                "unshielded_balance": 0,
+                "pending_change": 0,
+                "pending_spendable": 0
+              }
+            ]
+          ],
+          "history": []
+        },
+        "workerRpc": [
+          "GetSubtreeRoots",
+          "GetLatestBlock",
+          "GetAddressUtxosStream",
+          "GetBlockRange",
+          "GetTreeState"
+        ]
+      }
+    },
+    "attempted_direct_bypass": {
+      "status": "PASS",
+      "details": {
+        "blocked": [],
+        "relayRequests": 10
+      }
+    }
+  },
+  "browser": "156.0.8078.4",
+  "account": {
+    "birthday": 4606464,
+    "address": "utest15nj5h3u58leym9qdqza0lrl0wfsl8pxphyl4s429hpt69wg0cxckuc4fnjjw5hv2eg0vup8748qt2jph3pk7eq86z68h2drdqcf0l5elvxglvpw9x8yzx2d8py4suhqrqqeh9gr8tnuf530jxf9atdesd9pztf5m2lxmegwjr43k98gaa3jr397ys44mczfn6hqw22665utpww98cuv"
+  },
+  "protectedRpcCoverage": [
+    "GetAddressUtxosStream",
+    "GetBlockRange",
+    "GetLatestBlock",
+    "GetSubtreeRoots",
+    "GetTreeState"
+  ],
+  "end": "2026-11-11T00:58:34.382Z"
+}

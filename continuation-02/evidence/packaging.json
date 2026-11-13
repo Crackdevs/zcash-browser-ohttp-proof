@@ -1,0 +1,25 @@
+{
+  "command": [
+    "just",
+    "--shell",
+    "C:/Program Files/Git/bin/bash.exe",
+    "build"
+  ],
+  "executable_resolved": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\bin\\just.EXE",
+  "cwd": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\s2",
+  "started_at_utc": "2026-11-11T00:34:50.985909+00:00",
+  "environment": {
+    "RUSTUP_HOME": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\r",
+    "CARGO_HOME": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\c",
+    "CARGO_TARGET_DIR": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\t",
+    "CC": null,
+    "CC_wasm32_unknown_unknown": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\l\\bin\\clang.exe",
+    "CXX": null,
+    "TMP": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\tmp",
+    "TEMP": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\tmp"
+  },
+  "exit_code": 0,
+  "elapsed_seconds": 1279.781,
+  "log": "packaging.log",
+  "finished_at_utc": "2026-11-11T00:56:10.774378+00:00"
+}

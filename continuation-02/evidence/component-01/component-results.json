@@ -1,0 +1,14 @@
+{
+  "phase": "component",
+  "start": "2026-11-11T00:44:09.155Z",
+  "checks": {
+    "attempted_direct_bypass": {
+      "status": "FAIL",
+      "details": {
+        "blocked": []
+      }
+    }
+  },
+  "error": "Recovered proxy did not start",
+  "end": "2026-11-11T00:53:55.656Z"
+}

@@ -1,0 +1,72 @@
+{
+  "phase": "wallet-faults",
+  "start": "2026-11-11T01:05:42.928Z",
+  "checks": {
+    "wallet_truncate-ending": {
+      "status": "PASS",
+      "details": {
+        "positiveHeight": 4606481,
+        "error": "page.evaluate: Error: Error returned from GRPC server: code: 'Unknown error', message: \"js api error: OHTTPError: OHTTP error: DECRYPTION_FAILED\", source: JsError(\"OHTTPError: OHTTP error: DECRYPTION_FAILED\")",
+        "trace": [
+          {
+            "time": "2026-11-11T01:05:45.195Z",
+            "event": "browser-adapter",
+            "proof": "ohttp",
+            "stage": "relay-post",
+            "method": "GetLatestBlock",
+            "realm": "page",
+            "at": 1794359145194
+          },
+          {
+            "time": "2026-11-11T01:05:45.276Z",
+            "event": "browser-adapter",
+            "proof": "ohttp",
+            "stage": "trailer-held",
+            "method": "GetLatestBlock",
+            "realm": "page",
+            "at": 1794359145276
+          }
+        ]
+      }
+    },
+    "wallet_tamper-ending": {
+      "status": "PASS",
+      "details": {
+        "positiveHeight": 4606481,
+        "error": "page.evaluate: Error: Error returned from GRPC server: code: 'Unknown error', message: \"js api error: OHTTPError: OHTTP error: DECRYPTION_FAILED\", source: JsError(\"OHTTPError: OHTTP error: DECRYPTION_FAILED\")",
+        "trace": [
+          {
+            "time": "2026-11-11T01:05:45.287Z",
+            "event": "browser-adapter",
+            "proof": "ohttp",
+            "stage": "relay-post",
+            "method": "GetLatestBlock",
+            "realm": "page",
+            "at": 1794359145286
+          },
+          {
+            "time": "2026-11-11T01:05:46.366Z",
+            "event": "browser-adapter",
+            "proof": "ohttp",
+            "stage": "trailer-held",
+            "method": "GetLatestBlock",
+            "realm": "page",
+            "at": 1794359146362
+          }
+        ]
+      }
+    },
+    "attempted_direct_bypass": {
+      "status": "PASS",
+      "details": {
+        "blocked": [],
+        "relayRequests": 3
+      }
+    }
+  },
+  "browser": "156.0.8078.4",
+  "protectedRpcCoverage": [
+    "GetLatestBlock"
+  ],
+  "end": "2026-11-11T01:05:46.601Z"
+}

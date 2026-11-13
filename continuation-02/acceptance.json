@@ -1,0 +1,204 @@
+{
+  "experiment": "continuation-02",
+  "status": "PASS",
+  "checks": {
+    "reproduced_legacy_final_status_loss": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/legacy-01/legacy-results.json",
+        "evidence/legacy-01/legacy-events.jsonl"
+      ]
+    },
+    "live_stream": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/component-02/component-results.json",
+        "evidence/component-02/component-events.jsonl"
+      ]
+    },
+    "truncated_after_valid_trailer": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/component-02/component-results.json",
+        "evidence/component-02/component-events.jsonl"
+      ]
+    },
+    "tampered_after_valid_trailer": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/component-02/component-results.json",
+        "evidence/component-02/component-events.jsonl"
+      ]
+    },
+    "invalid_config_pin": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/component-02/component-results.json",
+        "evidence/component-02/component-events.jsonl"
+      ]
+    },
+    "wrong_gateway_key": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/component-02/component-results.json",
+        "evidence/component-02/component-events.jsonl"
+      ]
+    },
+    "nonzero_rpc_status": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/component-02/component-results.json",
+        "evidence/component-02/component-events.jsonl"
+      ]
+    },
+    "relay_interruption": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/component-02/component-results.json",
+        "evidence/component-02/component-events.jsonl"
+      ]
+    },
+    "cancellation": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/component-02/component-results.json",
+        "evidence/component-02/component-events.jsonl"
+      ]
+    },
+    "identity_headers": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/component-02/component-results.json",
+        "evidence/component-02/component-events.jsonl"
+      ]
+    },
+    "component_no_attempted_direct_bypass": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/component-02/component-results.json",
+        "evidence/component-02/component-events.jsonl"
+      ]
+    },
+    "wallet_loaded": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/wallet-live-01/wallet-results.json",
+        "evidence/wallet-live-01/wallet-events.jsonl"
+      ]
+    },
+    "wallet_final_rpc_error": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/wallet-live-01/wallet-results.json",
+        "evidence/wallet-live-01/wallet-events.jsonl"
+      ]
+    },
+    "wallet_worker_route": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/wallet-live-01/wallet-results.json",
+        "evidence/wallet-live-01/wallet-events.jsonl"
+      ]
+    },
+    "real_ohttp_receipt": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/wallet-live-01/wallet-results.json",
+        "evidence/wallet-live-01/wallet-events.jsonl",
+        "evidence/funding-intent.json"
+      ]
+    },
+    "same_checkpoint_comparison": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/wallet-live-01/wallet-results.json",
+        "evidence/wallet-live-01/wallet-events.jsonl"
+      ]
+    },
+    "transaction_details_rpc": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/wallet-live-01/wallet-results.json",
+        "evidence/wallet-live-01/wallet-events.jsonl"
+      ]
+    },
+    "outgoing_payment": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/wallet-live-01/wallet-results.json",
+        "evidence/wallet-live-01/wallet-events.jsonl",
+        "evidence/send-intent.json"
+      ]
+    },
+    "wallet_no_attempted_direct_bypass": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/wallet-live-01/wallet-results.json",
+        "evidence/wallet-live-01/wallet-events.jsonl"
+      ]
+    },
+    "wallet_rejects_missing_ohttp_ending": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/wallet-faults-01/wallet-faults-results.json",
+        "evidence/wallet-faults-01/wallet-faults-events.jsonl"
+      ]
+    },
+    "wallet_rejects_corrupt_ohttp_ending": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/wallet-faults-01/wallet-faults-results.json",
+        "evidence/wallet-faults-01/wallet-faults-events.jsonl"
+      ]
+    },
+    "previous_evidence_unchanged": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/previous-verification.json"
+      ]
+    }
+  },
+  "live_wallet_run_error": null,
+  "earlier_recovered_setup_failures": [
+    {
+      "reason": "The first readiness probe used /metrics and never reached Chromium.",
+      "evidence": "evidence/component-01/component-results.json"
+    },
+    {
+      "reason": "The first harness bundle hit a restricted SWC native-cache permission error.",
+      "evidence": "evidence/parcel.log"
+    }
+  ],
+  "timing": {
+    "started_utc": "2026-11-11T00:31:56Z",
+    "summarized_utc": "2026-11-11T01:07:10.546059+00:00",
+    "wall_clock_seconds_including_build_and_testnet_wait": 2114.5,
+    "maximum_focused_hours": 8
+  },
+  "authenticated_browser_responses_by_realm_and_method": {
+    "page": {
+      "GetLatestBlock": 3,
+      "GetTreeState": 3,
+      "GetTransaction": 1,
+      "GetBlock": 1,
+      "SendTransaction": 1
+    },
+    "worker": {
+      "GetSubtreeRoots": 27,
+      "GetLatestBlock": 9,
+      "GetAddressUtxosStream": 9,
+      "GetBlockRange": 8,
+      "GetTreeState": 8
+    }
+  },
+  "gateway_dispatches_by_rpc": {
+    "GetLatestBlock": 12,
+    "GetTreeState": 11,
+    "GetSubtreeRoots": 27,
+    "GetAddressUtxosStream": 9,
+    "GetBlockRange": 8,
+    "GetTransaction": 1,
+    "GetBlock": 1,
+    "SendTransaction": 1
+  }
+}

@@ -1,0 +1,28 @@
+{"time":"2026-11-11T00:54:46.424Z","event":"proxy-start","executable":"C:/Users/NewOwner/Documents/Codex/work/o1/bin/grpcwebproxy.exe","args":["--backend_addr=testnet.zec.rocks:443","--backend_tls","--run_tls_server=false","--server_bind_address=127.0.0.1","--server_http_debug_port=3100","--allow_all_origins","--backend_max_call_recv_msg_size=10485760"]}
+{"time":"2026-11-11T00:54:46.483Z","event":"proxy-readiness-retry","error":"ECONNREFUSED"}
+{"time":"2026-11-11T00:54:46.846Z","event":"proxy-readiness-retry","error":"ECONNREFUSED"}
+{"time":"2026-11-11T00:54:47.581Z","event":"proxy-readiness","http":200,"terminal":"grpc-status: 0\r\n"}
+{"time":"2026-11-11T00:54:47.610Z","event":"bootstrap-pin","sha256":"1c35ea76b8f943d6a8dad3746d5d86241bcb4ece7623f95eb834fbe0130533c3","keyId":7,"source":"controlled application origin; not relay discovery"}
+{"time":"2026-11-11T00:54:51.138Z","event":"browser-request","mode":"direct","url":"http://127.0.0.1:3110/recovery.html","method":"GET","resource":"document"}
+{"time":"2026-11-11T00:54:51.191Z","event":"browser-response","mode":"direct","url":"http://127.0.0.1:3110/recovery.html","status":200}
+{"time":"2026-11-11T00:54:51.415Z","event":"browser-request","mode":"direct","url":"http://127.0.0.1:3110/recovery.7c536761.js","method":"GET","resource":"script"}
+{"time":"2026-11-11T00:54:51.530Z","event":"browser-response","mode":"direct","url":"http://127.0.0.1:3110/recovery.7c536761.js","status":200}
+{"time":"2026-11-11T00:54:51.583Z","event":"browser-request","mode":"direct","url":"http://127.0.0.1:3110/webzjs_wallet_bg.ac500f27.wasm","method":"GET","resource":"fetch"}
+{"time":"2026-11-11T00:54:51.817Z","event":"browser-response","mode":"direct","url":"http://127.0.0.1:3110/webzjs_wallet_bg.ac500f27.wasm","status":200}
+{"time":"2026-11-11T00:54:52.082Z","event":"browser-request","mode":"direct","url":"http://127.0.0.1:3110/workerHelpers.6b298368.js","method":"GET","resource":"script"}
+{"time":"2026-11-11T00:54:52.084Z","event":"browser-request","mode":"direct","url":"http://127.0.0.1:3110/workerHelpers.6b298368.js","method":"GET","resource":"script"}
+{"time":"2026-11-11T00:54:52.120Z","event":"browser-worker","url":"/workerHelpers.6b298368.js"}
+{"time":"2026-11-11T00:54:52.125Z","event":"browser-worker","url":"/workerHelpers.6b298368.js"}
+{"time":"2026-11-11T00:54:52.358Z","event":"browser-response","mode":"direct","url":"http://127.0.0.1:3110/workerHelpers.6b298368.js","status":200}
+{"time":"2026-11-11T00:54:52.359Z","event":"browser-response","mode":"direct","url":"http://127.0.0.1:3110/workerHelpers.6b298368.js","status":200}
+{"time":"2026-11-11T00:54:52.563Z","event":"browser-request","mode":"direct","url":"http://127.0.0.1:3110/webzjs_wallet.93c9242e.js","method":"GET","resource":"other"}
+{"time":"2026-11-11T00:54:52.677Z","event":"browser-request","mode":"direct","url":"http://127.0.0.1:3110/webzjs_wallet.93c9242e.js","method":"GET","resource":"other"}
+{"time":"2026-11-11T00:54:52.790Z","event":"browser-request","mode":"direct","url":"http://127.0.0.1:3110/webzjs_keys_bg.b1cc1dcf.wasm","method":"GET","resource":"fetch"}
+{"time":"2026-11-11T00:54:52.841Z","event":"browser-response","mode":"direct","url":"http://127.0.0.1:3110/webzjs_keys_bg.b1cc1dcf.wasm","status":200}
+{"time":"2026-11-11T00:54:52.970Z","event":"browser-request","mode":"direct","url":"http://127.0.0.1:3100/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetLatestBlock","method":"POST","resource":"fetch"}
+{"time":"2026-11-11T00:54:52.979Z","event":"browser-response","mode":"direct","url":"http://127.0.0.1:3100/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetLatestBlock","status":200}
+{"time":"2026-11-11T00:54:53.172Z","event":"direct-wallet-tip","height":4606454,"hash":null}
+{"time":"2026-11-11T00:54:53.175Z","event":"browser-request","mode":"direct","url":"http://127.0.0.1:3100/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetTreeState","method":"POST","resource":"fetch"}
+{"time":"2026-11-11T00:54:53.243Z","event":"browser-response","mode":"direct","url":"http://127.0.0.1:3100/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetTreeState","status":200}
+{"time":"2026-11-11T00:54:53.291Z","event":"check","name":"reproduced_legacy_final_status_loss","status":"PASS"}
+{"time":"2026-11-11T00:54:57.877Z","event":"proxy-exit","code":null,"signal":"SIGTERM"}

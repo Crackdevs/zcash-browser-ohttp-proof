@@ -1,0 +1,99 @@
+{
+  "wallet_head": "c0457174ecb99c67a9d081fba0be54f50d0cf012",
+  "wallet_lockfiles_sha256": {
+    "Cargo.lock": {
+      "checkout": "485febc34a038eb6dfe539bf92de5864d2afdba14ac8807d888da48caf15035d",
+      "commit": "485febc34a038eb6dfe539bf92de5864d2afdba14ac8807d888da48caf15035d"
+    },
+    "yarn.lock": {
+      "checkout": "1fd82339982652ef5d512a44bd8e50edfaa7b2047dd75ee9cee51f5330a6930e",
+      "commit": "1fd82339982652ef5d512a44bd8e50edfaa7b2047dd75ee9cee51f5330a6930e"
+    }
+  },
+  "wallet_patch_sha256": "ed2584c595be07901de2b9e87ac9311aff5231f01f254f267a5b62d7311945fb",
+  "relay_head": "75e0a766ded56fe4ed8562d8953160fd35b171b0",
+  "relay_staged": {
+    "core.ts": {
+      "committed_blob_sha256": "d5df989228d72c3bb3beade97dc0725e3947bbd2396a0c39ed5e8b804970a0a8",
+      "staged_sha256": "2e54eaad512cd8f1946013277b7cd6e603cb3b925fd7f997b50569d3daddda16",
+      "equals_commit_after_normalizing_CRLF": true
+    },
+    "server.ts": {
+      "committed_blob_sha256": "cbeb343db2b0b21e9224e1ac3c8d6263e51b96868645818d486e42d3ee75fe15",
+      "staged_sha256": "5845f8991a8c9d78622620f3a6baf010eb7e779c678785b9e9d58e0c10b74306",
+      "equals_commit_after_normalizing_CRLF": true
+    }
+  },
+  "node": "v24.22.1",
+  "npm_packages": {
+    "ohttp-ts": {
+      "version": "0.6.2",
+      "license": "MIT",
+      "bhttp-ts": "0.6.1",
+      "package_gitHead": null
+    },
+    "hpke": {
+      "version": "1.1.7",
+      "license": "MIT"
+    },
+    "hono": {
+      "version": "4.13.9",
+      "license": "MIT"
+    },
+    "@hono/node-server": {
+      "version": "2.1.1",
+      "license": "MIT"
+    },
+    "esbuild": {
+      "version": "0.28.2",
+      "license": "MIT"
+    }
+  },
+  "files_in_work_tree_not_delivered": [
+    {
+      "path": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\o2\\proof-adapter.js",
+      "sha256": "8d0847938d7fdc3ade8cf42364ba6d4849cba4dc4d790d32551e4dbc5dd95063",
+      "bytes": 130501
+    },
+    {
+      "path": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\bin\\grpcwebproxy.exe",
+      "sha256": "1370f9baf3c4019d036db616a787dd48688908bb902405ca86f5024d7ed51972",
+      "bytes": 15719936
+    },
+    {
+      "path": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\o2\\app\\dist\\index.36c26b04.js",
+      "sha256": "3127e357d3d9df5a283964cc705313d3c57b074cc67bf0d94da5d8c1c828163a",
+      "bytes": 311727
+    },
+    {
+      "path": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\o2\\app\\dist\\index.html",
+      "sha256": "bd52066eb7d56f82e07dd44529e8dd450d99a2443c70fd32707403866db207fd",
+      "bytes": 212
+    },
+    {
+      "path": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\o2\\app\\dist\\web_worker_module.bundler.ccb90800.js",
+      "sha256": "fc3b9e397fb8848de3f7033886e3241b91b559e9cdb971d56e68f342e6d62749",
+      "bytes": 270487
+    },
+    {
+      "path": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\o2\\app\\dist\\webzjs_keys_bg.b1cc1dcf.wasm",
+      "sha256": "eb3dceb3bf06dad16930a3b86a0106d3fcacffbb22df873aadb8f8d2d3a48f44",
+      "bytes": 2745033
+    },
+    {
+      "path": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\o2\\app\\dist\\webzjs_wallet.50494d89.js",
+      "sha256": "60bb7944d1fb02c329b483e6ae29b853a5361d00c3f03069209da64b28c5fd61",
+      "bytes": 124100
+    },
+    {
+      "path": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\o2\\app\\dist\\webzjs_wallet_bg.a1a533c4.wasm",
+      "sha256": "e94241a3f3f407f3fa20cb27dce7938894cda4b7921e388909bc16dd5af8fd4b",
+      "bytes": 60529514
+    },
+    {
+      "path": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\o2\\app\\dist\\workerHelpers.7342dc3f.js",
+      "sha256": "69365b05ccd9fd45c3a0dcb33a6b7cba030704f617c250ff73eb39a169360142",
+      "bytes": 14530
+    }
+  ]
+}

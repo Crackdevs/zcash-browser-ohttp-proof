@@ -1,0 +1,80 @@
+just build-wallet
+cd crates/webzjs-wallet && wasm-pack build -t web --release --scope zcashcommunitygrants --out-dir ../../packages/webzjs-wallet --no-default-features --features="wasm wasm-parallel " -Z build-std="panic_abort,std"
+[INFO]: Checking for the Wasm target...
+[INFO]: Compiling to Wasm...
+   Compiling webzjs-common v0.1.0 (C:\Users\NewOwner\Documents\Codex\work\o1\s2\crates\webzjs-common)
+   Compiling tonic-web-wasm-client v0.8.0 (C:\Users\NewOwner\Documents\Codex\work\o1\s2\vendor\tonic-web-wasm-client)
+warning: unstable feature specified for `-Ctarget-feature`: `atomics`
+  |
+  = note: this feature is not stably supported; its behavior can change in the future
+
+
+warning: unstable feature specified for `-Ctarget-feature`: `atomics`
+  |
+  = note: this feature is not stably supported; its behavior can change in the future
+
+
+   Compiling webzjs-keys v0.1.0 (C:\Users\NewOwner\Documents\Codex\work\o1\s2\crates\webzjs-keys)
+warning: unstable feature specified for `-Ctarget-feature`: `atomics`
+  |
+  = note: this feature is not stably supported; its behavior can change in the future
+
+
+   Compiling webzjs-wallet v0.1.0 (C:\Users\NewOwner\Documents\Codex\work\o1\s2\crates\webzjs-wallet)
+warning: unstable feature specified for `-Ctarget-feature`: `atomics`
+  |
+  = note: this feature is not stably supported; its behavior can change in the future
+
+
+    Finished `release` profile [optimized] target(s) in 4m 14s
+warning: the following packages contain code that will be rejected by a future version of Rust: proc_macro v0.0.0 (C:\Users\NewOwner\Documents\Codex\work\o1\r\toolchains\nightly-2025-06-15-x86_64-pc-windows-msvc\lib\rustlib\src\rust\library\proc_macro)
+note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`
+[INFO]: found wasm-opt at "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\bin\\wasm-opt.exe"
+[INFO]: Optimizing wasm binaries with `wasm-opt`...
+[INFO]: License key is set in Cargo.toml but no LICENSE file(s) were found; Please add the LICENSE file(s) to your project directory
+[INFO]: :-) Done in 8m 52s
+[INFO]: :-) Your wasm pkg is ready to publish at C:\Users\NewOwner\Documents\Codex\work\o1\s2\packages\webzjs-wallet.
+./add-worker-module.sh
+Added worker module to: packages/webzjs-wallet/snippets/wasm_thread-8ee53d0673203880/src/wasm32/js/web_worker_module.bundler.js
+just build-keys
+cd crates/webzjs-keys && wasm-pack build -t web --release --scope zcashcommunitygrants --out-dir ../../packages/webzjs-keys --no-default-features --features="" -Z build-std="panic_abort,std"
+[INFO]: Checking for the Wasm target...
+[INFO]: Compiling to Wasm...
+   Compiling webzjs-common v0.1.0 (C:\Users\NewOwner\Documents\Codex\work\o1\s2\crates\webzjs-common)
+warning: unstable feature specified for `-Ctarget-feature`: `atomics`
+  |
+  = note: this feature is not stably supported; its behavior can change in the future
+
+
+   Compiling webzjs-keys v0.1.0 (C:\Users\NewOwner\Documents\Codex\work\o1\s2\crates\webzjs-keys)
+warning: unstable feature specified for `-Ctarget-feature`: `atomics`
+  |
+  = note: this feature is not stably supported; its behavior can change in the future
+
+
+    Finished `release` profile [optimized] target(s) in 42.07s
+warning: the following packages contain code that will be rejected by a future version of Rust: proc_macro v0.0.0 (C:\Users\NewOwner\Documents\Codex\work\o1\r\toolchains\nightly-2025-06-15-x86_64-pc-windows-msvc\lib\rustlib\src\rust\library\proc_macro)
+note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`
+[INFO]: found wasm-opt at "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\bin\\wasm-opt.exe"
+[INFO]: Optimizing wasm binaries with `wasm-opt`...
+[INFO]: License key is set in Cargo.toml but no LICENSE file(s) were found; Please add the LICENSE file(s) to your project directory
+[INFO]: :-) Done in 1m 28s
+[INFO]: :-) Your wasm pkg is ready to publish at C:\Users\NewOwner\Documents\Codex\work\o1\s2\packages\webzjs-keys.
+just build-requests
+cd crates/webzjs-requests && wasm-pack build -t web --release --scope zcashcommunitygrants --out-dir ../../packages/webzjs-requests --no-default-features --features="" -Z build-std="panic_abort,std"
+[INFO]: Checking for the Wasm target...
+[INFO]: Compiling to Wasm...
+   Compiling webzjs-requests v0.1.0 (C:\Users\NewOwner\Documents\Codex\work\o1\s2\crates\webzjs-requests)
+warning: unstable feature specified for `-Ctarget-feature`: `atomics`
+  |
+  = note: this feature is not stably supported; its behavior can change in the future
+
+
+    Finished `release` profile [optimized] target(s) in 8.45s
+warning: the following packages contain code that will be rejected by a future version of Rust: proc_macro v0.0.0 (C:\Users\NewOwner\Documents\Codex\work\o1\r\toolchains\nightly-2025-06-15-x86_64-pc-windows-msvc\lib\rustlib\src\rust\library\proc_macro)
+note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`
+[INFO]: found wasm-opt at "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\bin\\wasm-opt.exe"
+[INFO]: Optimizing wasm binaries with `wasm-opt`...
+[INFO]: License key is set in Cargo.toml but no LICENSE file(s) were found; Please add the LICENSE file(s) to your project directory
+[INFO]: :-) Done in 17.80s
+[INFO]: :-) Your wasm pkg is ready to publish at C:\Users\NewOwner\Documents\Codex\work\o1\s2\packages\webzjs-requests.
