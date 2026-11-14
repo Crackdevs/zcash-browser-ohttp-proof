@@ -65,7 +65,7 @@
   "dependencies/provenance.json": "bee205b5add4b00a31bc6701ee58098385755c6634d7897ccbf36d5cfd46bb47",
   "dependencies/toolchain/downloads.json": "bed9ca7386573c016b40812551fa212e81ee9b964370bfa0047cb335701de1dd",
   "dependencies/toolchain/versions.json": "9056e3a37dd7310bcddb34f55869a9456502d454f8c8ede231f7cf702eb521fd",
-  "dependencies/webzjs-base/.cargo/config.toml": "f6dcd875cb196419ad0d621c94676be9d37b2b7ce9e23be146bbc6aeb0211d8f",
+  "dependencies/webzjs-base/.cargo/config.toml": "c213686dc62ba13190192843f18424b97ab0a39b6884f85540b398954127d9b6",
   "dependencies/webzjs-base/Cargo.lock": "485febc34a038eb6dfe539bf92de5864d2afdba14ac8807d888da48caf15035d",
   "dependencies/webzjs-base/Cargo.toml": "ecf4ac2a403c7f9b0510596677c97851b404fa9020955677d517702fa6fc5428",
   "dependencies/webzjs-base/LICENSE-APACHE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
