@@ -1,0 +1,26 @@
+{
+  "command": [
+    "python",
+    "C:/Users/NewOwner/Documents/Codex/2026-11-10/build-a-bounded-feasibility-proof-for/outputs/webzjs-trailer-follow-up/repro/build-harness.py",
+    "C:/Users/NewOwner/Documents/Codex/work/w28",
+    "C:/Users/NewOwner/Documents/Codex/work/ws28",
+    "C:/Users/NewOwner/Documents/Codex/work/wa28"
+  ],
+  "executable_resolved": "C:\\Users\\NewOwner\\AppData\\Local\\Programs\\Python\\Python311\\python.EXE",
+  "cwd": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\w28",
+  "started_at_utc": "2026-11-17T05:20:06.260370+00:00",
+  "environment": {
+    "RUSTUP_HOME": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\r",
+    "CARGO_HOME": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\c",
+    "CARGO_TARGET_DIR": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\t",
+    "CC": null,
+    "CC_wasm32_unknown_unknown": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\l\\bin\\clang.exe",
+    "CXX": null,
+    "TMP": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\tmp",
+    "TEMP": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\tmp"
+  },
+  "exit_code": 0,
+  "elapsed_seconds": 39.266,
+  "log": "wasm-harness-build.log",
+  "finished_at_utc": "2026-11-17T05:20:45.525763+00:00"
+}

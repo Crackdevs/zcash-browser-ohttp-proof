@@ -1,0 +1,26 @@
+{
+  "command": [
+    "cargo",
+    "test",
+    "--locked",
+    "-p",
+    "tonic-web-wasm-client"
+  ],
+  "executable_resolved": "C:\\Users\\NewOwner\\.cargo\\bin\\cargo.EXE",
+  "cwd": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\w28",
+  "started_at_utc": "2026-11-17T05:08:12.527100+00:00",
+  "environment": {
+    "RUSTUP_HOME": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\r",
+    "CARGO_HOME": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\c",
+    "CARGO_TARGET_DIR": "C:/Users/NewOwner/Documents/Codex/work/tt28",
+    "CC": null,
+    "CC_wasm32_unknown_unknown": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\l\\bin\\clang.exe",
+    "CXX": null,
+    "TMP": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\tmp",
+    "TEMP": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\tmp"
+  },
+  "exit_code": 0,
+  "elapsed_seconds": 6.516,
+  "log": "native-patched-first.log",
+  "finished_at_utc": "2026-11-17T05:08:19.039039+00:00"
+}

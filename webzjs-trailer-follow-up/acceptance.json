@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "scope": "Incremental WebZjs gRPC-web body trailer completion and status validation",
+  "branch": "fix/grpc-web-trailer-completion",
+  "base": "a1891413e5caa33bf3747ab478b9f65cbe0561a1",
+  "commit": "46dccdcd9e090f9cc07f001c3b1d9f10f2627bfb",
+  "checks": {
+    "base_and_patch": {
+      "status": "PASS",
+      "reason": "PR #28 was open at the verified parent. The clean local commit and exported diff touch only five files in the vendored crate. Workspace pins are unchanged.",
+      "evidence": ["evidence/sources/pr-28.json", "evidence/sources/pr-28-recheck.json", "evidence/branch.json", "webzjs-trailer-follow-up.patch"]
+    },
+    "native_baseline": {
+      "status": "PASS",
+      "reason": "All 15 original unit tests passed before implementation changes.",
+      "evidence": ["evidence/native-baseline.json", "evidence/native-baseline.log"]
+    },
+    "regression_red_green": {
+      "status": "PASS",
+      "reason": "Six regressions fail on the baseline decoder with the delivered test-only changes applied. All 25 tests pass on the patched decoder.",
+      "evidence": ["evidence/native-regressions-exported-patch.json", "evidence/native-regressions-exported-patch.log", "evidence/native-patched.json", "evidence/native-patched.log"]
+    },
+    "format_and_lint": {
+      "status": "PASS",
+      "reason": "Pinned Rust formatting and warning-denying Clippy passed for the changed code on the native and WASM targets.",
+      "evidence": ["evidence/rustfmt.json", "evidence/clippy-native.json", "evidence/clippy-wasm.json"]
+    },
+    "locked_wasm_build": {
+      "status": "PASS",
+      "reason": "Built the committed vendored crate and minimal fixture harness for wasm32-unknown-unknown using 51 identical workspace package identities and wasm-bindgen 0.2.100.",
+      "evidence": ["evidence/wasm-harness-build.json", "evidence/harness-build-manifest.json", "evidence/harness.Cargo.lock"]
+    },
+    "vendoring_replay": {
+      "status": "PASS",
+      "reason": "The three patches and retained tests reconstruct all 18 vendored source files byte for byte from crates.io 0.8.0.",
+      "evidence": ["evidence/vendoring.json", "evidence/sources/crates-index.jsonl"]
+    },
+    "protocol_inputs": {
+      "status": "PASS",
+      "reason": "The preserved script matches the source comment exactly. Request fields and response method shapes were checked against pinned WebZjs protobuf files.",
+      "evidence": ["repro/grpcweb-trailer-check.mjs", "evidence/sources/daniel-comment.md", "evidence/sources/schema-check.json"]
+    },
+    "public_node": {
+      "status": "PASS",
+      "reason": "Node v24.22.1 on Windows sent 17 read-only POSTs. All 15 recorded calls passed conformance and the maximum observed trailer-to-EOF interval was 0.3634 ms.",
+      "evidence": ["evidence/public-node/node-run.json", "evidence/public-node/node-raw.json", "evidence/public-node/node-stderr.log", "evidence/public-node/conformance.json"]
+    },
+    "public_chromium": {
+      "status": "PASS",
+      "reason": "Fresh Chromium 156.0.8078.4 with normal CORS sent 17 read-only POSTs. All 15 recorded calls passed conformance and the maximum observed trailer-to-EOF interval was 1.7 ms.",
+      "evidence": ["evidence/public-chromium/chromium-public-raw.json", "evidence/public-chromium/conformance.json"]
+    },
+    "patched_wasm_chromium": {
+      "status": "PASS",
+      "reason": "All 15 compiled-client fixture checks passed, including pending unary and streaming completion, fetch cancellation, transport reset, trailing bytes and trailers-only semantics.",
+      "evidence": ["evidence/wasm-chromium/chromium-wasm.json"]
+    },
+    "historical_evidence": {
+      "status": "PASS",
+      "reason": "Verified 266 prior proof files and the retained Continuation 02 review archive against their existing hashes.",
+      "evidence": ["evidence/historical-integrity.json"]
+    }
+  },
+  "known_failures": {
+    "bare_workspace_wasm_package_selection": {
+      "status": "FAIL",
+      "reason": "The plain workspace -p command enables native Tokio networking. mio rejects this WASM target on both the baseline and patched code. The isolated locked WASM build passed.",
+      "evidence": ["evidence/wasm-workspace-base.log", "evidence/wasm-build.log", "evidence/wasm-harness-build.log"]
+    },
+    "gnu_patch_in_windows_sandbox": {
+      "status": "FAIL",
+      "reason": "The initial sandboxed patch invocation could not initialize MSYS. The same documented replay passed in the permitted local session.",
+      "evidence": ["evidence/vendoring-sandbox.json", "evidence/vendoring.json"]
+    }
+  }
+}

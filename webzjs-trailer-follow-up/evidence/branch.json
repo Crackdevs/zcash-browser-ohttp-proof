@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "checkout": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\w28",
+  "branch": "fix/grpc-web-trailer-completion",
+  "base": "a1891413e5caa33bf3747ab478b9f65cbe0561a1",
+  "head": "46dccdcd9e090f9cc07f001c3b1d9f10f2627bfb",
+  "parent": "a1891413e5caa33bf3747ab478b9f65cbe0561a1",
+  "clean": true,
+  "changes": [
+    "M\tvendor/tonic-web-wasm-client/VENDORED.md",
+    "M\tvendor/tonic-web-wasm-client/src/body_stream.rs",
+    "M\tvendor/tonic-web-wasm-client/src/response_body.rs",
+    "M\tvendor/tonic-web-wasm-client/src/response_body/tests.rs",
+    "A\tvendor/tonic-web-wasm-client/trailers-completion.patch"
+  ],
+  "workspace_manifests_and_pins": {
+    "Cargo.toml": {
+      "base_sha256": "1f77beedeb6f7145c75bfc2217eed2ad0b8072f817fd134aa4c767fee590bf32",
+      "head_sha256": "1f77beedeb6f7145c75bfc2217eed2ad0b8072f817fd134aa4c767fee590bf32"
+    },
+    "Cargo.lock": {
+      "base_sha256": "5e9f7874df1709aa98f1430474b9f6959e57e47794ef65f4f3a5b740fbdb1576",
+      "head_sha256": "5e9f7874df1709aa98f1430474b9f6959e57e47794ef65f4f3a5b740fbdb1576"
+    },
+    "yarn.lock": {
+      "base_sha256": "1fd82339982652ef5d512a44bd8e50edfaa7b2047dd75ee9cee51f5330a6930e",
+      "head_sha256": "1fd82339982652ef5d512a44bd8e50edfaa7b2047dd75ee9cee51f5330a6930e"
+    },
+    "rust-toolchain.toml": {
+      "base_sha256": "9097f5afcbcbef099fe2cafcad09e8cc58ace4a6bb66c70c58344521fc46c362",
+      "head_sha256": "9097f5afcbcbef099fe2cafcad09e8cc58ace4a6bb66c70c58344521fc46c362"
+    },
+    "vendor/tonic-web-wasm-client/Cargo.toml": {
+      "base_sha256": "adda2239f82f8d2ab2e89323d27a0ab0d32c94e70533ddfbfe3eaf24a81f0044",
+      "head_sha256": "adda2239f82f8d2ab2e89323d27a0ab0d32c94e70533ddfbfe3eaf24a81f0044"
+    }
+  },
+  "patch_sha256": "a82a4abbaa1adecd73d3d09d18339d1b756e32199b11ebc2bd5ea4f2b2042dc6",
+  "patch_matches_incremental_diff": true
+}

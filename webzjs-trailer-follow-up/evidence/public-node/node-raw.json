@@ -1,0 +1,587 @@
+[
+ {
+  "base": "https://zcash-mainnet.chainsafe.dev",
+  "run": 1,
+  "method": "GetLightdInfo",
+  "status": 200,
+  "contentType": "application/grpc-web",
+  "headerGrpcStatus": null,
+  "headerGrpcMessage": null,
+  "frames": [
+   {
+    "type": "0x00",
+    "len": 165
+   },
+   {
+    "type": "0x80",
+    "len": 16
+   }
+  ],
+  "trailerMs": 56.43049999999994,
+  "trailerToEndMs": 0.2661000000000513,
+  "extraBytesAfterTrailer": 0,
+  "trailerStatus": "0",
+  "trailerText": "grpc-status: 0\r\n",
+  "totalBytes": 191,
+  "firstDataMs": 56.43049999999994,
+  "endMs": 56.69659999999999
+ },
+ {
+  "base": "https://zcash-mainnet.chainsafe.dev",
+  "run": 1,
+  "method": "GetLatestBlock",
+  "status": 200,
+  "contentType": "application/grpc-web",
+  "headerGrpcStatus": null,
+  "headerGrpcMessage": null,
+  "frames": [
+   {
+    "type": "0x00",
+    "len": 39
+   },
+   {
+    "type": "0x80",
+    "len": 16
+   }
+  ],
+  "trailerMs": 53.75999999999999,
+  "trailerToEndMs": 0.16600000000016735,
+  "extraBytesAfterTrailer": 0,
+  "trailerStatus": "0",
+  "trailerText": "grpc-status: 0\r\n",
+  "totalBytes": 65,
+  "firstDataMs": 53.75999999999999,
+  "endMs": 53.92600000000016
+ },
+ {
+  "base": "https://zcash-mainnet.chainsafe.dev",
+  "run": 1,
+  "method": "GetBlockRange",
+  "status": 200,
+  "contentType": "application/grpc-web",
+  "headerGrpcStatus": null,
+  "headerGrpcMessage": null,
+  "frames": [
+   {
+    "type": "0x00",
+    "len": 489
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 452
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 452
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x80",
+    "len": 16
+   }
+  ],
+  "trailerMs": 56.401999999999816,
+  "trailerToEndMs": 0.3582000000001244,
+  "extraBytesAfterTrailer": 0,
+  "trailerStatus": "0",
+  "trailerText": "grpc-status: 0\r\n",
+  "totalBytes": 2129,
+  "firstDataMs": 56.401999999999816,
+  "endMs": 56.76019999999994
+ },
+ {
+  "base": "https://zcash-mainnet.chainsafe.dev",
+  "run": 2,
+  "method": "GetLightdInfo",
+  "status": 200,
+  "contentType": "application/grpc-web",
+  "headerGrpcStatus": null,
+  "headerGrpcMessage": null,
+  "frames": [
+   {
+    "type": "0x00",
+    "len": 165
+   },
+   {
+    "type": "0x80",
+    "len": 16
+   }
+  ],
+  "trailerMs": 57.89899999999989,
+  "trailerToEndMs": 0.16130000000021028,
+  "extraBytesAfterTrailer": 0,
+  "trailerStatus": "0",
+  "trailerText": "grpc-status: 0\r\n",
+  "totalBytes": 191,
+  "firstDataMs": 57.89899999999989,
+  "endMs": 58.0603000000001
+ },
+ {
+  "base": "https://zcash-mainnet.chainsafe.dev",
+  "run": 2,
+  "method": "GetLatestBlock",
+  "status": 200,
+  "contentType": "application/grpc-web",
+  "headerGrpcStatus": null,
+  "headerGrpcMessage": null,
+  "frames": [
+   {
+    "type": "0x00",
+    "len": 39
+   },
+   {
+    "type": "0x80",
+    "len": 16
+   }
+  ],
+  "trailerMs": 56.38270000000011,
+  "trailerToEndMs": 0.22469999999975698,
+  "extraBytesAfterTrailer": 0,
+  "trailerStatus": "0",
+  "trailerText": "grpc-status: 0\r\n",
+  "totalBytes": 65,
+  "firstDataMs": 56.38270000000011,
+  "endMs": 56.60739999999987
+ },
+ {
+  "base": "https://zcash-mainnet.chainsafe.dev",
+  "run": 2,
+  "method": "GetBlockRange",
+  "status": 200,
+  "contentType": "application/grpc-web",
+  "headerGrpcStatus": null,
+  "headerGrpcMessage": null,
+  "frames": [
+   {
+    "type": "0x00",
+    "len": 489
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 452
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 452
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x80",
+    "len": 16
+   }
+  ],
+  "trailerMs": 52.63760000000002,
+  "trailerToEndMs": 0.2535000000002583,
+  "extraBytesAfterTrailer": 0,
+  "trailerStatus": "0",
+  "trailerText": "grpc-status: 0\r\n",
+  "totalBytes": 2129,
+  "firstDataMs": 52.63760000000002,
+  "endMs": 52.89110000000028
+ },
+ {
+  "base": "https://zcash-mainnet.chainsafe.dev",
+  "run": 3,
+  "method": "GetLightdInfo",
+  "status": 200,
+  "contentType": "application/grpc-web",
+  "headerGrpcStatus": null,
+  "headerGrpcMessage": null,
+  "frames": [
+   {
+    "type": "0x00",
+    "len": 270
+   },
+   {
+    "type": "0x80",
+    "len": 16
+   }
+  ],
+  "trailerMs": 52.83879999999999,
+  "trailerToEndMs": 0.1463000000003376,
+  "extraBytesAfterTrailer": 0,
+  "trailerStatus": "0",
+  "trailerText": "grpc-status: 0\r\n",
+  "totalBytes": 296,
+  "firstDataMs": 52.83879999999999,
+  "endMs": 52.98510000000033
+ },
+ {
+  "base": "https://zcash-mainnet.chainsafe.dev",
+  "run": 3,
+  "method": "GetLatestBlock",
+  "status": 200,
+  "contentType": "application/grpc-web",
+  "headerGrpcStatus": null,
+  "headerGrpcMessage": null,
+  "frames": [
+   {
+    "type": "0x00",
+    "len": 39
+   },
+   {
+    "type": "0x80",
+    "len": 16
+   }
+  ],
+  "trailerMs": 53.86919999999964,
+  "trailerToEndMs": 0.22010000000000218,
+  "extraBytesAfterTrailer": 0,
+  "trailerStatus": "0",
+  "trailerText": "grpc-status: 0\r\n",
+  "totalBytes": 65,
+  "firstDataMs": 53.86919999999964,
+  "endMs": 54.08929999999964
+ },
+ {
+  "base": "https://zcash-mainnet.chainsafe.dev",
+  "run": 3,
+  "method": "GetBlockRange",
+  "status": 200,
+  "contentType": "application/grpc-web",
+  "headerGrpcStatus": null,
+  "headerGrpcMessage": null,
+  "frames": [
+   {
+    "type": "0x00",
+    "len": 489
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 452
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 452
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x80",
+    "len": 16
+   }
+  ],
+  "trailerMs": 51.850100000000566,
+  "trailerToEndMs": 0.33469999999942956,
+  "extraBytesAfterTrailer": 0,
+  "trailerStatus": "0",
+  "trailerText": "grpc-status: 0\r\n",
+  "totalBytes": 2129,
+  "firstDataMs": 51.850100000000566,
+  "endMs": 52.184799999999996
+ },
+ {
+  "base": "https://zcash-mainnet.chainsafe.dev",
+  "run": 4,
+  "method": "GetLightdInfo",
+  "status": 200,
+  "contentType": "application/grpc-web",
+  "headerGrpcStatus": null,
+  "headerGrpcMessage": null,
+  "frames": [
+   {
+    "type": "0x00",
+    "len": 165
+   },
+   {
+    "type": "0x80",
+    "len": 16
+   }
+  ],
+  "trailerMs": 64.35140000000047,
+  "trailerToEndMs": 0.28439999999955035,
+  "extraBytesAfterTrailer": 0,
+  "trailerStatus": "0",
+  "trailerText": "grpc-status: 0\r\n",
+  "totalBytes": 191,
+  "firstDataMs": 64.35140000000047,
+  "endMs": 64.63580000000002
+ },
+ {
+  "base": "https://zcash-mainnet.chainsafe.dev",
+  "run": 4,
+  "method": "GetLatestBlock",
+  "status": 200,
+  "contentType": "application/grpc-web",
+  "headerGrpcStatus": null,
+  "headerGrpcMessage": null,
+  "frames": [
+   {
+    "type": "0x00",
+    "len": 39
+   },
+   {
+    "type": "0x80",
+    "len": 16
+   }
+  ],
+  "trailerMs": 53.77900000000045,
+  "trailerToEndMs": 0.36340000000018335,
+  "extraBytesAfterTrailer": 0,
+  "trailerStatus": "0",
+  "trailerText": "grpc-status: 0\r\n",
+  "totalBytes": 65,
+  "firstDataMs": 53.77900000000045,
+  "endMs": 54.142400000000634
+ },
+ {
+  "base": "https://zcash-mainnet.chainsafe.dev",
+  "run": 4,
+  "method": "GetBlockRange",
+  "status": 200,
+  "contentType": "application/grpc-web",
+  "headerGrpcStatus": null,
+  "headerGrpcMessage": null,
+  "frames": [
+   {
+    "type": "0x00",
+    "len": 489
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 452
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 452
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x80",
+    "len": 16
+   }
+  ],
+  "trailerMs": 51.65529999999944,
+  "trailerToEndMs": 0.15080000000034488,
+  "extraBytesAfterTrailer": 0,
+  "trailerStatus": "0",
+  "trailerText": "grpc-status: 0\r\n",
+  "totalBytes": 2129,
+  "firstDataMs": 51.65529999999944,
+  "endMs": 51.80609999999979
+ },
+ {
+  "base": "https://zcash-mainnet.chainsafe.dev",
+  "run": 5,
+  "method": "GetLightdInfo",
+  "status": 200,
+  "contentType": "application/grpc-web",
+  "headerGrpcStatus": null,
+  "headerGrpcMessage": null,
+  "frames": [
+   {
+    "type": "0x00",
+    "len": 270
+   },
+   {
+    "type": "0x80",
+    "len": 16
+   }
+  ],
+  "trailerMs": 57.497699999999895,
+  "trailerToEndMs": 0.12960000000020955,
+  "extraBytesAfterTrailer": 0,
+  "trailerStatus": "0",
+  "trailerText": "grpc-status: 0\r\n",
+  "totalBytes": 296,
+  "firstDataMs": 57.497699999999895,
+  "endMs": 57.627300000000105
+ },
+ {
+  "base": "https://zcash-mainnet.chainsafe.dev",
+  "run": 5,
+  "method": "GetLatestBlock",
+  "status": 200,
+  "contentType": "application/grpc-web",
+  "headerGrpcStatus": null,
+  "headerGrpcMessage": null,
+  "frames": [
+   {
+    "type": "0x00",
+    "len": 39
+   },
+   {
+    "type": "0x80",
+    "len": 16
+   }
+  ],
+  "trailerMs": 61.345400000000154,
+  "trailerToEndMs": 0.31859999999960564,
+  "extraBytesAfterTrailer": 0,
+  "trailerStatus": "0",
+  "trailerText": "grpc-status: 0\r\n",
+  "totalBytes": 65,
+  "firstDataMs": 61.345400000000154,
+  "endMs": 61.66399999999976
+ },
+ {
+  "base": "https://zcash-mainnet.chainsafe.dev",
+  "run": 5,
+  "method": "GetBlockRange",
+  "status": 200,
+  "contentType": "application/grpc-web",
+  "headerGrpcStatus": null,
+  "headerGrpcMessage": null,
+  "frames": [
+   {
+    "type": "0x00",
+    "len": 489
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 452
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 452
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x00",
+    "len": 95
+   },
+   {
+    "type": "0x80",
+    "len": 16
+   }
+  ],
+  "trailerMs": 55.57129999999961,
+  "trailerToEndMs": 0.12470000000030268,
+  "extraBytesAfterTrailer": 0,
+  "trailerStatus": "0",
+  "trailerText": "grpc-status: 0\r\n",
+  "totalBytes": 2129,
+  "firstDataMs": 55.57129999999961,
+  "endMs": 55.69599999999991
+ }
+]

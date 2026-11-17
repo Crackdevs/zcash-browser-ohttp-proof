@@ -1,0 +1,19 @@
+{
+  "command": [
+    "node",
+    "--import",
+    "file:///C:/Users/NewOwner/Documents/Codex/2026-11-10/build-a-bounded-feasibility-proof-for/outputs/webzjs-trailer-follow-up/repro/bound-original-fetch.mjs",
+    "C:\\Users\\NewOwner\\Documents\\Codex\\2026-11-10\\build-a-bounded-feasibility-proof-for\\outputs\\webzjs-trailer-follow-up\\repro\\grpcweb-trailer-check.mjs",
+    "https://zcash-mainnet.chainsafe.dev",
+    "5"
+  ],
+  "platform": "Windows-10-10.0.26200-SP0",
+  "node": "v24.22.1",
+  "endpoint": "https://zcash-mainnet.chainsafe.dev",
+  "per_request_timeout_ms": 8000,
+  "process_timeout_s": 170,
+  "started_utc": "2026-11-17T05:06:16.065218+00:00",
+  "exit_code": 0,
+  "elapsed_s": 7.797,
+  "finished_utc": "2026-11-17T05:06:23.860891+00:00"
+}

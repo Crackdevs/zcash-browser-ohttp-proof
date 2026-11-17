@@ -1,0 +1,189 @@
+diff --git a/add-worker-module.sh b/add-worker-module.sh
+index 726b32d..da6eec2 100755
+--- a/add-worker-module.sh
++++ b/add-worker-module.sh
+@@ -14,7 +14,9 @@ mkdir -p "$WASM_THREAD_DIR/src/wasm32/js"
+ # Create the worker module file
+ cat > "$WASM_THREAD_DIR/src/wasm32/js/web_worker_module.bundler.js" << 'EOL'
+ // synchronously, using the browser, import wasm_bindgen shim JS scripts
++import { installProofTransport } from "../../../../../proof-adapter.js";
+ import init, { wasm_thread_entry_point } from "../../../../../";
++installProofTransport();
+ // Wait for the main thread to send us the shared module/memory and work context.
+ // Once we've got it, initialize it all with the `wasm_bindgen` global we imported via
+ // `importScripts`.
+diff --git a/vendor/tonic-web-wasm-client/src/call.rs b/vendor/tonic-web-wasm-client/src/call.rs
+index 0995d9c..906209e 100644
+--- a/vendor/tonic-web-wasm-client/src/call.rs
++++ b/vendor/tonic-web-wasm-client/src/call.rs
+@@ -29,10 +29,12 @@ pub async fn call(
+     let (result, content_type) = set_response_headers(result, &response)?;
+ 
+     let content_type = content_type.ok_or(Error::MissingContentTypeHeader)?;
+-    let body_stream = response.body().ok_or(Error::MissingResponseBody)?;
+-
+     let trailers_only = response.headers().has("grpc-status").unwrap_or(false);
+-    let body = ResponseBody::new(body_stream, &content_type, abort, trailers_only)?;
++    let body = match response.body() {
++        Some(body_stream) => ResponseBody::new(body_stream, &content_type, abort, trailers_only)?,
++        None if trailers_only => ResponseBody::default(),
++        None => return Err(Error::MissingResponseBody),
++    };
+ 
+     result.body(body).map_err(Into::into)
+ }
+diff --git a/vendor/tonic-web-wasm-client/src/fetch.rs b/vendor/tonic-web-wasm-client/src/fetch.rs
+index 782e299..34240fc 100644
+--- a/vendor/tonic-web-wasm-client/src/fetch.rs
++++ b/vendor/tonic-web-wasm-client/src/fetch.rs
+@@ -25,7 +25,23 @@ fn js_fetch(request: &Request, init: &RequestInit) -> Promise {
+ }
+ 
+ pub async fn fetch(request: &Request, init: &RequestInit) -> Result<Response, Error> {
+-    let js_response = JsFuture::from(js_fetch(request, init))
++    // The experiment uses an unresolvable logical origin. This mode must never
++    // reach the native Fetch path, even if a worker forgot to install the hook.
++    let promise = if request.url().starts_with("http://wallet-rpc.invalid/") {
++        let global = js_sys::global();
++        let hook = js_sys::Reflect::get(&global, &JsValue::from_str("__zcashProofOhttpFetch"))
++            .map_err(Error::js_error)?;
++        let hook = hook.dyn_into::<js_sys::Function>().map_err(|_| {
++            Error::JsError("OHTTP transport is not installed in this realm".into())
++        })?;
++        hook.call2(&global, request.as_ref(), init.as_ref())
++            .map_err(Error::js_error)?
++            .dyn_into::<Promise>()
++            .map_err(|_| Error::JsError("OHTTP transport did not return a Promise".into()))?
++    } else {
++        js_fetch(request, init)
++    };
++    let js_response = JsFuture::from(promise)
+         .await
+         .map_err(Error::js_error)?;
+ 
+diff --git a/vendor/tonic-web-wasm-client/src/response_body.rs b/vendor/tonic-web-wasm-client/src/response_body.rs
+index 934c05d..79ee19b 100644
+--- a/vendor/tonic-web-wasm-client/src/response_body.rs
++++ b/vendor/tonic-web-wasm-client/src/response_body.rs
+@@ -96,14 +96,6 @@ pub enum ReadState {
+     Done,
+ }
+ 
+-impl ReadState {
+-    fn finished_data(&self) -> bool {
+-        matches!(self, ReadState::TrailerLength)
+-            || matches!(self, ReadState::Trailer(_))
+-            || matches!(self, ReadState::Done)
+-    }
+-}
+-
+ /// Type to handle HTTP response
+ #[pin_project]
+ pub struct ResponseBody {
+@@ -115,6 +107,7 @@ pub struct ResponseBody {
+     trailer: Option<HeaderMap>,
+     state: ReadState,
+     finished_stream: bool,
++    terminal_emitted: bool,
+     /// Whether the response headers carried `grpc-status`, i.e. the server sent a
+     /// "trailers-only" response (status in the HTTP headers, no body frames).
+     trailers_only: bool,
+@@ -138,6 +131,7 @@ impl ResponseBody {
+             trailer: None,
+             state: ReadState::CompressionFlag,
+             finished_stream: false,
++            terminal_emitted: false,
+             trailers_only,
+         })
+     }
+@@ -254,7 +248,7 @@ impl ResponseBody {
+                             let header_name =
+                                 HeaderName::from_bytes(parsed_trailer.name.as_bytes())?;
+                             let header_value = HeaderValue::from_bytes(parsed_trailer.value)?;
+-                            trailers.insert(header_name, header_value);
++                            trailers.append(header_name, header_value);
+                         }
+ 
+                         *this.trailer = Some(trailers);
+@@ -277,49 +271,40 @@ impl Body for ResponseBody {
+         mut self: Pin<&mut Self>,
+         cx: &mut Context<'_>,
+     ) -> Poll<Option<Result<http_body::Frame<Self::Data>, Self::Error>>> {
+-        // Check if there's already some data in buffer and return that
+-        if self.data.is_some() {
+-            let data = self.data.take().unwrap();
+-
+-            return Poll::Ready(Some(Ok(http_body::Frame::data(data.freeze()))));
+-        }
+-
+-        // If reading data is finished return `None`
+-        if self.state.finished_data() {
++        if self.terminal_emitted {
+             return Poll::Ready(None);
+         }
+-
+         loop {
+-            // Read bytes from stream
+-            if let Err(e) = ready!(self.as_mut().read_stream(cx)) {
+-                return Poll::Ready(Some(Err(e)));
++            if let Err(error) = self.as_mut().step() {
++                self.terminal_emitted = true;
++                return Poll::Ready(Some(Err(error)));
+             }
+-
+-            // Step the state machine
+-            if let Err(e) = self.as_mut().step() {
+-                return Poll::Ready(Some(Err(e)));
+-            }
+-
+-            if self.data.is_some() {
+-                // If data is available in buffer, return that
+-                let data = self.data.take().unwrap();
++            if let Some(data) = self.data.take() {
+                 return Poll::Ready(Some(Ok(http_body::Frame::data(data.freeze()))));
+-            } else if self.state.finished_data() {
+-                // If we finished reading data continue return `None`
+-                return Poll::Ready(None);
+-            } else if self.finished_stream {
+-                // A trailers-only response carries its status in the HTTP headers and has an empty
+-                // body: the stream legitimately ends before any frame header.
+-                if self.trailers_only
+-                    && self.state == ReadState::CompressionFlag
+-                    && self.buf.is_empty()
+-                    && self.incomplete_data.is_empty()
++            }
++            if self.finished_stream {
++                self.terminal_emitted = true;
++                if self.state == ReadState::Done && self.buf.is_empty() && self.buf.raw_buf.is_empty() {
++                    if let Some(trailers) = self.trailer.take() {
++                        if trailers.get_all("grpc-status").iter().count() == 1
++                            && trailers.get("grpc-status").and_then(|s| s.to_str().ok())
++                                .and_then(|s| s.parse::<u32>().ok()).is_some_and(|s| s <= 16)
++                        {
++                            return Poll::Ready(Some(Ok(http_body::Frame::trailers(trailers))));
++                        }
++                    }
++                }
++                if self.trailers_only && self.state == ReadState::CompressionFlag
++                    && self.buf.is_empty() && self.buf.raw_buf.is_empty() && self.incomplete_data.is_empty()
+                 {
+                     return Poll::Ready(None);
+                 }
+-                // If stream is finished but data is not finished return error
+                 return Poll::Ready(Some(Err(Error::MalformedResponse)));
+             }
++            if let Err(error) = ready!(self.as_mut().read_stream(cx)) {
++                self.terminal_emitted = true;
++                return Poll::Ready(Some(Err(error)));
++            }
+         }
+     }
+ }
+@@ -338,6 +323,7 @@ impl Default for ResponseBody {
+             trailer: None,
+             state: ReadState::Done,
+             finished_stream: true,
++            terminal_emitted: true,
+             trailers_only: false,
+         }
+     }

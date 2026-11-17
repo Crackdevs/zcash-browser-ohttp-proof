@@ -1,0 +1,29 @@
+{
+  "command": [
+    "rustfmt",
+    "+nightly-2025-06-15",
+    "--check",
+    "--edition",
+    "2021",
+    "C:/Users/NewOwner/Documents/Codex/work/w28/vendor/tonic-web-wasm-client/src/body_stream.rs",
+    "C:/Users/NewOwner/Documents/Codex/work/w28/vendor/tonic-web-wasm-client/src/response_body.rs",
+    "C:/Users/NewOwner/Documents/Codex/2026-11-10/build-a-bounded-feasibility-proof-for/outputs/webzjs-trailer-follow-up/repro/trailer_harness.rs"
+  ],
+  "executable_resolved": "C:\\Users\\NewOwner\\.cargo\\bin\\rustfmt.EXE",
+  "cwd": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\w28",
+  "started_at_utc": "2026-11-17T05:16:52.230020+00:00",
+  "environment": {
+    "RUSTUP_HOME": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\r",
+    "CARGO_HOME": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\c",
+    "CARGO_TARGET_DIR": "C:/Users/NewOwner/Documents/Codex/work/tt28",
+    "CC": null,
+    "CC_wasm32_unknown_unknown": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\l\\bin\\clang.exe",
+    "CXX": null,
+    "TMP": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\tmp",
+    "TEMP": "C:\\Users\\NewOwner\\Documents\\Codex\\work\\o1\\tmp"
+  },
+  "exit_code": 0,
+  "elapsed_seconds": 2.078,
+  "log": "rustfmt.log",
+  "finished_at_utc": "2026-11-17T05:16:54.315906+00:00"
+}

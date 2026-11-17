@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "pinned_webzjs_commit": "a1891413e5caa33bf3747ab478b9f65cbe0561a1",
+  "schema_path": "protos",
+  "files": {
+    "service.proto": {
+      "git_blob": "a94e639f9359011e98e60c9fb00b9cd6041d28da",
+      "sha256": "5393c39ef5ffd470aef877cfeac1df79ea9ad1b7ba46136cd3c7bab06397f14e"
+    },
+    "compact_formats.proto": {
+      "git_blob": "09df06d48bed993d2da32ac5f61f7f6a08029ffd",
+      "sha256": "bd0936773c2f92c07fa954a930e746600d91c990a19e877b2ba6390c6181877c"
+    }
+  },
+  "asserted": [
+    "Empty and ChainSpec encode to zero bytes",
+    "CompactTxStreamer GetLightdInfo and GetLatestBlock are unary",
+    "GetBlockRange is server streaming with BlockRange as input",
+    "BlockRange.start and end are embedded message fields 1 and 2 (tags 0x0a and 0x12)",
+    "BlockID.height is uint64 field 1 (tag 0x08)",
+    "CompactBlock.height is uint64 field 2 (tag 0x10)"
+  ],
+  "original_script_sha256": "6d3122db05ab569785ac96592e7e533530cd6650c73659953a433bea76cfcbc6",
+  "original_script_exact_fragment_match": true
+}

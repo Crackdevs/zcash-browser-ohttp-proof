@@ -1,0 +1,15 @@
+{
+  "checkout": "46dccdcd9e090f9cc07f001c3b1d9f10f2627bfb",
+  "workspace_lock_sha256": "5e9f7874df1709aa98f1430474b9f6959e57e47794ef65f4f3a5b740fbdb1576",
+  "standalone_lock_sha256": "964f0213c9dd2459f2970615bba9179c465b7139545fbf7066e58aeb8beb5575",
+  "standalone_packages_from_workspace": 51,
+  "changed_package_identities": [],
+  "wasm_bindgen": "wasm-bindgen 0.2.100",
+  "source_sha256": "4ae76d287473306cb51b6935b21a2cdbb86b82df6a37527ad718c42a704a9952",
+  "files": {
+    "trailer_harness.d.ts": "04049c75a099e3c4d8e58459239b2dd9ec11675f07e5a9ab6b7f02ebc583650d",
+    "trailer_harness.js": "d8b980f6db3c2b4f551a55dbea82fcbc494d92a598e1ba5efe952f82af4cdf51",
+    "trailer_harness_bg.wasm": "89812604d427cef3d4f8c61a9e638e0fb15eba83116d5462244ddf767e6469fc",
+    "trailer_harness_bg.wasm.d.ts": "2d964af4d4707e7381fe2e9d4c554f387fbdcba795c4084f6adc016e52742c9e"
+  }
+}

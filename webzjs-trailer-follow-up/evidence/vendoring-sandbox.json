@@ -1,0 +1,17 @@
+{
+  "status": "FAIL",
+  "crate": "tonic-web-wasm-client 0.8.0",
+  "archive_sha256": "898cd44be5e23e59d2956056538f1d6b3c5336629d384ffd2d92e76f87fb98ff",
+  "patch_cli": "patch -p1 --fuzz=0 --batch --forward",
+  "steps": [
+    {
+      "patch": "trailers-only.patch",
+      "sha256": "9101b3a680ba2b8ca14a717eac6fd6f80554701204b598bd23dff2cc1019f0c4",
+      "exit_code": 3221225794,
+      "stdout": "",
+      "stderr": "      1 [main] patch (43416) C:\\Program Files\\Git\\usr\\bin\\patch.exe: *** fatal error - NtCreateDirectoryObject(\\BaseNamedObjects\\msys-2.0S5-1888ae32e00d56aa): 0xC0000022\n"
+    }
+  ],
+  "identical_src_files": [],
+  "missing_or_different_files": []
+}

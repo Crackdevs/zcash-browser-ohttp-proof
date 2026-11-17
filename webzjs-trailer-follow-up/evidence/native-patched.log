@@ -1,0 +1,43 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling tonic-web-wasm-client v0.8.0 (C:\Users\NewOwner\Documents\Codex\work\w28\vendor\tonic-web-wasm-client)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 8.30s
+     Running unittests src\lib.rs (C:/Users/NewOwner/Documents/Codex/work/tt28\debug\deps\tonic_web_wasm_client-f93093a837ce3d0e.exe)
+
+running 25 tests
+test content_type::tests::test_encoding_from_content_type ... ok
+test response_body::tests::data_without_any_trailer_is_malformed ... ok
+test response_body::tests::cancelling_while_waiting_for_eof_drops_the_source ... ok
+test response_body::tests::ok_trailer_is_yielded_and_ends_the_call_cleanly ... ok
+test response_body::tests::nothing_is_yielded_after_the_trailers ... ok
+test response_body::tests::stream_that_ends_inside_a_data_frame_is_malformed ... ok
+test response_body::tests::bytes_after_body_trailer_fail_even_after_an_ok_status ... ok
+test response_body::tests::stream_that_ends_inside_the_trailer_frame_is_malformed ... ok
+test response_body::tests::invalid_body_status_fails_both_tonic_paths ... ok
+test response_body::tests::streaming_message_arrives_before_eof_but_final_success_waits ... ok
+test response_body::tests::tonic_handles_headers_only_without_an_extra_body_trailer ... ok
+test response_body::tests::trailer_after_data_is_yielded_as_a_trailers_frame ... ok
+test response_body::tests::tonic_unary_call_reports_the_status_sent_after_its_message ... ok
+test response_body::tests::trailer_frame_alone_is_yielded ... ok
+test response_body::tests::trailers_only_response_with_a_truncated_body_is_still_malformed ... ok
+test response_body::tests::trailers_only_response_with_an_empty_body_ends_cleanly ... ok
+test response_body::tests::unary_result_waits_for_eof ... ok
+test response_body::tests::transport_error_after_complete_trailer_reaches_tonic ... ok
+test response_body::tests::tonic_preserves_all_recognized_body_status_codes ... ok
+test response_body::tests::truncated_data_or_trailer_does_not_erase_preceding_message ... ok
+test response_body::tests::unfamiliar_body_status_maps_to_unknown_with_server_metadata ... ok
+test response_body::tests::trailer_is_yielded_whatever_the_chunk_boundaries ... ok
+test response_body::tests::tonic_stream_reports_the_status_sent_in_the_body_trailer ... ok
+test response_body::tests::captured_successful_unary_body_still_succeeds ... ok
+test response_body::tests::tonic_reports_the_status_of_a_captured_body_trailer ... ok
+
+test result: ok. 25 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+   Doc-tests tonic_web_wasm_client
+
+running 1 test
+test vendor\tonic-web-wasm-client\src\lib.rs - (line 17) ... ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "runtime": "v24.22.1",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "endpoint": "https://zcash-mainnet.chainsafe.dev",
+  "tip_at_setup": 3581593,
+  "block_range_inclusive": [
+    3581573,
+    3581582
+  ],
+  "post_count": 17,
+  "recorded_calls": 15,
+  "trailer_to_eof_ms": {
+    "GetLightdInfo": {
+      "count": 5,
+      "min": 0.12960000000020955,
+      "median": 0.16130000000021028,
+      "max": 0.28439999999955035
+    },
+    "GetLatestBlock": {
+      "count": 5,
+      "min": 0.16600000000016735,
+      "median": 0.22469999999975698,
+      "max": 0.36340000000018335
+    },
+    "GetBlockRange": {
+      "count": 5,
+      "min": 0.12470000000030268,
+      "median": 0.2535000000002583,
+      "max": 0.3582000000001244
+    }
+  },
+  "maximum_trailer_to_eof_ms": 0.36340000000018335,
+  "problems": [],
+  "row_failures": [],
+  "evidence": [
+    "node-raw.json",
+    "node-stderr.log",
+    "node-run.json"
+  ]
+}

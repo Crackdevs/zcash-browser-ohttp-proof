@@ -1,0 +1,13 @@
+{
+  "verified_utc": "2026-11-17T05:25:12.710Z",
+  "url": "https://github.com/red-dev-inc/WebZjs/pull/28",
+  "number": 28,
+  "state": "open",
+  "merged": false,
+  "base": "feat/nu7-portable-keys",
+  "base_sha": "9ad0a589f65e767c34334a2992c76bd9c07c2e68",
+  "head": "fix/grpc-web-trailers",
+  "head_sha": "a1891413e5caa33bf3747ab478b9f65cbe0561a1",
+  "head_repo_full_name": "deegalabs/WebZjs",
+  "merged_at": null
+}

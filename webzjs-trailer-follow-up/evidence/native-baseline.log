@@ -1,0 +1,120 @@
+   Compiling unicode-ident v1.0.22
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.44
+   Compiling windows_x86_64_msvc v0.53.1
+   Compiling once_cell v1.21.3
+   Compiling pin-project-lite v0.2.16
+   Compiling bytes v1.11.0
+   Compiling futures-core v0.3.31
+   Compiling windows-targets v0.53.5
+   Compiling windows-link v0.2.1
+   Compiling windows-sys v0.60.2
+   Compiling windows-sys v0.61.2
+   Compiling futures-sink v0.3.31
+   Compiling syn v2.0.114
+   Compiling wasm-bindgen-shared v0.2.100
+   Compiling socket2 v0.6.2
+   Compiling slab v0.4.12
+   Compiling cfg-if v1.0.4
+   Compiling itoa v1.0.17
+   Compiling log v0.4.29
+   Compiling bumpalo v3.19.1
+   Compiling http v1.4.0
+   Compiling futures-channel v0.3.31
+   Compiling tracing-core v0.1.36
+   Compiling mio v1.1.1
+   Compiling rustversion v1.0.22
+   Compiling equivalent v1.0.2
+   Compiling hashbrown v0.16.1
+   Compiling pin-utils v0.1.0
+   Compiling futures-task v0.3.31
+   Compiling wasm-bindgen-backend v0.2.100
+   Compiling indexmap v2.13.0
+   Compiling wasm-bindgen v0.2.100
+   Compiling futures-io v0.3.31
+   Compiling httparse v1.10.1
+   Compiling memchr v2.7.6
+   Compiling wasm-bindgen-macro-support v0.2.100
+   Compiling tokio-macros v2.6.0
+   Compiling zeroize_derive v1.4.3
+   Compiling tracing-attributes v0.1.31
+   Compiling futures-macro v0.3.31
+   Compiling tokio v1.49.0
+   Compiling zeroize v1.8.2
+   Compiling rustls-pki-types v1.14.0
+   Compiling futures-util v0.3.31
+   Compiling wasm-bindgen-macro v0.2.100
+   Compiling tracing v0.1.44
+   Compiling http-body v1.0.1
+   Compiling try-lock v0.2.5
+   Compiling atomic-waker v1.1.2
+   Compiling libc v0.2.180
+   Compiling fnv v1.0.7
+   Compiling want v0.3.1
+   Compiling smallvec v1.15.1
+   Compiling rustls v0.23.36
+   Compiling untrusted v0.9.0
+   Compiling value-bag v1.12.0
+   Compiling tower-service v0.3.3
+   Compiling crc32fast v1.5.0
+   Compiling rustls-webpki v0.103.9
+   Compiling js-sys v0.3.77
+   Compiling adler2 v2.0.1
+   Compiling subtle v2.6.1
+   Compiling tokio-util v0.7.18
+   Compiling simd-adler32 v0.3.8
+   Compiling miniz_oxide v0.8.9
+   Compiling h2 v0.4.13
+   Compiling pin-project-internal v1.1.10
+   Compiling tower-layer v0.3.3
+   Compiling sync_wrapper v1.0.2
+   Compiling thiserror v2.0.18
+   Compiling tower v0.5.3
+   Compiling pin-project v1.1.10
+   Compiling flate2 v1.1.8
+   Compiling hyper v1.8.1
+   Compiling web-sys v0.3.77
+   Compiling tokio-rustls v0.26.4
+   Compiling wasm-bindgen-futures v0.4.50
+   Compiling hyper-util v0.1.19
+   Compiling tokio-stream v0.1.18
+   Compiling hyper-timeout v0.5.2
+   Compiling http-body-util v0.1.3
+   Compiling webpki-roots v1.0.5
+   Compiling thiserror-impl v2.0.18
+   Compiling async-trait v0.1.89
+   Compiling percent-encoding v2.3.2
+   Compiling base64 v0.22.1
+   Compiling byteorder v1.5.0
+   Compiling tonic v0.14.3
+   Compiling wasm-streams v0.4.2
+   Compiling tonic-web-wasm-client v0.8.0 (C:\Users\NewOwner\Documents\Codex\work\w28\vendor\tonic-web-wasm-client)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1m 28s
+     Running unittests src\lib.rs (C:/Users/NewOwner/Documents/Codex/work/tt28\debug\deps\tonic_web_wasm_client-f4f3573095fd0228.exe)
+
+running 15 tests
+test content_type::tests::test_encoding_from_content_type ... ok
+test response_body::tests::data_without_any_trailer_is_malformed ... ok
+test response_body::tests::stream_that_ends_inside_the_trailer_frame_is_malformed ... ok
+test response_body::tests::stream_that_ends_inside_a_data_frame_is_malformed ... ok
+test response_body::tests::nothing_is_yielded_after_the_trailers ... ok
+test response_body::tests::tonic_unary_call_reports_the_status_sent_after_its_message ... ok
+test response_body::tests::ok_trailer_is_yielded_and_ends_the_call_cleanly ... ok
+test response_body::tests::trailer_after_data_is_yielded_as_a_trailers_frame ... ok
+test response_body::tests::trailer_frame_alone_is_yielded ... ok
+test response_body::tests::trailers_only_response_with_a_truncated_body_is_still_malformed ... ok
+test response_body::tests::trailers_only_response_with_an_empty_body_ends_cleanly ... ok
+test response_body::tests::tonic_stream_reports_the_status_sent_in_the_body_trailer ... ok
+test response_body::tests::trailer_is_yielded_whatever_the_chunk_boundaries ... ok
+test response_body::tests::captured_successful_unary_body_still_succeeds ... ok
+test response_body::tests::tonic_reports_the_status_of_a_captured_body_trailer ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+   Doc-tests tonic_web_wasm_client
+
+running 1 test
+test vendor\tonic-web-wasm-client\src\lib.rs - (line 17) ... ignored
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

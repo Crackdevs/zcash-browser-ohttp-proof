@@ -1,0 +1,828 @@
+{
+  "command": [
+    "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1110-778-0_26.1110.778.0_x64__3k8sg7r9htsxt\\dependencies\\node\\bin\\node.exe",
+    "C:\\Users\\NewOwner\\Documents\\Codex\\2026-11-10\\build-a-bounded-feasibility-proof-for\\outputs\\webzjs-trailer-follow-up\\repro\\run-wasm-browser.mjs",
+    "C:\\Users\\NewOwner\\Documents\\Codex\\2026-11-10\\build-a-bounded-feasibility-proof-for\\work\\zcash-browser-ohttp-proof\\browser-probe",
+    "C:/Users/NewOwner/Documents/Codex/work/wa28",
+    "outputs/webzjs-trailer-follow-up/evidence/wasm-chromium"
+  ],
+  "node": "v24.22.1",
+  "platform": "win32",
+  "started": "2026-11-17T05:21:40.997Z",
+  "build": {
+    "checkout": "46dccdcd9e090f9cc07f001c3b1d9f10f2627bfb",
+    "workspace_lock_sha256": "5e9f7874df1709aa98f1430474b9f6959e57e47794ef65f4f3a5b740fbdb1576",
+    "standalone_lock_sha256": "964f0213c9dd2459f2970615bba9179c465b7139545fbf7066e58aeb8beb5575",
+    "standalone_packages_from_workspace": 51,
+    "changed_package_identities": [],
+    "wasm_bindgen": "wasm-bindgen 0.2.100",
+    "source_sha256": "4ae76d287473306cb51b6935b21a2cdbb86b82df6a37527ad718c42a704a9952",
+    "files": {
+      "trailer_harness.d.ts": "04049c75a099e3c4d8e58459239b2dd9ec11675f07e5a9ab6b7f02ebc583650d",
+      "trailer_harness.js": "d8b980f6db3c2b4f551a55dbea82fcbc494d92a598e1ba5efe952f82af4cdf51",
+      "trailer_harness_bg.wasm": "89812604d427cef3d4f8c61a9e638e0fb15eba83116d5462244ddf767e6469fc",
+      "trailer_harness_bg.wasm.d.ts": "2d964af4d4707e7381fe2e9d4c554f387fbdcba795c4084f6adc016e52742c9e"
+    }
+  },
+  "checks": {
+    "body_success": {
+      "status": "PASS",
+      "details": {
+        "unary": {
+          "value": [
+            10,
+            20,
+            30
+          ]
+        },
+        "stream": {
+          "messages": [
+            [
+              10,
+              20,
+              30
+            ]
+          ],
+          "terminal": {
+            "value": null
+          }
+        }
+      }
+    },
+    "body-error": {
+      "status": "PASS",
+      "details": {
+        "unary": {
+          "code": 13,
+          "error": "fixture failed",
+          "metadata": "kept"
+        },
+        "stream": {
+          "messages": [
+            [
+              10,
+              20,
+              30
+            ]
+          ],
+          "terminal": {
+            "code": 13,
+            "error": "fixture failed",
+            "metadata": "kept"
+          }
+        }
+      }
+    },
+    "unknown": {
+      "status": "PASS",
+      "details": {
+        "unary": {
+          "code": 2,
+          "error": "new code",
+          "metadata": "kept"
+        },
+        "stream": {
+          "messages": [
+            [
+              10,
+              20,
+              30
+            ]
+          ],
+          "terminal": {
+            "code": 2,
+            "error": "new code",
+            "metadata": "kept"
+          }
+        }
+      }
+    },
+    "missing-status": {
+      "status": "PASS",
+      "details": {
+        "unary": {
+          "code": 2,
+          "error": "malformed response"
+        },
+        "stream": {
+          "messages": [
+            [
+              10,
+              20,
+              30
+            ]
+          ],
+          "terminal": {
+            "code": 2,
+            "error": "malformed response"
+          }
+        }
+      }
+    },
+    "duplicate-status": {
+      "status": "PASS",
+      "details": {
+        "unary": {
+          "code": 2,
+          "error": "malformed response"
+        },
+        "stream": {
+          "messages": [
+            [
+              10,
+              20,
+              30
+            ]
+          ],
+          "terminal": {
+            "code": 2,
+            "error": "malformed response"
+          }
+        }
+      }
+    },
+    "malformed-status": {
+      "status": "PASS",
+      "details": {
+        "unary": {
+          "code": 2,
+          "error": "malformed response"
+        },
+        "stream": {
+          "messages": [
+            [
+              10,
+              20,
+              30
+            ]
+          ],
+          "terminal": {
+            "code": 2,
+            "error": "malformed response"
+          }
+        }
+      }
+    },
+    "truncated": {
+      "status": "PASS",
+      "details": {
+        "unary": {
+          "code": 2,
+          "error": "malformed response"
+        },
+        "stream": {
+          "messages": [
+            [
+              10,
+              20,
+              30
+            ]
+          ],
+          "terminal": {
+            "code": 2,
+            "error": "malformed response"
+          }
+        }
+      }
+    },
+    "same-chunk-extra": {
+      "status": "PASS",
+      "details": {
+        "unary": {
+          "code": 2,
+          "error": "malformed response"
+        },
+        "stream": {
+          "messages": [
+            [
+              10,
+              20,
+              30
+            ]
+          ],
+          "terminal": {
+            "code": 2,
+            "error": "malformed response"
+          }
+        }
+      }
+    },
+    "headers_only_ok": {
+      "status": "PASS",
+      "details": {
+        "unary": {
+          "code": 13,
+          "error": "Missing response message."
+        },
+        "stream": {
+          "messages": [],
+          "terminal": {
+            "value": null
+          }
+        }
+      }
+    },
+    "headers_only_error": {
+      "status": "PASS",
+      "details": {
+        "unary": {
+          "code": 5,
+          "error": "header status"
+        },
+        "stream": {
+          "messages": [],
+          "terminal": {
+            "code": 5,
+            "error": "header status"
+          }
+        }
+      }
+    },
+    "delayed-stream": {
+      "status": "PASS",
+      "details": {
+        "first": {
+          "value": [
+            10,
+            20,
+            30
+          ]
+        },
+        "terminalBeforeRelease": null,
+        "heldOpen": true,
+        "terminal": {
+          "value": null
+        },
+        "upstreamClosedEarly": false
+      }
+    },
+    "delayed-unary": {
+      "status": "PASS",
+      "details": {
+        "first": null,
+        "terminalBeforeRelease": null,
+        "heldOpen": true,
+        "terminal": {
+          "value": [
+            10,
+            20,
+            30
+          ]
+        },
+        "upstreamClosedEarly": false
+      }
+    },
+    "late-bytes": {
+      "status": "PASS",
+      "details": {
+        "first": {
+          "value": [
+            10,
+            20,
+            30
+          ]
+        },
+        "terminalBeforeRelease": null,
+        "heldOpen": true,
+        "terminal": {
+          "code": 2,
+          "error": "malformed response"
+        },
+        "upstreamClosedEarly": false
+      }
+    },
+    "connection-reset": {
+      "status": "PASS",
+      "details": {
+        "first": {
+          "value": [
+            10,
+            20,
+            30
+          ]
+        },
+        "terminalBeforeRelease": null,
+        "heldOpen": true,
+        "terminal": {
+          "code": 2,
+          "error": "js api error: TypeError: network error"
+        },
+        "upstreamClosedEarly": true
+      }
+    },
+    "deadline-wait": {
+      "status": "PASS",
+      "details": {
+        "first": {
+          "value": [
+            10,
+            20,
+            30
+          ]
+        },
+        "terminalBeforeRelease": null,
+        "heldOpen": true,
+        "terminal": {
+          "code": 4,
+          "error": "Request timed out"
+        },
+        "upstreamClosedEarly": true
+      }
+    }
+  },
+  "events": [
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:42.450Z",
+      "name": "ok",
+      "method": "Unary",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:42.451Z",
+      "name": "ok",
+      "method": "Unary",
+      "writableFinished": true
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:42.589Z",
+      "name": "ok",
+      "method": "Stream",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:42.589Z",
+      "name": "ok",
+      "method": "Stream",
+      "writableFinished": true
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:42.628Z",
+      "name": "body-error",
+      "method": "Unary",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:42.629Z",
+      "name": "body-error",
+      "method": "Unary",
+      "writableFinished": true
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:42.652Z",
+      "name": "body-error",
+      "method": "Stream",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:42.652Z",
+      "name": "body-error",
+      "method": "Stream",
+      "writableFinished": true
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:42.660Z",
+      "name": "unknown",
+      "method": "Unary",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:42.661Z",
+      "name": "unknown",
+      "method": "Unary",
+      "writableFinished": true
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:42.685Z",
+      "name": "unknown",
+      "method": "Stream",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:42.685Z",
+      "name": "unknown",
+      "method": "Stream",
+      "writableFinished": true
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:42.707Z",
+      "name": "missing-status",
+      "method": "Unary",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:42.708Z",
+      "name": "missing-status",
+      "method": "Unary",
+      "writableFinished": true
+    },
+    {
+      "event": "request-failed",
+      "at": "2026-11-17T05:21:42.727Z",
+      "url": "http://127.0.0.1:63899/fixture/missing-status/followup.Probe/Unary",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:42.734Z",
+      "name": "missing-status",
+      "method": "Stream",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:42.734Z",
+      "name": "missing-status",
+      "method": "Stream",
+      "writableFinished": true
+    },
+    {
+      "event": "request-failed",
+      "at": "2026-11-17T05:21:42.751Z",
+      "url": "http://127.0.0.1:63899/fixture/missing-status/followup.Probe/Stream",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:42.754Z",
+      "name": "duplicate-status",
+      "method": "Unary",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:42.754Z",
+      "name": "duplicate-status",
+      "method": "Unary",
+      "writableFinished": true
+    },
+    {
+      "event": "request-failed",
+      "at": "2026-11-17T05:21:42.783Z",
+      "url": "http://127.0.0.1:63899/fixture/duplicate-status/followup.Probe/Unary",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:42.787Z",
+      "name": "duplicate-status",
+      "method": "Stream",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:42.788Z",
+      "name": "duplicate-status",
+      "method": "Stream",
+      "writableFinished": true
+    },
+    {
+      "event": "request-failed",
+      "at": "2026-11-17T05:21:42.811Z",
+      "url": "http://127.0.0.1:63899/fixture/duplicate-status/followup.Probe/Stream",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:42.815Z",
+      "name": "malformed-status",
+      "method": "Unary",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:42.816Z",
+      "name": "malformed-status",
+      "method": "Unary",
+      "writableFinished": true
+    },
+    {
+      "event": "request-failed",
+      "at": "2026-11-17T05:21:42.841Z",
+      "url": "http://127.0.0.1:63899/fixture/malformed-status/followup.Probe/Unary",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:42.845Z",
+      "name": "malformed-status",
+      "method": "Stream",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:42.845Z",
+      "name": "malformed-status",
+      "method": "Stream",
+      "writableFinished": true
+    },
+    {
+      "event": "request-failed",
+      "at": "2026-11-17T05:21:42.871Z",
+      "url": "http://127.0.0.1:63899/fixture/malformed-status/followup.Probe/Stream",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:42.876Z",
+      "name": "truncated",
+      "method": "Unary",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:42.876Z",
+      "name": "truncated",
+      "method": "Unary",
+      "writableFinished": true
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:42.889Z",
+      "name": "truncated",
+      "method": "Stream",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:42.890Z",
+      "name": "truncated",
+      "method": "Stream",
+      "writableFinished": true
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:42.935Z",
+      "name": "same-chunk-extra",
+      "method": "Unary",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:42.935Z",
+      "name": "same-chunk-extra",
+      "method": "Unary",
+      "writableFinished": true
+    },
+    {
+      "event": "request-failed",
+      "at": "2026-11-17T05:21:42.980Z",
+      "url": "http://127.0.0.1:63899/fixture/same-chunk-extra/followup.Probe/Unary",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:42.986Z",
+      "name": "same-chunk-extra",
+      "method": "Stream",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:42.986Z",
+      "name": "same-chunk-extra",
+      "method": "Stream",
+      "writableFinished": true
+    },
+    {
+      "event": "request-failed",
+      "at": "2026-11-17T05:21:42.994Z",
+      "url": "http://127.0.0.1:63899/fixture/same-chunk-extra/followup.Probe/Stream",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:43.005Z",
+      "name": "header-ok",
+      "method": "Unary",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:43.005Z",
+      "name": "header-ok",
+      "method": "Unary",
+      "writableFinished": true
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:43.022Z",
+      "name": "header-ok",
+      "method": "Stream",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:43.023Z",
+      "name": "header-ok",
+      "method": "Stream",
+      "writableFinished": true
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:43.062Z",
+      "name": "header-error",
+      "method": "Unary",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:43.062Z",
+      "name": "header-error",
+      "method": "Unary",
+      "writableFinished": true
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:43.088Z",
+      "name": "header-error",
+      "method": "Stream",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:43.088Z",
+      "name": "header-error",
+      "method": "Stream",
+      "writableFinished": true
+    },
+    {
+      "event": "request-failed",
+      "at": "2026-11-17T05:21:43.103Z",
+      "url": "http://127.0.0.1:63899/fixture/header-error/followup.Probe/Unary",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "event": "request-failed",
+      "at": "2026-11-17T05:21:43.106Z",
+      "url": "http://127.0.0.1:63899/fixture/header-error/followup.Probe/Stream",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:43.113Z",
+      "name": "delayed-stream",
+      "method": "Stream",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "trailer-sent-without-eof",
+      "at": "2026-11-17T05:21:43.113Z",
+      "name": "delayed-stream",
+      "bytes": 29
+    },
+    {
+      "event": "server-release",
+      "at": "2026-11-17T05:21:43.149Z",
+      "name": "delayed-stream"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:43.150Z",
+      "name": "delayed-stream",
+      "method": "Stream",
+      "writableFinished": true
+    },
+    {
+      "event": "request-failed",
+      "at": "2026-11-17T05:21:43.155Z",
+      "url": "http://127.0.0.1:63899/fixture/delayed-stream/followup.Probe/Stream",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:43.159Z",
+      "name": "delayed-unary",
+      "method": "Unary",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "trailer-sent-without-eof",
+      "at": "2026-11-17T05:21:43.159Z",
+      "name": "delayed-unary",
+      "bytes": 29
+    },
+    {
+      "event": "server-release",
+      "at": "2026-11-17T05:21:43.182Z",
+      "name": "delayed-unary"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:43.183Z",
+      "name": "delayed-unary",
+      "method": "Unary",
+      "writableFinished": true
+    },
+    {
+      "event": "request-failed",
+      "at": "2026-11-17T05:21:43.185Z",
+      "url": "http://127.0.0.1:63899/fixture/delayed-unary/followup.Probe/Unary",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:43.190Z",
+      "name": "late-bytes",
+      "method": "Stream",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "trailer-sent-without-eof",
+      "at": "2026-11-17T05:21:43.190Z",
+      "name": "late-bytes",
+      "bytes": 29
+    },
+    {
+      "event": "server-release",
+      "at": "2026-11-17T05:21:43.223Z",
+      "name": "late-bytes"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:43.224Z",
+      "name": "late-bytes",
+      "method": "Stream",
+      "writableFinished": true
+    },
+    {
+      "event": "request-failed",
+      "at": "2026-11-17T05:21:43.236Z",
+      "url": "http://127.0.0.1:63899/fixture/late-bytes/followup.Probe/Stream",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:43.240Z",
+      "name": "connection-reset",
+      "method": "Stream",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "trailer-sent-without-eof",
+      "at": "2026-11-17T05:21:43.240Z",
+      "name": "connection-reset",
+      "bytes": 29
+    },
+    {
+      "event": "server-reset",
+      "at": "2026-11-17T05:21:43.314Z",
+      "name": "connection-reset"
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:43.318Z",
+      "name": "connection-reset",
+      "method": "Stream",
+      "writableFinished": false
+    },
+    {
+      "event": "request-failed",
+      "at": "2026-11-17T05:21:43.332Z",
+      "url": "http://127.0.0.1:63899/fixture/connection-reset/followup.Probe/Stream",
+      "error": "net::ERR_INCOMPLETE_CHUNKED_ENCODING"
+    },
+    {
+      "event": "fixture-request",
+      "at": "2026-11-17T05:21:43.337Z",
+      "name": "deadline-wait",
+      "method": "Stream",
+      "contentType": "application/grpc-web+proto"
+    },
+    {
+      "event": "trailer-sent-without-eof",
+      "at": "2026-11-17T05:21:43.337Z",
+      "name": "deadline-wait",
+      "bytes": 29
+    },
+    {
+      "event": "response-close",
+      "at": "2026-11-17T05:21:45.847Z",
+      "name": "deadline-wait",
+      "method": "Stream",
+      "writableFinished": false
+    },
+    {
+      "event": "request-failed",
+      "at": "2026-11-17T05:21:45.848Z",
+      "url": "http://127.0.0.1:63899/fixture/deadline-wait/followup.Probe/Stream",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "chromium": "156.0.8078.4",
+  "finished": "2026-11-17T05:21:46.052Z",
+  "status": "PASS"
+}

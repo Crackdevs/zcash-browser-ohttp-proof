@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "crate": "tonic-web-wasm-client 0.8.0",
+  "archive_sha256": "898cd44be5e23e59d2956056538f1d6b3c5336629d384ffd2d92e76f87fb98ff",
+  "patch_cli": "patch -p1 --fuzz=0 --batch --forward",
+  "steps": [
+    {
+      "patch": "trailers-only.patch",
+      "sha256": "9101b3a680ba2b8ca14a717eac6fd6f80554701204b598bd23dff2cc1019f0c4",
+      "exit_code": 0,
+      "stdout": "patching file src/call.rs\npatching file src/response_body.rs\n",
+      "stderr": ""
+    },
+    {
+      "patch": "trailers.patch",
+      "sha256": "e140150ffeb9b6964262ca71ae48a774d7c9f8381473635d2543dc42e4b79132",
+      "exit_code": 0,
+      "stdout": "patching file src/body_stream.rs\npatching file src/response_body.rs\n",
+      "stderr": ""
+    },
+    {
+      "patch": "trailers-completion.patch",
+      "sha256": "2b14630097f45b0efea4aaafd54dd3452981da5b4956b6e1b3eee65f7759d316",
+      "exit_code": 0,
+      "stdout": "patching file src/body_stream.rs\npatching file src/response_body.rs\n",
+      "stderr": ""
+    }
+  ],
+  "identical_src_files": [
+    "abort_guard.rs",
+    "body_stream.rs",
+    "call.rs",
+    "client.rs",
+    "content_type.rs",
+    "error.rs",
+    "fetch.rs",
+    "lib.rs",
+    "options/cache.rs",
+    "options/credentials.rs",
+    "options/mod.rs",
+    "options/mode.rs",
+    "options/redirect.rs",
+    "options/referrer_policy.rs",
+    "response_body.rs",
+    "response_body/fixtures/body-trailer-error.bin",
+    "response_body/fixtures/data-then-trailer-ok.bin",
+    "response_body/tests.rs"
+  ],
+  "missing_or_different_files": []
+}

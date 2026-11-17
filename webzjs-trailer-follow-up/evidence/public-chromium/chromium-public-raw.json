@@ -1,0 +1,1328 @@
+{
+  "command": [
+    "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1110-778-0_26.1110.778.0_x64__3k8sg7r9htsxt\\dependencies\\node\\bin\\node.exe",
+    "C:\\Users\\NewOwner\\Documents\\Codex\\2026-11-10\\build-a-bounded-feasibility-proof-for\\outputs\\webzjs-trailer-follow-up\\repro\\run-chromium-public.mjs",
+    "C:\\Users\\NewOwner\\Documents\\Codex\\2026-11-10\\build-a-bounded-feasibility-proof-for\\work\\zcash-browser-ohttp-proof\\browser-probe",
+    "outputs/webzjs-trailer-follow-up/evidence/public-chromium"
+  ],
+  "endpoint": "https://zcash-mainnet.chainsafe.dev",
+  "node": "v24.22.1",
+  "platform": "win32",
+  "chromeArgs": [],
+  "normalBrowserCORS": true,
+  "perRequestTimeoutMs": 8000,
+  "measurementTimeoutMs": 160000,
+  "start": "2026-11-17T05:10:18.045Z",
+  "events": [
+    {
+      "event": "request",
+      "at": "2026-11-17T05:10:20.140Z",
+      "requestId": "6496.2",
+      "url": "https://zcash-mainnet.chainsafe.dev/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetLightdInfo",
+      "method": "POST",
+      "type": "Fetch"
+    },
+    {
+      "event": "request",
+      "at": "2026-11-17T05:10:20.141Z",
+      "requestId": "8392438EF064E5E4714842ECA5A7514F",
+      "url": "https://zcash-mainnet.chainsafe.dev/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetLightdInfo",
+      "method": "OPTIONS",
+      "type": "Other"
+    },
+    {
+      "event": "response",
+      "at": "2026-11-17T05:10:23.042Z",
+      "requestId": "8392438EF064E5E4714842ECA5A7514F",
+      "status": 200,
+      "protocol": "h2"
+    },
+    {
+      "event": "response",
+      "at": "2026-11-17T05:10:23.106Z",
+      "requestId": "6496.2",
+      "status": 200,
+      "protocol": "h2"
+    },
+    {
+      "event": "request",
+      "at": "2026-11-17T05:10:23.114Z",
+      "requestId": "6496.3",
+      "url": "https://zcash-mainnet.chainsafe.dev/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetLatestBlock",
+      "method": "POST",
+      "type": "Fetch"
+    },
+    {
+      "event": "request",
+      "at": "2026-11-17T05:10:23.114Z",
+      "requestId": "20CC269EE2A6C665244056CC941C3E75",
+      "url": "https://zcash-mainnet.chainsafe.dev/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetLatestBlock",
+      "method": "OPTIONS",
+      "type": "Other"
+    },
+    {
+      "event": "response",
+      "at": "2026-11-17T05:10:23.155Z",
+      "requestId": "20CC269EE2A6C665244056CC941C3E75",
+      "status": 200,
+      "protocol": "h2"
+    },
+    {
+      "event": "response",
+      "at": "2026-11-17T05:10:23.211Z",
+      "requestId": "6496.3",
+      "status": 200,
+      "protocol": "h2"
+    },
+    {
+      "event": "request",
+      "at": "2026-11-17T05:10:23.217Z",
+      "requestId": "6496.4",
+      "url": "https://zcash-mainnet.chainsafe.dev/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetLightdInfo",
+      "method": "POST",
+      "type": "Fetch"
+    },
+    {
+      "event": "response",
+      "at": "2026-11-17T05:10:23.273Z",
+      "requestId": "6496.4",
+      "status": 200,
+      "protocol": "h2"
+    },
+    {
+      "event": "request",
+      "at": "2026-11-17T05:10:23.679Z",
+      "requestId": "6496.5",
+      "url": "https://zcash-mainnet.chainsafe.dev/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetLatestBlock",
+      "method": "POST",
+      "type": "Fetch"
+    },
+    {
+      "event": "response",
+      "at": "2026-11-17T05:10:23.736Z",
+      "requestId": "6496.5",
+      "status": 200,
+      "protocol": "h2"
+    },
+    {
+      "event": "request",
+      "at": "2026-11-17T05:10:24.151Z",
+      "requestId": "6496.6",
+      "url": "https://zcash-mainnet.chainsafe.dev/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetBlockRange",
+      "method": "POST",
+      "type": "Fetch"
+    },
+    {
+      "event": "request",
+      "at": "2026-11-17T05:10:24.151Z",
+      "requestId": "C6F21389B84DAF4EF1302C8713638392",
+      "url": "https://zcash-mainnet.chainsafe.dev/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetBlockRange",
+      "method": "OPTIONS",
+      "type": "Other"
+    },
+    {
+      "event": "response",
+      "at": "2026-11-17T05:10:24.189Z",
+      "requestId": "C6F21389B84DAF4EF1302C8713638392",
+      "status": 200,
+      "protocol": "h2"
+    },
+    {
+      "event": "response",
+      "at": "2026-11-17T05:10:24.249Z",
+      "requestId": "6496.6",
+      "status": 200,
+      "protocol": "h2"
+    },
+    {
+      "event": "request",
+      "at": "2026-11-17T05:10:24.664Z",
+      "requestId": "6496.7",
+      "url": "https://zcash-mainnet.chainsafe.dev/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetLightdInfo",
+      "method": "POST",
+      "type": "Fetch"
+    },
+    {
+      "event": "response",
+      "at": "2026-11-17T05:10:24.717Z",
+      "requestId": "6496.7",
+      "status": 200,
+      "protocol": "h2"
+    },
+    {
+      "event": "request",
+      "at": "2026-11-17T05:10:25.119Z",
+      "requestId": "6496.8",
+      "url": "https://zcash-mainnet.chainsafe.dev/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetLatestBlock",
+      "method": "POST",
+      "type": "Fetch"
+    },
+    {
+      "event": "response",
+      "at": "2026-11-17T05:10:25.173Z",
+      "requestId": "6496.8",
+      "status": 200,
+      "protocol": "h2"
+    },
+    {
+      "event": "request",
+      "at": "2026-11-17T05:10:25.587Z",
+      "requestId": "6496.9",
+      "url": "https://zcash-mainnet.chainsafe.dev/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetBlockRange",
+      "method": "POST",
+      "type": "Fetch"
+    },
+    {
+      "event": "response",
+      "at": "2026-11-17T05:10:25.643Z",
+      "requestId": "6496.9",
+      "status": 200,
+      "protocol": "h2"
+    },
+    {
+      "event": "request",
+      "at": "2026-11-17T05:10:26.051Z",
+      "requestId": "6496.10",
+      "url": "https://zcash-mainnet.chainsafe.dev/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetLightdInfo",
+      "method": "POST",
+      "type": "Fetch"
+    },
+    {
+      "event": "response",
+      "at": "2026-11-17T05:10:26.105Z",
+      "requestId": "6496.10",
+      "status": 200,
+      "protocol": "h2"
+    },
+    {
+      "event": "request",
+      "at": "2026-11-17T05:10:26.522Z",
+      "requestId": "6496.11",
+      "url": "https://zcash-mainnet.chainsafe.dev/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetLatestBlock",
+      "method": "POST",
+      "type": "Fetch"
+    },
+    {
+      "event": "response",
+      "at": "2026-11-17T05:10:26.573Z",
+      "requestId": "6496.11",
+      "status": 200,
+      "protocol": "h2"
+    },
+    {
+      "event": "request",
+      "at": "2026-11-17T05:10:26.977Z",
+      "requestId": "6496.12",
+      "url": "https://zcash-mainnet.chainsafe.dev/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetBlockRange",
+      "method": "POST",
+      "type": "Fetch"
+    },
+    {
+      "event": "response",
+      "at": "2026-11-17T05:10:27.029Z",
+      "requestId": "6496.12",
+      "status": 200,
+      "protocol": "h2"
+    },
+    {
+      "event": "request",
+      "at": "2026-11-17T05:10:27.443Z",
+      "requestId": "6496.13",
+      "url": "https://zcash-mainnet.chainsafe.dev/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetLightdInfo",
+      "method": "POST",
+      "type": "Fetch"
+    },
+    {
+      "event": "response",
+      "at": "2026-11-17T05:10:27.501Z",
+      "requestId": "6496.13",
+      "status": 200,
+      "protocol": "h2"
+    },
+    {
+      "event": "request",
+      "at": "2026-11-17T05:10:27.910Z",
+      "requestId": "6496.14",
+      "url": "https://zcash-mainnet.chainsafe.dev/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetLatestBlock",
+      "method": "POST",
+      "type": "Fetch"
+    },
+    {
+      "event": "response",
+      "at": "2026-11-17T05:10:27.963Z",
+      "requestId": "6496.14",
+      "status": 200,
+      "protocol": "h2"
+    },
+    {
+      "event": "request",
+      "at": "2026-11-17T05:10:28.373Z",
+      "requestId": "6496.15",
+      "url": "https://zcash-mainnet.chainsafe.dev/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetBlockRange",
+      "method": "POST",
+      "type": "Fetch"
+    },
+    {
+      "event": "response",
+      "at": "2026-11-17T05:10:28.437Z",
+      "requestId": "6496.15",
+      "status": 200,
+      "protocol": "h2"
+    },
+    {
+      "event": "request",
+      "at": "2026-11-17T05:10:28.839Z",
+      "requestId": "6496.16",
+      "url": "https://zcash-mainnet.chainsafe.dev/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetLightdInfo",
+      "method": "POST",
+      "type": "Fetch"
+    },
+    {
+      "event": "response",
+      "at": "2026-11-17T05:10:28.892Z",
+      "requestId": "6496.16",
+      "status": 200,
+      "protocol": "h2"
+    },
+    {
+      "event": "request",
+      "at": "2026-11-17T05:10:29.295Z",
+      "requestId": "6496.17",
+      "url": "https://zcash-mainnet.chainsafe.dev/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetLatestBlock",
+      "method": "POST",
+      "type": "Fetch"
+    },
+    {
+      "event": "response",
+      "at": "2026-11-17T05:10:29.353Z",
+      "requestId": "6496.17",
+      "status": 200,
+      "protocol": "h2"
+    },
+    {
+      "event": "request",
+      "at": "2026-11-17T05:10:29.759Z",
+      "requestId": "6496.18",
+      "url": "https://zcash-mainnet.chainsafe.dev/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetBlockRange",
+      "method": "POST",
+      "type": "Fetch"
+    },
+    {
+      "event": "response",
+      "at": "2026-11-17T05:10:29.814Z",
+      "requestId": "6496.18",
+      "status": 200,
+      "protocol": "h2"
+    }
+  ],
+  "chromium": "156.0.8078.4",
+  "origin": "http://127.0.0.1:58774",
+  "measurement": {
+    "started": "2026-11-17T05:10:20.121Z",
+    "finished": "2026-11-17T05:10:30.224Z",
+    "requestsStarted": 17,
+    "setup": [
+      {
+        "id": 1,
+        "method": "GetLightdInfo",
+        "at": "2026-11-17T05:10:20.124Z",
+        "requestHex": "0000000000",
+        "frames": [
+          {
+            "type": "0x00",
+            "len": 165
+          },
+          {
+            "type": "0x80",
+            "len": 16
+          }
+        ],
+        "heights": [],
+        "trailerText": "grpc-status: 0\r\n",
+        "trailerMs": 2981.400000035763,
+        "trailerToEndMs": 3,
+        "extraBytesAfterTrailer": 0,
+        "firstDataMs": 2981.400000035763,
+        "endMs": 2984.400000035763,
+        "totalBytes": 191,
+        "eof": true,
+        "status": 200,
+        "contentType": "application/grpc-web",
+        "headerGrpcStatus": null,
+        "headerGrpcMessage": null,
+        "visibleHeaderNames": [
+          "access-control-allow-credentials",
+          "access-control-allow-origin",
+          "content-type",
+          "date",
+          "fly-request-id",
+          "server",
+          "vary",
+          "via",
+          "x-backend",
+          "x-cache",
+          "x-region"
+        ],
+        "unparsedBytes": 0
+      },
+      {
+        "id": 2,
+        "method": "GetLatestBlock",
+        "at": "2026-11-17T05:10:23.112Z",
+        "requestHex": "0000000000",
+        "frames": [
+          {
+            "type": "0x00",
+            "len": 39
+          },
+          {
+            "type": "0x80",
+            "len": 16
+          }
+        ],
+        "heights": [
+          3581603
+        ],
+        "trailerText": "grpc-status: 0\r\n",
+        "trailerMs": 98.10000002384186,
+        "trailerToEndMs": 4,
+        "extraBytesAfterTrailer": 0,
+        "firstDataMs": 98.10000002384186,
+        "endMs": 102.10000002384186,
+        "totalBytes": 65,
+        "eof": true,
+        "status": 200,
+        "contentType": "application/grpc-web",
+        "headerGrpcStatus": null,
+        "headerGrpcMessage": null,
+        "visibleHeaderNames": [
+          "access-control-allow-credentials",
+          "access-control-allow-origin",
+          "content-type",
+          "date",
+          "fly-request-id",
+          "server",
+          "vary",
+          "via",
+          "x-backend",
+          "x-cache",
+          "x-region"
+        ],
+        "unparsedBytes": 0
+      }
+    ],
+    "rows": [
+      {
+        "run": 1,
+        "id": 3,
+        "method": "GetLightdInfo",
+        "at": "2026-11-17T05:10:23.215Z",
+        "requestHex": "0000000000",
+        "frames": [
+          {
+            "type": "0x00",
+            "len": 165
+          },
+          {
+            "type": "0x80",
+            "len": 16
+          }
+        ],
+        "heights": [],
+        "trailerText": "grpc-status: 0\r\n",
+        "trailerMs": 56.299999952316284,
+        "trailerToEndMs": 0.5,
+        "extraBytesAfterTrailer": 0,
+        "firstDataMs": 56.299999952316284,
+        "endMs": 56.799999952316284,
+        "totalBytes": 191,
+        "eof": true,
+        "status": 200,
+        "contentType": "application/grpc-web",
+        "headerGrpcStatus": null,
+        "headerGrpcMessage": null,
+        "visibleHeaderNames": [
+          "access-control-allow-credentials",
+          "access-control-allow-origin",
+          "content-type",
+          "date",
+          "fly-request-id",
+          "server",
+          "vary",
+          "via",
+          "x-backend",
+          "x-cache",
+          "x-region"
+        ],
+        "unparsedBytes": 0
+      },
+      {
+        "run": 1,
+        "id": 4,
+        "method": "GetLatestBlock",
+        "at": "2026-11-17T05:10:23.678Z",
+        "requestHex": "0000000000",
+        "frames": [
+          {
+            "type": "0x00",
+            "len": 39
+          },
+          {
+            "type": "0x80",
+            "len": 16
+          }
+        ],
+        "heights": [
+          3581603
+        ],
+        "trailerText": "grpc-status: 0\r\n",
+        "trailerMs": 58.799999952316284,
+        "trailerToEndMs": 0.30000001192092896,
+        "extraBytesAfterTrailer": 0,
+        "firstDataMs": 58.799999952316284,
+        "endMs": 59.09999996423721,
+        "totalBytes": 65,
+        "eof": true,
+        "status": 200,
+        "contentType": "application/grpc-web",
+        "headerGrpcStatus": null,
+        "headerGrpcMessage": null,
+        "visibleHeaderNames": [
+          "access-control-allow-credentials",
+          "access-control-allow-origin",
+          "content-type",
+          "date",
+          "fly-request-id",
+          "server",
+          "vary",
+          "via",
+          "x-backend",
+          "x-cache",
+          "x-region"
+        ],
+        "unparsedBytes": 0
+      },
+      {
+        "run": 1,
+        "id": 5,
+        "method": "GetBlockRange",
+        "at": "2026-11-17T05:10:24.149Z",
+        "requestHex": "000000000e0a05088fcdda0112050898cdda01",
+        "frames": [
+          {
+            "type": "0x00",
+            "len": 2673
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 452
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 452
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 1364
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x80",
+            "len": 16
+          }
+        ],
+        "heights": [
+          3581583,
+          3581584,
+          3581585,
+          3581586,
+          3581587,
+          3581588,
+          3581589,
+          3581590,
+          3581591,
+          3581592
+        ],
+        "trailerText": "grpc-status: 0\r\n",
+        "trailerMs": 99.60000002384186,
+        "trailerToEndMs": 0.5,
+        "extraBytesAfterTrailer": 0,
+        "firstDataMs": 99.60000002384186,
+        "endMs": 100.10000002384186,
+        "totalBytes": 5582,
+        "eof": true,
+        "status": 200,
+        "contentType": "application/grpc-web",
+        "headerGrpcStatus": null,
+        "headerGrpcMessage": null,
+        "visibleHeaderNames": [
+          "access-control-allow-credentials",
+          "access-control-allow-origin",
+          "content-type",
+          "date",
+          "fly-request-id",
+          "server",
+          "vary",
+          "via",
+          "x-backend",
+          "x-cache",
+          "x-region"
+        ],
+        "unparsedBytes": 0
+      },
+      {
+        "run": 2,
+        "id": 6,
+        "method": "GetLightdInfo",
+        "at": "2026-11-17T05:10:24.663Z",
+        "requestHex": "0000000000",
+        "frames": [
+          {
+            "type": "0x00",
+            "len": 270
+          },
+          {
+            "type": "0x80",
+            "len": 16
+          }
+        ],
+        "heights": [],
+        "trailerText": "grpc-status: 0\r\n",
+        "trailerMs": 54.30000001192093,
+        "trailerToEndMs": 0.09999996423721313,
+        "extraBytesAfterTrailer": 0,
+        "firstDataMs": 54.30000001192093,
+        "endMs": 54.39999997615814,
+        "totalBytes": 296,
+        "eof": true,
+        "status": 200,
+        "contentType": "application/grpc-web",
+        "headerGrpcStatus": null,
+        "headerGrpcMessage": null,
+        "visibleHeaderNames": [
+          "access-control-allow-credentials",
+          "access-control-allow-origin",
+          "content-type",
+          "date",
+          "fly-request-id",
+          "server",
+          "vary",
+          "via",
+          "x-backend",
+          "x-cache",
+          "x-region"
+        ],
+        "unparsedBytes": 0
+      },
+      {
+        "run": 2,
+        "id": 7,
+        "method": "GetLatestBlock",
+        "at": "2026-11-17T05:10:25.118Z",
+        "requestHex": "0000000000",
+        "frames": [
+          {
+            "type": "0x00",
+            "len": 39
+          },
+          {
+            "type": "0x80",
+            "len": 16
+          }
+        ],
+        "heights": [
+          3581603
+        ],
+        "trailerText": "grpc-status: 0\r\n",
+        "trailerMs": 55.09999996423721,
+        "trailerToEndMs": 1.7000000476837158,
+        "extraBytesAfterTrailer": 0,
+        "firstDataMs": 55.09999996423721,
+        "endMs": 56.80000001192093,
+        "totalBytes": 65,
+        "eof": true,
+        "status": 200,
+        "contentType": "application/grpc-web",
+        "headerGrpcStatus": null,
+        "headerGrpcMessage": null,
+        "visibleHeaderNames": [
+          "access-control-allow-credentials",
+          "access-control-allow-origin",
+          "content-type",
+          "date",
+          "fly-request-id",
+          "server",
+          "vary",
+          "via",
+          "x-backend",
+          "x-cache",
+          "x-region"
+        ],
+        "unparsedBytes": 0
+      },
+      {
+        "run": 2,
+        "id": 8,
+        "method": "GetBlockRange",
+        "at": "2026-11-17T05:10:25.585Z",
+        "requestHex": "000000000e0a05088fcdda0112050898cdda01",
+        "frames": [
+          {
+            "type": "0x00",
+            "len": 2673
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 452
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 452
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 1364
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x80",
+            "len": 16
+          }
+        ],
+        "heights": [
+          3581583,
+          3581584,
+          3581585,
+          3581586,
+          3581587,
+          3581588,
+          3581589,
+          3581590,
+          3581591,
+          3581592
+        ],
+        "trailerText": "grpc-status: 0\r\n",
+        "trailerMs": 57.90000003576279,
+        "trailerToEndMs": 0.19999998807907104,
+        "extraBytesAfterTrailer": 0,
+        "firstDataMs": 57.90000003576279,
+        "endMs": 58.10000002384186,
+        "totalBytes": 5582,
+        "eof": true,
+        "status": 200,
+        "contentType": "application/grpc-web",
+        "headerGrpcStatus": null,
+        "headerGrpcMessage": null,
+        "visibleHeaderNames": [
+          "access-control-allow-credentials",
+          "access-control-allow-origin",
+          "content-type",
+          "date",
+          "fly-request-id",
+          "server",
+          "vary",
+          "via",
+          "x-backend",
+          "x-cache",
+          "x-region"
+        ],
+        "unparsedBytes": 0
+      },
+      {
+        "run": 3,
+        "id": 9,
+        "method": "GetLightdInfo",
+        "at": "2026-11-17T05:10:26.050Z",
+        "requestHex": "0000000000",
+        "frames": [
+          {
+            "type": "0x00",
+            "len": 165
+          },
+          {
+            "type": "0x80",
+            "len": 16
+          }
+        ],
+        "heights": [],
+        "trailerText": "grpc-status: 0\r\n",
+        "trailerMs": 55,
+        "trailerToEndMs": 0.09999996423721313,
+        "extraBytesAfterTrailer": 0,
+        "firstDataMs": 55,
+        "endMs": 55.09999996423721,
+        "totalBytes": 191,
+        "eof": true,
+        "status": 200,
+        "contentType": "application/grpc-web",
+        "headerGrpcStatus": null,
+        "headerGrpcMessage": null,
+        "visibleHeaderNames": [
+          "access-control-allow-credentials",
+          "access-control-allow-origin",
+          "content-type",
+          "date",
+          "fly-request-id",
+          "server",
+          "vary",
+          "via",
+          "x-backend",
+          "x-cache",
+          "x-region"
+        ],
+        "unparsedBytes": 0
+      },
+      {
+        "run": 3,
+        "id": 10,
+        "method": "GetLatestBlock",
+        "at": "2026-11-17T05:10:26.520Z",
+        "requestHex": "0000000000",
+        "frames": [
+          {
+            "type": "0x00",
+            "len": 39
+          },
+          {
+            "type": "0x80",
+            "len": 16
+          }
+        ],
+        "heights": [
+          3581603
+        ],
+        "trailerText": "grpc-status: 0\r\n",
+        "trailerMs": 52.799999952316284,
+        "trailerToEndMs": 0.10000002384185791,
+        "extraBytesAfterTrailer": 0,
+        "firstDataMs": 52.799999952316284,
+        "endMs": 52.89999997615814,
+        "totalBytes": 65,
+        "eof": true,
+        "status": 200,
+        "contentType": "application/grpc-web",
+        "headerGrpcStatus": null,
+        "headerGrpcMessage": null,
+        "visibleHeaderNames": [
+          "access-control-allow-credentials",
+          "access-control-allow-origin",
+          "content-type",
+          "date",
+          "fly-request-id",
+          "server",
+          "vary",
+          "via",
+          "x-backend",
+          "x-cache",
+          "x-region"
+        ],
+        "unparsedBytes": 0
+      },
+      {
+        "run": 3,
+        "id": 11,
+        "method": "GetBlockRange",
+        "at": "2026-11-17T05:10:26.975Z",
+        "requestHex": "000000000e0a05088fcdda0112050898cdda01",
+        "frames": [
+          {
+            "type": "0x00",
+            "len": 2673
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 452
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 452
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 1364
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x80",
+            "len": 16
+          }
+        ],
+        "heights": [
+          3581583,
+          3581584,
+          3581585,
+          3581586,
+          3581587,
+          3581588,
+          3581589,
+          3581590,
+          3581591,
+          3581592
+        ],
+        "trailerText": "grpc-status: 0\r\n",
+        "trailerMs": 53.89999997615814,
+        "trailerToEndMs": 0.19999998807907104,
+        "extraBytesAfterTrailer": 0,
+        "firstDataMs": 53.89999997615814,
+        "endMs": 54.09999996423721,
+        "totalBytes": 5582,
+        "eof": true,
+        "status": 200,
+        "contentType": "application/grpc-web",
+        "headerGrpcStatus": null,
+        "headerGrpcMessage": null,
+        "visibleHeaderNames": [
+          "access-control-allow-credentials",
+          "access-control-allow-origin",
+          "content-type",
+          "date",
+          "fly-request-id",
+          "server",
+          "vary",
+          "via",
+          "x-backend",
+          "x-cache",
+          "x-region"
+        ],
+        "unparsedBytes": 0
+      },
+      {
+        "run": 4,
+        "id": 12,
+        "method": "GetLightdInfo",
+        "at": "2026-11-17T05:10:27.441Z",
+        "requestHex": "0000000000",
+        "frames": [
+          {
+            "type": "0x00",
+            "len": 162
+          },
+          {
+            "type": "0x80",
+            "len": 16
+          }
+        ],
+        "heights": [],
+        "trailerText": "grpc-status: 0\r\n",
+        "trailerMs": 59.89999997615814,
+        "trailerToEndMs": 0.10000002384185791,
+        "extraBytesAfterTrailer": 0,
+        "firstDataMs": 59.89999997615814,
+        "endMs": 60,
+        "totalBytes": 188,
+        "eof": true,
+        "status": 200,
+        "contentType": "application/grpc-web",
+        "headerGrpcStatus": null,
+        "headerGrpcMessage": null,
+        "visibleHeaderNames": [
+          "access-control-allow-credentials",
+          "access-control-allow-origin",
+          "content-type",
+          "date",
+          "fly-request-id",
+          "server",
+          "vary",
+          "via",
+          "x-backend",
+          "x-cache",
+          "x-region"
+        ],
+        "unparsedBytes": 0
+      },
+      {
+        "run": 4,
+        "id": 13,
+        "method": "GetLatestBlock",
+        "at": "2026-11-17T05:10:27.909Z",
+        "requestHex": "0000000000",
+        "frames": [
+          {
+            "type": "0x00",
+            "len": 39
+          },
+          {
+            "type": "0x80",
+            "len": 16
+          }
+        ],
+        "heights": [
+          3581603
+        ],
+        "trailerText": "grpc-status: 0\r\n",
+        "trailerMs": 54.39999997615814,
+        "trailerToEndMs": 0.10000002384185791,
+        "extraBytesAfterTrailer": 0,
+        "firstDataMs": 54.39999997615814,
+        "endMs": 54.5,
+        "totalBytes": 65,
+        "eof": true,
+        "status": 200,
+        "contentType": "application/grpc-web",
+        "headerGrpcStatus": null,
+        "headerGrpcMessage": null,
+        "visibleHeaderNames": [
+          "access-control-allow-credentials",
+          "access-control-allow-origin",
+          "content-type",
+          "date",
+          "fly-request-id",
+          "server",
+          "vary",
+          "via",
+          "x-backend",
+          "x-cache",
+          "x-region"
+        ],
+        "unparsedBytes": 0
+      },
+      {
+        "run": 4,
+        "id": 14,
+        "method": "GetBlockRange",
+        "at": "2026-11-17T05:10:28.371Z",
+        "requestHex": "000000000e0a05088fcdda0112050898cdda01",
+        "frames": [
+          {
+            "type": "0x00",
+            "len": 2673
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 452
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 452
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 1364
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x80",
+            "len": 16
+          }
+        ],
+        "heights": [
+          3581583,
+          3581584,
+          3581585,
+          3581586,
+          3581587,
+          3581588,
+          3581589,
+          3581590,
+          3581591,
+          3581592
+        ],
+        "trailerText": "grpc-status: 0\r\n",
+        "trailerMs": 65.69999998807907,
+        "trailerToEndMs": 0,
+        "extraBytesAfterTrailer": 0,
+        "firstDataMs": 65.69999998807907,
+        "endMs": 65.69999998807907,
+        "totalBytes": 5582,
+        "eof": true,
+        "status": 200,
+        "contentType": "application/grpc-web",
+        "headerGrpcStatus": null,
+        "headerGrpcMessage": null,
+        "visibleHeaderNames": [
+          "access-control-allow-credentials",
+          "access-control-allow-origin",
+          "content-type",
+          "date",
+          "fly-request-id",
+          "server",
+          "vary",
+          "via",
+          "x-backend",
+          "x-cache",
+          "x-region"
+        ],
+        "unparsedBytes": 0
+      },
+      {
+        "run": 5,
+        "id": 15,
+        "method": "GetLightdInfo",
+        "at": "2026-11-17T05:10:28.838Z",
+        "requestHex": "0000000000",
+        "frames": [
+          {
+            "type": "0x00",
+            "len": 270
+          },
+          {
+            "type": "0x80",
+            "len": 16
+          }
+        ],
+        "heights": [],
+        "trailerText": "grpc-status: 0\r\n",
+        "trailerMs": 53.90000003576279,
+        "trailerToEndMs": 0,
+        "extraBytesAfterTrailer": 0,
+        "firstDataMs": 53.90000003576279,
+        "endMs": 53.90000003576279,
+        "totalBytes": 296,
+        "eof": true,
+        "status": 200,
+        "contentType": "application/grpc-web",
+        "headerGrpcStatus": null,
+        "headerGrpcMessage": null,
+        "visibleHeaderNames": [
+          "access-control-allow-credentials",
+          "access-control-allow-origin",
+          "content-type",
+          "date",
+          "fly-request-id",
+          "server",
+          "vary",
+          "via",
+          "x-backend",
+          "x-cache",
+          "x-region"
+        ],
+        "unparsedBytes": 0
+      },
+      {
+        "run": 5,
+        "id": 16,
+        "method": "GetLatestBlock",
+        "at": "2026-11-17T05:10:29.294Z",
+        "requestHex": "0000000000",
+        "frames": [
+          {
+            "type": "0x00",
+            "len": 39
+          },
+          {
+            "type": "0x80",
+            "len": 16
+          }
+        ],
+        "heights": [
+          3581603
+        ],
+        "trailerText": "grpc-status: 0\r\n",
+        "trailerMs": 59.200000047683716,
+        "trailerToEndMs": 0.09999996423721313,
+        "extraBytesAfterTrailer": 0,
+        "firstDataMs": 59.200000047683716,
+        "endMs": 59.30000001192093,
+        "totalBytes": 65,
+        "eof": true,
+        "status": 200,
+        "contentType": "application/grpc-web",
+        "headerGrpcStatus": null,
+        "headerGrpcMessage": null,
+        "visibleHeaderNames": [
+          "access-control-allow-credentials",
+          "access-control-allow-origin",
+          "content-type",
+          "date",
+          "fly-request-id",
+          "server",
+          "vary",
+          "via",
+          "x-backend",
+          "x-cache",
+          "x-region"
+        ],
+        "unparsedBytes": 0
+      },
+      {
+        "run": 5,
+        "id": 17,
+        "method": "GetBlockRange",
+        "at": "2026-11-17T05:10:29.757Z",
+        "requestHex": "000000000e0a05088fcdda0112050898cdda01",
+        "frames": [
+          {
+            "type": "0x00",
+            "len": 2673
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 452
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 452
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x00",
+            "len": 1364
+          },
+          {
+            "type": "0x00",
+            "len": 95
+          },
+          {
+            "type": "0x80",
+            "len": 16
+          }
+        ],
+        "heights": [
+          3581583,
+          3581584,
+          3581585,
+          3581586,
+          3581587,
+          3581588,
+          3581589,
+          3581590,
+          3581591,
+          3581592
+        ],
+        "trailerText": "grpc-status: 0\r\n",
+        "trailerMs": 56.89999997615814,
+        "trailerToEndMs": 0.10000002384185791,
+        "extraBytesAfterTrailer": 0,
+        "firstDataMs": 56.89999997615814,
+        "endMs": 57,
+        "totalBytes": 5582,
+        "eof": true,
+        "status": 200,
+        "contentType": "application/grpc-web",
+        "headerGrpcStatus": null,
+        "headerGrpcMessage": null,
+        "visibleHeaderNames": [
+          "access-control-allow-credentials",
+          "access-control-allow-origin",
+          "content-type",
+          "date",
+          "fly-request-id",
+          "server",
+          "vary",
+          "via",
+          "x-backend",
+          "x-cache",
+          "x-region"
+        ],
+        "unparsedBytes": 0
+      }
+    ],
+    "tip": 3581603,
+    "range": {
+      "start": 3581583,
+      "end": 3581592
+    }
+  },
+  "finished": "2026-11-17T05:10:30.372Z"
+}
